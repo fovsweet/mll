@@ -1,0 +1,303 @@
+@charset UTF-8;
+/*重用样式*/
+.border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.confirm-btn {
+  width: 148px;
+  height: 45px;
+  background-color: #2bc589;
+  border: 1px solid #2bc589;
+  color: white;
+  font-size: 14px;
+}
+.setting {
+  padding: 30px;
+  color: #666666;
+}
+.active-catagory {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.active-catagory a {
+  display: inline-block;
+  text-align: center;
+  padding: 2px 20px 10px 20px;
+  margin-right: 20px;
+}
+.active-catagory .focus {
+  color: #2bc486;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #2bc486;
+}
+.active-config {
+  float: left;
+  width: 50%;
+}
+.active-title {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.active-title span {
+  font-weight: bold;
+}
+.upimg-big {
+  display: inline-block;
+  width: 223px;
+  height: 125px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 15px;
+  border: 1px dashed #dddddd;
+  position: relative;
+}
+.upimg-small {
+  display: inline-block;
+  width: 223px;
+  height: 125px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 15px;
+  border: 1px dashed #dddddd;
+  position: relative;
+  width: 126px;
+}
+.addimg-ico {
+  width: 48px;
+  padding-left: 26px;
+  height: 16px;
+  margin-top: 50px;
+  vertical-align: -4px;
+  display: inline-block;
+  background: url('../images/add_ico.png') no-repeat;
+}
+.upimg-tips {
+  display: inline-block;
+  position: absolute;
+  color: #999999;
+  bottom: -20px;
+  left: 0;
+  line-height: 1em;
+}
+.upimg-warning {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  line-height: 1em;
+  color: #ff6600;
+}
+.item {
+  position: relative;
+  padding-bottom: 20px;
+}
+.item label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 15%;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+  vertical-align: -4px;
+}
+.item input[type='text'] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 84%;
+  height: 34px;
+  line-height: 34px;
+  background-color: white;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.item input[type='text'].chose-date {
+  width: 30%;
+}
+.item input[type='text'].chose-date:nth-of-type(1) {
+  margin-right: 5px;
+}
+.item input[type='text'].chose-date:nth-of-type(2) {
+  margin-left: 5px;
+}
+.item textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 84%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  color: #666666;
+  resize: none;
+}
+.item select {
+  width: 145px;
+  height: 30px;
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.item input[type=checkbox] + span {
+  display: inline-block;
+  vertical-align: -3px;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  background: url('../images/base_z2968da.png') 0 -182px no-repeat;
+}
+.item input[type=checkbox]:checked + span {
+  background: url('../images/base_z2968da.png') 0 -208px no-repeat;
+}
+.item.add-prize {
+  height: 60px;
+  line-height: 60px ;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  border: 1px dashed #dddddd;
+  text-align: center;
+  border-radius: ;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.item.add-prize .addimg-ico {
+  margin-top: 0;
+  width: 86px;
+  line-height: 16px;
+}
+.item.chose-box label {
+  text-align: left;
+  width: 100px;
+}
+.item.submit {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.item.prize-item {
+  height: 60px;
+  font-size: 14px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  line-height: 60px;
+  border: 1px solid #dddddd;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.item.prize-item span {
+  display: inline-block;
+  margin-left: 10px;
+}
+.item.prize-item p {
+  float: right;
+}
+.item.prize-item a {
+  display: inline-block;
+  text-align: center;
+  width: 38px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #dddddd;
+  color: #666666;
+  margin-right: 10px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.item.prize-item a:hover {
+  border: 1px solid #2bc589;
+  color: #2bc589;
+}
+.item .fault-tips {
+  color: #ff6600;
+  position: absolute;
+  bottom: 0px;
+  left: 15%;
+}
+.hidden-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.active-preview {
+  float: right;
+  width: 354px;
+  height: 651px;
+  background: url('../images/iphone.png') no-repeat;
+  position: releative;
+}
+/*弹出框样式*/
+.data-dia {
+  color: #666666;
+}
+.data-dia .data-content {
+  width: 568px;
+  padding: 0;
+}
+.data-dia .setting-cont {
+  padding: 30px;
+}
+.data-dia .page-header {
+  text-align: center;
+  color: #666666;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.data-dia .page-header .close_log {
+  margin-right: 30px;
+}
+.data-dia .setting-item {
+  padding-bottom: 20px;
+}
+.data-dia .setting-item label {
+  margin-right: 15px;
+  font-size: 14px;
+}
+.data-dia .setting-item select {
+  width: 300px;
+  height: 34px;
+}
+.data-dia .setting-item select:nth-of-type(2) {
+  margin-right: 10px;
+}
+.data-dia .setting-item textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #666666;
+  padding: 10px;
+  width: 426px;
+  height: 150px;
+  resize: none;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #dddddd;
+}
+.data-dia .btn-bar {
+  text-align: center;
+  margin-top: 20px;
+}

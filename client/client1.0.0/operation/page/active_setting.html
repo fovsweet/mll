@@ -1,9 +1,131 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+<!-------------------css---------------------->
+<link rel="stylesheet" href="css/active_setting.css" />
+
+<!-------------------主页---------------------->
+<div class="setting">
+	<div class="active-catagory">
+		<a href="#" class="focus">配置</a><a href="#">活动列表</a>
+	</div>
+	<!----------配置-------------->
+	<div class="active-config">
+		<div class="active-title">
+			<span>活动图文</span>
+		</div>
+		<div class="item">
+			<label for="active-main">活动主题</label>
+			<input type="text" id="active-main"/>
+		</div>
+		<div class="item">
+			<label>图文封面</label>
+			<div class="upimg-big">
+				<span class="addimg-ico">上传图片</span>
+				<span class="upimg-warning">*请上传图片</span>
+				<img src='' class="img-hide" />
+				<span class="upimg-tips">大图建议尺寸&nbsp;900X500</span>
+			</div>
+			<div class="upimg-small">
+				<span class="addimg-ico">上传图片</span>
+				<span class="upimg-warning">*请上传图片</span>
+				<img src='' class="img-hide" />
+				<span class="upimg-tips">小图建议尺寸&nbsp;300X300</span>
+			</div>
+		</div>
+		<div class="item">
+			<label for="share-title">分享标题</label>
+			<input type="text" id="share-title" />
+			<span class="fault-tips">*请填写名称</span>
+		</div>
+		<div class="item">
+			<label for="share-cont">分享内容</label>
+			<input type="text" id="share-cont" placeholder="不同的分享内容通过字符 #@# 隔开，系统随机调用"/>
+		</div>
+		<div class="item">
+			<label for="share-url">分享URL</label>
+			<input type="text"  id="share-url"/>
+		</div>
+		<div class="active-title">
+			<span>活动设置</span>
+		</div>
+		<div class="item">
+			<label >活动时间</label>
+			<input type="text" class="chose-date" />至<input type="text" class="chose-date" />
+		</div>
+		<div class="item">
+			<label for="active-explain">活动说明</label>
+			<textarea id="active-explain"></textarea>
+		</div>
+		<div class="active-title">
+			<span>奖品设置</span>
+		</div>
+		<div class="item add-prize" data-role="prize-setting">
+				<span class="addimg-ico">添加奖品</span>
+		</div>
+		<div class="list-prize">
+			<div class="item prize-item">
+				<span>美乐乐代金券100</span>
+				<p>
+					<a href="javascript:;" data-role="prize-setting">编辑</a>
+					<a href="javascript:;">删除</a>
+				</p>
+			</div>
+		</div>
+		<div class="item chose-box">
+			<label for="prize-condition">
+			    <input type="checkbox" id="prize-condition" class="hidden-input" />
+			    <span></span>中奖条件
+			</label>
+			<select>
+				<option>100%中奖</option>
+				<option>90%中奖</option>
+				<option>80%中奖</option>
+			</select>
+		</div>
+		<div class="item submit">
+			<input type="submit" value="保存" class="confirm-btn" />
+		</div>
+	</div>
+	
+	<!-----------预览图--------------->
+	<div class="active-preview">
+		
+	</div>
+</div>
+
+<!-------------------奖品设置框---------------------->
+<div class="data-dia" id="prize-setting">
+    <div class="data-content">
+   		<h3 class='page-header'>
+			添加奖品
+			<a href='javascript:;' class='close_log'></a>
+		</h3>
+		<div class="setting-cont">
+			<div class="setting-item">
+				<label>奖品类型</label>
+				<select></select>
+			</div>
+			<div class="setting-item" >
+				<label>奖品名称</label>
+				<select style="margin-right: 10px"></select>
+				库存:<span>200</span>
+			</div>
+			<div class="setting-item">
+				<label>奖品数量</label>
+				<select></select>
+			</div>
+			<div class="setting-item">
+				<label>兑奖说明</label>
+				<textarea></textarea>
+			</div>
+			<div class="btn-bar">
+			<input type="submit" value="保存" class="confirm-btn" />
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-----------------js代码------------------------------>
+<script type="text/javascript">
+	$('.setting .add-prize').on('click',function(){
+		dialog(this);
+	})
+</script>

@@ -1,9 +1,220 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+<link rel="stylesheet" href="css/active_list.css" />
+<div class="sec-main">
+	<div>
+        <ul class="tab-menu">
+            <li><a data-role='tabContent1' href='#'>配置</a></li>
+            <li class="act"><a data-role='tabContent2' href='#'>活动列表</a></li>
+        </ul>
+    </div>
+    
+	<div class="search-box">
+       <form>
+           <p>
+               	<label class="no-margin-left" >活动名称</label>
+               	<input type="text" class="input" placeholder="请输入活动名称" style="width: 150px">
+              	<label>活动状态</label>
+              	<select class="select" style="margin-right: 10px;width: 125px" >
+                   	<option value="0">全部</option>
+                   	<option value="1">进行中</option>
+                   	<option value="1">已结束</option>
+               	</select>
+           	</p>
+          	<p class="p-oper">
+               	<input type="button" class="bright-button" value="查询">
+               	<input type="button" class="light-button save-button" value="保存" >
+           	</p>
+           	
+       </form>
+    </div>
+	<div class="info-list">
+		<table class="list">
+			<thead style="text-align:center">
+				<tr>
+					<th style="width:7%">ID</th>
+					<th >活动名称</th>
+					<th>活动时间</th>
+					<th>中奖●奖品</th>
+					<th style="width:10%">状态</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>
+						<div class="active-pic">
+							<img src="images/active_bg.png" alt="" />
+							<p>拜年有礼 每家惊喜</p>
+						</div>
+					</td>
+					<td>2015.10.11~2015.10.18</td>
+					<td>
+						<div class="prize-box">
+							<p>500代金券（0/100）</p>
+							<p>礼品券抱枕（0/100）</p>
+							<p>礼品券马代游（0/1）</p>
+						</div>
+					</td>
+					<td>进行中</td>
+					<td>
+                       <a href="javascript:;">编辑</a>
+                       <a href="javascript:;" class="red-button">停用</a>
+                       <a href="javascript:;" class="js-prize-list">中奖明细</a>
+					</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>
+						<div class="active-pic">
+							<img src="images/active_bg.png" alt="" />
+							<p>拜年有礼 每家惊喜</p>
+						</div>
+					</td>
+					<td>2015.10.11~2015.10.18</td>
+					<td>
+						<div class="prize-box">
+							<p>500代金券（0/100）</p>
+							<p>礼品券抱枕（0/100）</p>
+							<p>礼品券马代游（0/1）</p>
+						</div>
+					</td>
+					<td>已结束</td>
+					<td>
+                        <a href="javascript:;">编辑</a>
+                       <a href="javascript:;" class="red-button">停用</a>
+                       <a href="javascript:;" class="js-prize-list">中奖明细</a>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+	<div class="page-bar">
+		<span class="total-info">198条记录</span> 
+        <a class="prev" href="#" style="width:66px;">&lt; 上一页</a>
+        <a href="#">1</a>
+        <strong>2</strong>
+        <a href="#">3</a>
+        <span class="dot">…</span>
+        <a href="#">150</a>
+        <a class="next" href="#" style="width:66px;">下一页 &gt;</a>
+        <span class="no-border">到第<input  onkeyup="__goPageE(this,event);">页</span>
+        <a class="button" href="javascript:;" onclick="__goPage(this);" style="width:50px;">确定</a>
+    </div>
+</div>
+
+
+
+
+<div class="prizeList" style="display: none">
+	<div class="prize-list">
+		<div class="search-box clearfix">
+	       <form>
+	           <p style="margin-right:10px">
+	               	
+	              	<label class="no-margin-left">是否中奖</label>
+	              	<select class="select" style="margin-right: 10px;width: 85px" >
+	                   	<option value="0">全部</option>
+	                   	<option value="1">进行中</option>
+	                   	<option value="1">已结束</option>
+	               	</select>
+	               	<label class="no-margin-left">手机号码</label>
+	               	<input type="text" class="input"  placeholder="请输入手机号码" style="width: 120px">
+	           	</p>
+	          	<p class="p-oper">
+	               	<input type="button" class="bright-button" value="查询">
+	               	<input type="button" class="cancel-button" value="重置" >
+	           	</p>
+	           	<p class="p-oper fr">
+	               	<input type="button" class="light-button save-button" value="保存" >
+	               	<button class="btn-group" type="button">
+	               		<span class="btn-export"></span>
+	               		导出数据
+	               	</button>
+	           	</p>
+	       </form>
+	    </div>
+	    
+	    <div class="info-list">
+			<table class="list">
+				<thead style="text-align:center">
+					<tr>
+						<th>微信头像●昵称</th>
+						<th>手机号</th>
+						<th>是否中奖</th>
+						<th>券号</th>
+						<th>奖品名称</th>
+						<th>卡券状态</th>
+						<th style="width: 10%">领券时间</th>
+						<th style="width: 10%">核销时间</th>
+						<th>验券门店</th>
+						<th>验券店员</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="head-active">
+								<img src="images/header.png" alt="" />
+								<p>喵喵喵</p>
+							</div>
+						</td>
+						<td>18625390998</td>
+						<td>是</td>
+						<td>MLL12345678</td>
+						<td>礼品券抱枕</td>
+						<td>已使用</td>
+						<td>2015.10.11 13:34</td>
+						<td>2015.10.11 13:34</td>
+						<td>门店名称</td>
+						<td>店员姓名</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="head-active">
+								<img src="images/header.png" alt="" />
+								<p>喵喵喵</p>
+							</div>
+						</td>
+						<td>18625390998</td>
+						<td>是</td>
+						<td>MLL12345678</td>
+						<td>礼品券抱枕</td>
+						<td>已使用</td>
+						<td>2015.10.11 13:34</td>
+						<td>2015.10.11 13:34</td>
+						<td>门店名称</td>
+						<td>店员姓名</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	    <div class="page-bar">
+	        <span class="total-info">198条记录</span>
+	        <a class="prev" href="#" style="width:66px;">&lt; 上一页</a>
+	        <a href="#">1</a>
+	        <strong>2</strong>
+	        <a href="#">3</a>
+	        <span class="dot">…</span>
+	        <a href="#">150</a>
+	        <a class="next" href="#" style="width:66px;">下一页 &gt;</a>
+	        <span class="no-border">到第<input  onkeyup="__goPageE(this,event);">页</span>
+	        <a class="button" href="javascript:;" onclick="__goPage(this);" style="width:50px;">确定</a>
+	    </div>
+	</div>
+</div>
+
+<script>
+	
+$(document).on('click','.js-prize-list',function(){
+	$.lightBox({
+        width: 1000,
+        boxID: 'prizeList',
+        title: '中奖明细',
+        html: $('.prizeList').html()        
+    });
+    
+    $('#prizeListDia').find('.dia-footer').remove();
+})
+	
+</script>

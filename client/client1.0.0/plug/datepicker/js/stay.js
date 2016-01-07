@@ -19,7 +19,7 @@
                 showMonthAfterYear:true,
                 firstDay : 1,
                 showOtherMonths:true,
-                minDate : 0,
+                minDate : -360,
                 maxDate:360,
               	onSelect:function(dateText,inst){
                     stay.end.datepicker('option', 'minDate', new Date(moment(dateText).add('days', 1)));
@@ -87,8 +87,8 @@
             return strDay;
         },
         inputVal:function(){
-            stay.inputTimes(stay.start,1);
-            stay.inputTimes(stay.end,2);
+            stay.inputTimes(stay.start,0);
+            stay.inputTimes(stay.end,1);
         },
         inputTimes:function(obj,day){
             var m = new Date(moment(stay.today).add('days', day));

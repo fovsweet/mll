@@ -1,0 +1,14 @@
+1、dialog ——弹出框
+    <input type="button" value="选择" data-role="dialog" class="dialog"/>
+    <div class="data-dia" id="dialog">
+        <div class="fix"></div>
+        <div class="data-content">
+            <h2 class="page-header">店员基本信息</h2>
+            <input type="button" value="确定"/>
+            <input type="button" value="取消"/>
+        </div>
+    </div>
+2、table
+3、公共样式
+4、page-header
+5、input

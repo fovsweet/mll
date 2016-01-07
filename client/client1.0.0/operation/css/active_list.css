@@ -1,0 +1,199 @@
+* {
+	font-family: Arial, '微软雅黑';
+}
+
+#section {
+	padding-right: 30px;
+}
+
+.section .sec-main {
+	width: auto;
+}
+
+.fr {
+	float: right;
+}
+
+.page-bar {
+	margin-top: 30px;
+}
+
+.tab-menu {
+	border-bottom: 1px solid #ddd;
+}
+
+.tab-menu a {
+	color: #666666;
+}
+
+.tab-menu li a {
+	font-size: 14px;
+}
+
+.tab-menu li.act a {
+	color: #2bc486;
+}
+
+.tab-menu li.act {
+	border-bottom: 1px solid #2bc486;
+}
+
+.tab-menu li {
+	display: inline-block;
+	padding: 27px 0 10px 0;
+	width: 95px;
+	text-align: center;
+	margin-bottom: -1px;
+	margin-right: 10px;
+}
+
+.search-box p {
+	display: inline-block;
+}
+
+.search-box p label {
+	margin: 0 10px 0 15px
+}
+
+.search-box .input,
+.search-box .select {
+	color: #666;
+}
+
+.p-oper input,
+.p-oper button {
+	width: 110px;
+	font-size: 14px;
+}
+
+.p-oper input:not(:last-child) {
+	margin-right: 10px
+}
+
+.save-button {
+	transition: all .1s ease-in-out;
+}
+
+.save-button:hover {
+	background: #2bc486;
+	color: #fff;
+	border-color: #2bc486;
+}
+
+.section .list tbody tr td {
+	height: 120px;
+}
+
+.section .list td a {
+	margin-right: 2px;
+}
+
+.list td a:hover {
+	border-color: #2bc486;
+	color: #2bc486;
+	}
+
+.list td a.red-button {
+	color: #666!important;
+	border-color: #ddd!important;
+}
+
+.list td a.red-button:hover {
+	color: #e7441f!important;
+	border-color: #e7441f!important;
+}
+
+.prize-box p {
+	line-height: 20px;
+}
+
+.page-bar .total-info {
+	margin-right: 20px;
+}
+
+.data-dia .data-content {
+	box-sizing: border-box;
+}
+
+.data-dia .dia-header .dia-close {
+	background: url('../images/close.png') no-repeat;
+	position: absolute;	right: 35px;
+	top: 20px;
+}
+
+.data-dia .search-box {
+	margin-top: 20px;
+}
+
+.data-dia .list {
+	padding: 0;
+	margin: 30px 0;
+	border: 1px solid #e8e8e8;
+}
+
+.data-dia .list thead tr th ,
+.data-dia .list tbody tr td {
+	text-align: center;
+	height: 54px;
+	vertical-align: middle;
+}
+
+.data-dia .list thead tr th {
+	background: #eee;
+}
+
+.data-dia .list tbody tr td {
+	height: 80px;
+}
+
+.data-dia .list tr{
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.data-dia .list thead tr:not(:last-child){
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.data-dia .page-bar {
+	margin: 30px auto 20px;
+}
+
+.btn-group {
+	width: 96px;
+	height: 34px;
+	color: #666666;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	position: relative;
+	padding-left: 23px;
+	vertical-align: top;
+	cursor: pointer;
+	outline:none;
+}
+
+.btn-group .btn-export {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 34px;
+	height: 30px;
+	background: url('../images/btn-export.png') no-repeat 14px 8px;
+}
+
+.head-active {
+	padding: 10px;
+	line-height: 15px;
+}
+
+.head-active img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.active-pic img {
+	width: 135px;
+	height: 75px;
+}
