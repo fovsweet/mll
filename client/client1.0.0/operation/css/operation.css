@@ -1,0 +1,93 @@
+*{color:#666}
+	.mll_qcrode{padding-left:30px;min-width:1220px;}
+	a:link{color:#666;}
+	button{height:34px;background:#fff;border:1px solid #ddd;outline:none;cursor:pointer;width:70px;margin-right:10px;border-radius:2px;font-family:'微软雅黑';font-size:12px;position:relative;top:2px;}
+	button.chick{background:#f2f2f2}
+	.bright-button {font-size:16px;-webkit-box-sizing:border-box;}
+	input{height:32px;background-color:#fff;line-height:30px;padding-left:10px;width:95px}
+	.page-header{font-weight:100}
+	.btn_20{margin-bottom:20px;}
+	/** tab切换页面主体内容样式 **/
+	.tab_menu{border-bottom:1px solid #ddd}
+	.mll_qcrode ul li a {font-size: 14px;}
+    .mll_qcrode ul li {display: inline-block;padding: 27px 0 10px 0;width: 95px;text-align: center;margin-bottom: -1px;margin-right: 10px;}
+    .act a {color: #2bc486;}
+    .act {border-bottom: 1px solid #2bc486;}
+    .tab-content{min-width: 910px;width:100%;padding-right:30px;-webkit-box-sizing:border-box;padding-bottom:55px;margin-top:20px;}
+    .tab-content .search-box{margin:20px 0;background-color: #fff;}
+    .tab-content .search-box p{display:inline-block;}
+    .tab-content .search-box p:first-of-type{margin-right:10px}
+    .tab-content .search-box .p-oper{margin-top: 20px;text-align: right;}
+    .tab-content .search-box label{margin:0 10px 0 15px;}
+    .tab-content table{width:100%;color:#666;border-top: 1px solid #ddd;border-left: 1px solid #ddd;  border-collapse: collapse;}
+    .tab-content table tr,.table_info thead tr td{border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;vertical-align:middle;text-align:center;}
+    .tab-content table tr td{background-color: #fff;border:1px solid #ddd;}
+    .tab-content table td,.tab-content table th{vertical-align: middle;}
+    .tab-content table thead th{height: 50px;background-color: #eee;font-weight: bold;font-size: 12px;}
+    .tab-content table tr td,.table_info thead tr td{height: 50px;background-color: #fff;font-size: 12px;}
+    .tab-content table .odd td{background-color: #f8f8f8;}
+    .tab-content table td a{padding: 3px 5px;border: 1px solid #ddd;border-radius:2px;background-color: transparent;color: #666;}
+    .tab-content table .odd td a{border-color: #2bc486;color: #2bc486;}
+    a.red-button{border-color: #e7441f!important;color: #e7441f!important;}
+    .info-list .list{text-align: center;padding: 0;margin: 0;}
+    /*static*/
+    #statistic .static_header{width:100%;height:auto;background:#fafafa;display:flex}
+    #statistic .static_header .header_left{width:25%;height:auto;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;border-right:1px solid #e9e9e9}
+    #statistic .static_header .header_left>div{text-align:center}
+    #statistic .static_header .header_left p{font-size:30px}
+	#statistic .static_header .header_right{width:75%;-webkit-box-sizing:border-box;padding:20px}
+	.add{display:none};
+	#statistic .static_header .header_right .chick_time span{margin-left:10px;margin-right:3px}
+	#statistic .static_header .header_right .chick_time .span_center{margin:0 3px;}
+	#statistic .static_header .header_right select{width:110px;height:34px;background-color:#fff}
+	#statistic .static_header .header_right .store_search{margin-top:20px;}
+	#statistic .static_header .header_right .store_search *{margin-right:10px;}
+	a.add_more,a.cut_more{color:#008ed4}
+
+	/*图表样式*/
+	#static_info{width:100% !important;height:360px !important;margin-top:30px}
+	.line_title{position:relative;top:60px;display:block;text-align:center;width:100%;height:auto;vertical-align:bottom;margin-top:-40px;}
+	.line_title p{display:inline-block;font-size:12px;line-height:25px;vertical-align:6px}
+	.line_title span{font-size:25px;margin-left:10px;color:#a991d8;display:inline-block;vertical-align:bottom;}
+	.line_title p:nth-of-type(2){margin-left:40px;}
+	.line_title span:nth-of-type(2){color:#49d0d2}
+	/*表格样式*/
+	.static_main_info{margin-bottom:30px;width:100%}
+	.static_main_info table,.table_info{text-align:center}
+	.static_main_info table thead tr td{background:#eee;border:1px solid #ddd}
+	.table_info thead tr td{background:#eee;border:none;font-weight:bold}
+	.data-dia .table_info tr{border:1px solid #ddd}
+	.data-dia .table_info tr td{text-align:center;;vertical-align:middle}
+	.data-dia .table_info tr td img{width:40px;height:40px;border-radius:40px;overflow:hidden;}
+	.data-dia .table_info tr:nth-of-type(2n){background:#f8f8f8}
+	.data-dia table{margin-bottom:30px;}
+	/*列表*/
+	.list_search{width:100%;margin-bottom:30px}
+	.list_search input{width:120px;margin-right:8px;}
+	.list_search .id_search{width:200px}
+	.static_main_info td a {padding: 3px 5px;border: 1px solid #ddd;border-radius: 2px;background-color: transparent;color: #666;}
+	.list_add{margin-bottom:20px;margin-top:-10px}
+	.list_add input:nth-of-type(1){margin-left:223px;}
+	.list_search .bright-button{margin-left:10px;}
+
+	/*弹框*/
+	.data-dia .data-content{width:830px;}
+	.page-header{text-align:center;margin-bottom:0px}
+	.table_info_main_title{width:100%;height:50px;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;}
+	.table_info_main_title div:not(:last-of-type){margin-right:25px;}
+
+	/*词汇联想*/
+	.insert ul li{width:100%;height:32px;display:block;padding:0px;margin:0px;line-height:32px;background:#fff;cursor:pointer;-webkit-box-sizing:border-box;text-align: left;padding-left:10px}
+	.insert ul li:hover{border:1px solid #2bc486;line-height:30px;color:#2bc486;padding-left:9px}
+
+	/*分页样式*/
+    .pageNav{ text-align: center;}
+    .pageNav a{ display: inline-block;height: 26px; line-height: 28px; padding: 0 10px; border: 1px solid #dddddd; cursor: pointer; color: #666666;}
+    .pageNav a:hover{background-color: #2bc589; border: 1px solid #2bc589; color: white;}
+    .pageNav a.hoverd{background-color: #2bc589; border: 1px solid #2bc589; color: white;}
+    .pageNav input{height: 28px;width:32px;  padding-left: 5px; margin: -4px 5px 0 5px; border-radius: 0;}
+    .pageNav input[type='submit']{width: auto; padding: 0 15px; cursor: pointer;}
+    .pageNav button{ height: 28px; margin: -6px 5px 0 0 ; border-radius: 0;}
+    .pageNav input[type='submit']:hover{background-color: #2bc589; border: 1px solid #2bc589; color: white;}
+    .pageNav span{color: black;}
+    .pageNav .all_items{ display: inline-block; margin-left: 10px;}

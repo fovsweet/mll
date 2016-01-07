@@ -1,0 +1,364 @@
+<style type="text/css">
+#section {padding-right: 30px;}
+.section .sec-main {width:auto;}
+/* ***************************
+* 微回复内容导航
+* ****************************/
+.sec-header ul li{cursor: pointer;}
+.sec-header .tab-menu-0 { margin-top: 15px;}
+.sec-header .tab-menu-0 ul { display: inline-block; border: solid 1px #2bc486; border-radius: 2px;}
+.sec-header .tab-menu-0 ul li { display: inline-block; width: 210px; height: 36px; line-height: 36px; font-size: 14px; color: #333; text-align: center; border-right: solid 1px #2bc486;margin-left: -4px;}
+.sec-header .tab-menu-0 ul .first { margin-left: 0;}
+.sec-header .tab-menu-0 ul .last { border-right: none;}
+.sec-header .tab-menu-0 ul .current { background-color: #2bc486; color: #fff;}
+.sec-header .tab-menu-1 { border-bottom: 1px solid #ddd;}
+.sec-header .tab-menu-1 ul li { display: inline-block; padding: 20px 20px 10px 20px; text-align: center; margin-bottom: -1px; margin-right: 10px; font-size: 14px;}
+.sec-header .tab-menu-1 ul .current { color: #2bc486; border-bottom: 1px solid #2bc486;}
+.sec-header .tab-menu-2 ul li { display: inline-block; margin: 20px 0 10px 10px; width: 95px; height:16px;line-height:16px;text-align: center; font-size: 14px; background: url(images/radio.png) 0 -18px no-repeat; background-size: 16px;}
+.sec-header .tab-menu-2 ul .current { background-position: 0 0;}
+.sec-header .none {display: none;}
+
+/* ***************************
+* 文字消息模块
+* ****************************/
+.msg-content .emotion-editor .edit-area{height: 270px;padding: 20px;border: solid 1px #ddd;font-size: 14px;color: #666;overflow-y: auto; overflow-x: hidden;}
+.msg-content .emotion-editor .editor-toolbar{height: 36px;line-height: 36px;padding: 0 20px;border: solid 1px #ddd;border-top:none;}
+.msg-content .emotion-editor .editor-toolbar p{float: right;font-size: 14px;color: #666;padding: 0;}
+
+/* ***************************
+* 添加规则按钮
+* ****************************/
+.main-content .setting-box {margin-top: 10px;}
+.main-content .setting-box p{margin-bottom: 20px;}
+.main-content .setting-box .tips{padding-left: 30px;height: 56px;line-height: 56px;font-size: 14px;color: #333;background-color: #e9f9f3;}
+.main-content .lit-orange{width: 120px;line-height: 34px;background-color: #ff811a;}
+
+/* ***************************
+* 图文消息内容模块
+* ****************************/
+.msg-contents .msg-item{display: none;}
+.msg-contents .cur-item{display: block;}
+/* ***************************
+* 回复列表
+* ****************************/
+.main-content .info-list .kspan{display: inline-block;padding: 0 5px;background-color: #e9f9f3;}
+
+/* ***************************
+* 添加规则弹窗
+* ****************************/
+.data-dia p{padding: 5px 0;}
+.data-dia p .lab{display: inline-block;width: 80px;}
+.data-dia p .input{width: 734px;border-color: #ddd;}
+.data-dia p .choose-qr-btn{display:inline-block;width: 754px;height: 60px;line-height: 60px;text-align: center;border:solid 1px #ddd; border-radius: 2px;cursor: pointer;}
+.data-dia p .choose-qr-btn i.icon20-gray-add {margin-right: 10px}
+.data-dia .radio-wefeed{display: inline-block; cursor: pointer; padding-left: 22px; background: url(images/radio.png) 0 -16px no-repeat;background-size: 16px;}
+.data-dia .radio-current{background-position: 0 2px;}
+.data-dia .rule-main .emotion-editor{margin-top:20px;}
+
+/* ***************************
+* 选择二维码弹窗内容
+* ****************************/
+#chooseQrDia .data-content { padding: 10px 0; }
+#chooseQrDia .dia-main {margin-top: 0;}
+#chooseQrDia .qr-choose-box { position: relative;}
+#chooseQrDia .qr-choose-box .spera { display: inline-block; width: 1px; height: 100%; position: absolute; top: 0; left: 50%; border-right: solid 1px #ddd; }
+#chooseQrDia .qr-choose-box dl {width: 50%; height: 400px; float: left; border-bottom: solid 1px #ddd;}
+#chooseQrDia .qr-choose-box dt { height: 40px; line-height: 40px; padding-left: 30px; background-color: #f4f4f4; color: #666; font-size: 14px; font-weight: bold; }
+#chooseQrDia .qr-choose-box dt span { font-size: 12px;}
+#chooseQrDia .qr-choose-box dd { padding: 20px 30px; }
+#chooseQrDia .qr-search-box { position: relative; margin-bottom: 20px;}
+#chooseQrDia .qr-search-box .input { width: 220px;padding-right: 40px; }
+#chooseQrDia .qr-search-box .qr-search-btn { display: inline-block; width: 20px; height: 20px; position: absolute; background: url("images/base_z2968da.png") 0 -4337px no-repeat; top: 7px; right: 10px; cursor: pointer; }
+#chooseQrDia .qr-choose-box .table-box {width:100%;height: 270px;overflow-y: auto;}
+#chooseQrDia .qr-choose-box .search-list td { height: 34px; vertical-align: middle; text-align: center; color: #666; }
+#chooseQrDia .qr-choose-box .search-list td span { display: inline-block; width: 16px;
+  height: 16px; background: url("images/check.png") 0 0 no-repeat ; cursor: pointer; }
+#chooseQrDia .qr-choose-box .search-list td .checked {background-position: 0 -16px;}
+#chooseQrDia .qr-choose-box dd ul li{cursor: pointer;height: 34px;line-height: 34px;position: relative;padding-left: 10px;}
+#chooseQrDia .qr-choose-box dd ul li span {color: #666}
+#chooseQrDia .qr-choose-box dd ul .del-span { display: inline-block; width: 20px; height: 20px; background: url("images/base_z2968da.png") 0 -2570px no-repeat ; cursor: pointer; vertical-align: -10px; position: absolute;top:10px; right:10px;}
+#chooseQrDia .qr-choose-box .hover-li {border: solid 1px #2bc486;border-radius: 2px;}
+#chooseQrDia .qr-choose-box .hover-li span{ color: #2bc486;}
+#chooseQrDia .qr-choose-box .hover-li .del-span{ background-position: 0 -1824px;}
+
+/* ***************************
+* 有参关注选择二维码弹窗模块
+* ****************************/
+#screenQrDia .data-content { padding: 10px 0 0 0;}
+#screenQrDia .dia-main {margin:0;}
+#screenQrDia .qr-screen-box dl {float: left;width: 50%;border-bottom:solid 1px #ddd; }
+#screenQrDia .qr-screen-box dt { height: 40px; line-height: 40px; padding-left: 30px; background-color: #f4f4f4; color: #666; font-size: 14px; font-weight: bold; }
+#screenQrDia .qr-screen-box dd{padding: 30px 20px 20px 30px; height:340px;overflow-y:scroll;}
+#screenQrDia .qr-screen-box .screen-search-box .select-span{position: relative;display: inline-block;margin-bottom:10px;margin-right:12px;}
+#screenQrDia .qr-screen-box .screen-search-box ul{display: none;position: absolute;top: 38px;left: 0;background-color: #fff; border: solid 1px #ddd; border-top: none; width: 127px; z-index: 99;}
+#screenQrDia .qr-screen-box .screen-search-box ul li{padding-left: 3px;}
+#screenQrDia .qr-screen-box .screen-search-box ul li:hover{background-color: #2bc486;color: #fff;}
+#screenQrDia .qr-screen-box .screen-search-box .cur-display-select{display: block;}
+#screenQrDia .qr-screen-box .screen-search-box .cur-display-select-span ul { display: block;}
+#screenQrDia .qr-screen-box .screen-search-box input[type=text]{background: #fff;width: 124px;height: 34px;padding-left: 3px;}
+#screenQrDia .qr-screen-box .screen-search-box input[type=button]{width: 70px;height: 38px;vertical-align: -1px;}
+#screenQrDia .qr-screen-box .screen-search-list{margin-top: 10px;}
+#screenQrDia .qr-screen-box .screen-search-list input[type=checkbox] {vertical-align: middle;}
+#screenQrDia .qr-screen-box .screen-search-list tbody td {height: 34px;vertical-align: middle;}
+#screenQrDia .qr-screen-box .screen-search-list table span {display: inline-block;width: 16px;height: 16px;background: url("images/check.png") 0 0 no-repeat;cursor: pointer;vertical-align: :-2px;}
+#screenQrDia .qr-screen-box .screen-search-list table .checked {background-position: 0 -16px;}
+#screenQrDia .screen-show-list th {height: 22px;vertical-align: top;padding-left: 10px;}
+#screenQrDia .screen-show-list td {height: 34px;vertical-align: middle;padding-left: 10px;}
+#screenQrDia .screen-show-list td .del-span { display: inline-block; width: 20px; height: 20px; background: url("images/base_z2968da.png") 0 -2570px no-repeat ; cursor: pointer; vertical-align: -10px;}
+#screenQrDia .screen-show-list .hover-tr {border: solid 1px #2bc486;border-radius: 2px;}
+#screenQrDia .screen-show-list .hover-tr td{ color: #2bc486;}
+#screenQrDia .screen-show-list .hover-tr .del-span{ background-position: 0 -1824px;}
+
+/* ***************************
+* 关键词-添加规则弹窗
+* ****************************/
+.data-dia .edit-rule-main {margin-top: 10px;}
+.data-dia .edit-rule-main table { font-size: 14px; color: #666; margin-top: 10px;}
+.data-dia .edit-rule-main table td { vertical-align: middle; height: 70px;}
+.data-dia .edit-rule-main .lab { font-size: 14px; color: #666; width: 80px; }
+.data-dia .edit-rule-main .input { width: 680px; }
+.data-dia .edit-rule-main .textarea {width: 810px;height: 78px;padding: 10px;}
+.data-dia .edit-rule-main .keyw-tips {display: inline-block;width: 830px;height: 34px;line-height: 26px;color: #999;text-align: right;}
+.data-dia .edit-rule-main .fir-create-access {padding-right: 20px;}
+.data-dia .edit-rule-main .create-access a {display: inline-block;width: 400px;height: 100px;line-height:100px;text-align:center;color:#666;border: dotted 2px #ddd;border-radius: 2px;}
+.data-dia .edit-rule-main .create-access a:hover {border-color: #aaa;}
+.data-dia .edit-rule-main .msg-contain { display: inline-block; width: 830px; height: 118px; border: solid 1px #ddd; border-radius: 2px; margin:10px 0;}
+.data-dia .edit-rule-main .msg-contain .msg-span { display: inline-block; width: 660px; height: 98px; border-right: solid 1px #ddd; margin: 10px; vertical-align: middle;}
+.data-dia .edit-rule-main .msg-contain dl { display: inline-block; width: 134px; float: none; height: 60px; vertical-align: middle;border-bottom: none;text-align: center;}
+.data-dia .edit-rule-main .msg-contain dd{display: inline-block;margin-top: 8px;padding: 0 3px;}
+.data-dia .edit-rule-main .msg-span .msg-span-intext{display: inline-block;width: 470px;height: 100px;}
+
+/* ***************************
+* 通用
+* ****************************/
+.feed-footer .feed-oper { margin: 20px 0 10px 0; text-align: center;}
+.feed-footer input,.data-dia .dia-footer input{ width: 138px; font-size: 16px;height: 45px;line-height: 45px;}
+
+i.icon20-gray-add{display: inline-block;width: 20px;height: 20px;background: url("images/base_z2968da.png") 0 -2950px no-repeat;vertical-align: -5px;}
+i.icon20-white-add{display: inline-block;width: 20px;height: 20px;background: url("images/add_white_ico.png") no-repeat 1px 1px;vertical-align: -5px;}
+.data-dia a.green-link{  padding: 3px 5px; border: 1px solid #2bc486; border-radius: 2px;color: #2bc486;}
+.data-dia a.red-link{  padding: 3px 5px; border: 1px solid red; border-radius: 2px;color: red;}
+.data-dia a.gray-link{  padding: 3px 5px; border: 1px solid #ddd; border-radius: 2px;color: #666;}
+.data-dia .dia-header .dia-cha{	background: url('images/close.png') no-repeat;	position: absolute;	right: 35px;	top: 20px;}
+.rulename-tips {color: #999}
+.rulename-tips-red {color: #ff0000;}
+</style>
+<link rel="stylesheet" type="text/css" href="css/msg_imgtext.css" />
+<div class="sec-header">
+    <p>微信回复管理</p>
+    <div class="tab-menu-0">
+        <ul>
+            <li class="first">关注自动回复</li>
+            <li>消息自动回复</li>
+            <li class="last">关键词自动回复</li>
+        </ul>
+    </div>
+    <div class="tab-menu-1">
+        <ul>
+            <li>无参关注</li>
+            <li>有参关注</li>
+            <li>美乐乐有参关注</li>
+        </ul>
+    </div>
+    <div class="tab-menu-2">
+        <ul>
+            <li>图文消息</li>
+            <li>文字消息</li>
+        </ul>
+    </div>
+</div>
+<div class="sec-main">
+    <div class="page-content" id="js-page1-1-1"></div>
+    <div class="page-content" id="js-page1-1-2"></div>
+    <div class="page-content" id="js-page1-2-0"></div>
+    <div class="page-content" id="js-page1-3-0"></div>
+    <div class="page-content" id="js-page2-0-1"></div>
+    <div class="page-content" id="js-page2-0-2"></div>
+    <div class="page-content" id="js-page3-0-0"></div>
+</div>
+<!-- 添加二维码规则弹框内容 start -->
+<div class="addQrRule" style="display:none;">
+    <p>
+        <span class="lab">规则名</span>
+        <input type="text" class="input js-rulename" placeholder="输入规则名，最多60个字，规则名是唯一的" />
+        <!--<span class="rulename-tips-red">规则名已存在</span>-->
+        <span class="rulename-tips">规则名最多为60个字</span>
+    </p>
+    <p>
+        <span class="lab">选择二维码</span>
+        <span class="choose-qr-btn js-cho-qr"><i class="icon20-gray-add"></i>选择二维码</span>
+    </p>
+    <p>
+        <span class="lab">回复内容</span>
+        <span>
+            <span class="radio-wefeed radio-current" data-role="0">图文消息</span>&emsp;&emsp;
+            <span class="radio-wefeed" data-role="1">文字消息</span>
+        </span>
+    </p>
+    <div class="rule-main">
+        <div class="js-main1"></div>
+        <div class="js-main2" style="display:none;"></div>
+    </div>
+</div>
+<!-- 添加二维码规则弹框内容 end -->
+<!-- 选择二维码弹框内容 start -->
+<div class="chooseQRcode" style="display:none;">
+    <div class="qr-choose-box clearfix">
+        <dl>
+            <dt>二维码列表</dt>
+            <dd>
+                <div class="qr-search-box">
+                    <input type="input" class="input" placeholder="请输入二维码ID或描述进行搜索" />
+                    <span class="qr-search-btn js-search-qr"></span>
+                </div>
+                <div class="table-box">
+                    <table class="js-qrlist search-list">
+                        <thead>
+                            <tr>
+                                <td width="20%"></td>
+                                <td>二维码ID</td>
+                                <td>描述</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>已选择二维码<span class="js-choosed-num">（7条）</span></dt>
+            <dd>
+                <ul class="js-qrlist-choed">
+                    <li>
+                        <span>1.2050年周年庆</span>
+                        <span class="js-del-choed del-span" data-role="2"></span>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <span class="spera"></span>
+    </div>
+</div>
+<!-- 选择二维码弹框内容 end -->
+<!-- 筛选条件选择二维码 start -->
+<div class="screenQr" style="display:none;">
+    <div class="qr-screen-box clearfix">
+        <dl class="screen-dl-fir">
+            <dt>筛选</dt>
+            <dd>
+                <div class="screen-search-box">
+                    <form><div>
+                        <div class="select-span">
+                            <input type="text" name="city" placeholder="城市" />
+                            <ul class="js-screen-search-select">
+                            </ul>
+                        </div>
+                        <div class="select-span">
+                            <input type="text" name="siteAttr" placeholder="站点属性" />
+                            <ul class="js-screen-search-select">
+                            </ul>
+                        </div>
+                    </div><div>
+                        <div class="select-span">
+                            <input type="text" name="pageAddr" placeholder="页面位置" />
+                            <ul class="js-screen-search-select">
+                            </ul>
+                        </div>
+                        <div class="select-span">
+                            <input type="text" name="storeName" placeholder="门店" />
+                            <ul class="js-screen-search-select">
+                            </ul>
+                        </div>
+                        <input type="button" class="bright-button js-screenqr-btn" value="搜索" />
+                    </div></form>
+                </div>
+                <div class="screen-search-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="10%"><span class="js-screen-check-all "></span></th>
+                                <th width="15%">ID</th>
+                                <th width="40%">参数值</th>
+                                <th width="35%">目前所属规则</th>
+                            </tr>
+                        </thead>
+                        <tbody class="js-screen-search-list">
+                        </tbody>
+                    </table>
+                </div>
+            </dd>
+        </dl>
+        <dl class="screen-dl-sec">
+            <dt>二维码列表</dt>
+            <dd>
+                <div class="screen-show-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="20%">ID</th>
+                                <th width="35%">参数值</th>
+                                <th width="30%">目前所属规则</th>
+                                <th width="15%"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="js-screen-list">
+                        </tbody>
+                    </table>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    <div class="js-screened-num" style="text-align:right;padding:5px 30px 0 0;">已选择0项</div>
+</div>
+<!-- 筛选条件选择二维码 end -->
+<!-- 添加/编辑关键词规则弹框内容 start -->
+<div class="addRule" style="display:none">
+    <div class="edit-rule-main">
+        <table>
+            <tr>
+                <td class="lab">规则名</td>
+                <td>
+                    <input type="text" class="input js-rulename" />
+                    <span class="rulename-tips-red">规则名已存在</span>
+                    <span class="rulename-tips">规则名最多为60个字</span>
+                    <input type="hidden" class="js-imgmsg-ids" />
+                </td>
+            </tr>
+            <tr>
+                <td class="lab">关键词</td>
+                <td>
+                    <textarea class="textarea js-keywords"></textarea>
+                    <span class="js-keyw-tips keyw-tips">多个关键字使用空格隔开，还可输入30个字</span>
+                </td>
+            </tr>
+            <tr class="js-add-content">
+                <td>回复内容</td>
+                <td>
+                		<p class="rulename-tips">最多回复5条</p>
+                    <span class="create-access fir-create-access">
+                        <a class="js-add-msg" href="javascript:;" onclick="addMsgItem(this);" data-role="add-mulmsg">
+                            <i class="icon20-gray-add"></i>
+                            <span>添加图文消息</span>
+                        </a>
+                    </span>
+                    <span class="create-access">
+                        <a class="js-add-msg" href="javascript:;" onclick="addTextMsg(this);" data-role="add-textmsg">
+                            <i class="icon20-gray-add"></i>
+                            <span>添加文字消息</span>
+                        </a>
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- 添加/编辑关键词规则弹框内容 end -->
+<!-- 添加编辑文字消息内容 start -->
+<div class="addTextMsg" style="display:none;"></div>
+<!-- 添加编辑文字消息内容 end -->
+<!-- 添加编辑图文消息 start -->
+<div class="addMsgItem" style="display:none;"></div>
+<!-- 添加编辑图文消息 end -->
+<script type="text/javascript" src="js/msg_imgtext.js"></script>
+<script type="text/javascript" src="js/we_feedback.js"></script>

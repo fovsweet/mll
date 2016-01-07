@@ -1,0 +1,65 @@
+﻿$axure.loadCurrentPage({
+  "url":"流程图.html",
+  "generationDate":new Date(1451040062825.02),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"d326c9a6ff3945ba896aa84426dbd0a4",
+    "type":"Axure:Page",
+    "name":"流程图",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"5d499db7f7a74318a6f28c9236755ead",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":700,
+              "height":960}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"e8102c2d94734b29989d57cf827193cc",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":700,
+                  "height":960}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/流程图/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "5d499db7f7a74318a6f28c9236755ead":{
+      "scriptId":"u0"},
+    "e8102c2d94734b29989d57cf827193cc":{
+      "scriptId":"u1"}}});

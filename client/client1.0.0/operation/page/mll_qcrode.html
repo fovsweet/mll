@@ -1,0 +1,221 @@
+<link href="css/jquery.ui.css" rel="stylesheet"/>
+<link href="css/date.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/operation.css">
+<div class='mll_qcrode'>
+	<div class='tab_menu'>
+		<ul>
+			<li class='act'>
+				<a data-role='statistic' href="javascript:;">统计</a>
+			</li>
+			<li>
+				<a data-role='list' href="javascript:;">列表</a>
+			</li>
+		</ul>
+	</div>
+	<div class='tab-content' id='statistic'>
+		<div class='static_header'>
+			<div class='header_left'>
+				<div>
+					<h3>累计关注总数</h3>
+					<p>13215487</p>
+				</div>
+
+			</div>
+			<div class='header_right'>
+				<div class='chick_time'>
+					<button class='chick'>最近7天</button>
+					<button>最近30天</button>
+					<span>时间</span>
+					<input type="text" readonly  id="startDate"/>
+					<span class='span_center'>至</span>
+					<input type="text" readonly  id="endDate"/>
+				</div>
+				<div class='store_search'>
+					<input type='text' placeholder='城市'>
+					<input type='text' placeholder='站点'>
+					<input type='text' placeholder='页面位置'>
+					<input type='text' placeholder='门店'>
+					<input type='text' placeholder='参1'>
+					<a href="javascript:;" class='add_more'>更多选项
+						<img src="images/down.png">
+					</a>
+					<button class='bright-button'>查询</button>
+				</div>
+				<div class='store_search add'>
+					<input type='text' placeholder='城市'>
+					<input type='text' placeholder='站点'>
+					<input type='text' placeholder='页面位置'>
+					<input type='text' placeholder='门店'>
+					<input type='text' placeholder='参1'>
+					<a href="javascript:;" class='cut_more'>更多选项
+						<img src="images/up.png">
+					</a>
+					<button class='bright-button'>查询</button>
+				</div>
+			</div>
+		</div>
+		<div class='line_title'>
+			<p>新关注人数</p><span>123124</span>
+			<p>取消关注数</p><span>123124</span>
+		</div>
+		<div id='static_info'></div>
+		<div class='static_main_info'>
+			<table>
+				<thead>
+					<tr>
+						<td width='10%'>定制二维码ID</td>
+						<td width='8%'>城市</td>
+						<td width='8%'>站点</td>
+						<td width='10%'>页面位置</td>
+						<td width='12%'>体验馆</td>
+						<td width='6.5%'>参数1</td>
+						<td width='6.5%'>参数2</td>
+						<td width='6.5%'>参数3</td>
+						<td width='6.5%'>参数4</td>
+						<td width='6.5%'>参数5</td>
+						<td width='6.5%'>参数6</td>
+						<td width='6.5%'>关注数</td>
+						<td width='6.5%'>取消关注数</td>
+					</tr>
+				</thead>
+			</table>
+
+		</div>
+		<div class='pageNav'>
+			<a>上一页</a>
+			<a class="hoverd"> 1 </a>
+			<a> 2 </a>
+			<a> 3 </a>
+			<a>...</a>
+			<a>50</a>
+			<a>下一页</a>
+			到第<input type="text" />页
+			<input type="submit" value="确定" />
+			共<span>20</span>页<span class="all_items">200</span>项
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.ui.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/stay.js"></script>
+<script type="text/javascript" src='js/echarts-all.js'></script>
+<script type="text/javascript">
+	$('.tab_menu ul li:nth-of-type(1) a').click(function(){
+		$('#section').load('page/mll_qcrode.html')
+	})
+	$('.tab_menu ul li:nth-of-type(2) a').click(function(){
+		$('#section').load('page/mll_qcrode_list.html')
+	})
+
+	$('.chick_time button').click(function(){
+		$('button').removeClass('chick');
+		$(this).toggleClass('chick');
+	})
+/*——————————————图表————————————————*/
+	var w = $('#section').width();
+	var sw = $('#sidebar').width();
+	$('#static_info').css({'width':w-sw,'height':'360px'})
+	$('.line_title').css({'width':w-sw});
+	var myChart = echarts.init(document.getElementById('static_info'),'macarons');
+    var ecConfig = echarts.config;
+    option = {
+	    tooltip : {
+	        trigger: 'axis',
+	        borderRadius: 2,
+	        opacity:0.5,
+	        padding:15,
+	    },
+	    legend: {
+	    	x:'right',
+	        data:['关注数','取消关注数']
+	    },
+	    toolbox: {
+	        show : false,
+	        feature : {
+	            mark : {show: true},
+	            dataView : {show: true, readOnly: false},
+	            magicType : {show: true, type: ['line', 'bar']},
+	            restore : {show: true},
+	            saveAsImage : {show: true}
+	        }
+	    },
+	    calculable : true,
+	    xAxis : [
+	        {
+	            type : 'category',
+	            boundaryGap : false,
+	            data : ['12-8','12-9','12-10','12-11','12-12','12-13','12-14']
+	        }
+	    ],
+	    yAxis : [
+	        {
+	            type : 'value',
+	            axisLabel : {
+	                formatter: '{value}'
+	            }
+	        }
+	    ],
+	    series : [
+	        {
+	            name:'关注数',
+	            type:'line',
+	            data:[11, 11, 15, 13, 12, 13, 10],
+	            markLine : {
+	                data : [
+	                    {type : 'average', name: '平均值'}
+	                ]
+	            }
+	        },
+	        {
+	            name:'取消关注数',
+	            type:'line',
+	            data:[1, -2, 2, 5, 3, 2, 0],
+	            markLine : {
+	                data : [
+	                    {type : 'average', name : '平均值'}
+	                ]
+	            }
+	        }
+	    ]
+	};
+	myChart.setOption(option);
+	$('.static_main_info td a').click(function(){
+		console.log(111)
+		dialog(this)
+	})
+
+	$('.add_more').click(function(){
+		$('.add').show();
+		$(this).hide();
+		$(this).parent().children('.bright-button').hide();
+	})
+	$('.cut_more').click(function(){
+		$('.add').hide();
+		$('.add_more').show();
+		$('.add_more').parent().children('.bright-button').show();
+	})
+	$('input').focus(function(){
+		$(this).parent().append("<div class='insert'><ul></ul></div>");
+	})
+	$('input').keyup(function(){
+		var v = $(this).val();
+		var x = $(this).offset().top;
+		var y = $(this).offset().left;
+		var w = $(this).width();
+		var h = $(this).height();
+		console.log(x+'+'+y+'+'+w+'+'+h);
+		$('.insert ul').css('margin','0')
+		$('.insert').css({'position':'absolute','left':y,'top':x+h+3,'height':'auto','width':w+10,'border':'1px solid #ddd','z-index':'2000'});
+
+		/*-----java------*/
+		// !$.ajax({
+
+		// })
+		/*-----java------*/
+		$('.insert ul').append('<li>选项1</li>')
+	})
+	$('input').blur(function(){
+		console.log($(this).val());
+		$('.insert').remove()
+	})
+</script>

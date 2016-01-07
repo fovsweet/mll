@@ -1,0 +1,189 @@
+<link rel="stylesheet" type="text/css" href="css/operation.css">
+<div class='mll_qcrode'>
+	<div class='tab_menu'>
+		<ul>
+			<li>
+				<a data-role='statistic' href="javascript:;">统计</a>
+			</li>
+			<li class='act'>
+				<a data-role='list' href="javascript:;">列表</a>
+			</li>
+		</ul>
+	</div>
+	<div class='tab-content' id='list'>
+		<div class='list_search'>
+			<input placeholder='请输入二维码ID' type='text' class='id_search'>
+			<input placeholder='城市' type='text'>
+			<input placeholder='站点' type='text'>
+			<input placeholder='页面位置' type='text'>
+			<input placeholder='体验馆' type='text'>
+			<input placeholder='参1' type='text'>
+			<a href="javascript:;" class='add_more'>更多选项
+				<img src="images/down.png">
+			</a>
+			<button class='bright-button'>查询</button>
+		</div>
+		<div class='list_search add list_add'>
+			<input placeholder='城市' type='text'>
+			<input placeholder='站点' type='text'>
+			<input placeholder='页面位置' type='text'>
+			<input placeholder='体验馆' type='text'>
+			<input placeholder='参1' type='text'>
+			<a href="javascript:;" class='cut_more'>更多选项
+				<img src="images/up.png">
+			</a>
+			<button class='bright-button'>查询</button>
+		</div>
+		<div class='static_main_info'>
+			<table>
+				<thead>
+					<tr>
+						<td width='7%'>定制二维码ID</td>
+						<td width='8%'>城市</td>
+						<td width='7%'>站点</td>
+						<td width='7%'>页面位置</td>
+						<td width='8%'>体验馆</td>
+						<td width='6%'>参数1</td>
+						<td width='6%'>参数2</td>
+						<td width='6%'>参数3</td>
+						<td width='6%'>参数4</td>
+						<td width='6%'>参数5</td>
+						<td width='6%'>参数6</td>
+						<td width='6%'>拉粉总数</td>
+						<td width='7%'>关注数</td>
+						<td width='7%'>取消关注数</td>
+						<td width='7%'>操作</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>定制二维码ID</td>
+					<td>乌鲁木齐</td>
+					<td>站点</td>
+					<td>页面位置</td>
+					<td>体验馆</td>
+					<td>关注数</td>
+					<td>关注数</td>
+					<td>关注数</td>
+					<td>关注数</td>
+					<td>关注数</td>
+					<td>关注数</td>
+					<td>关注数</td>
+					<td>关注数</td>
+					<td>取消关注数</td>
+					<td><a href="javascript:;" data-role='detail'>明细</a></td>
+				</tr>
+			</table>
+
+		</div>
+		<div class='pageNav'>
+			<a>上一页</a>
+			<a class="hoverd"> 1 </a>
+			<a> 2 </a>
+			<a> 3 </a>
+			<a>...</a>
+			<a>50</a>
+			<a>下一页</a>
+			到第<input type="text" />页
+			<input type="submit" value="确定" />
+			共<span>20</span>页<span class="all_items">200</span>项
+		</div>
+	</div>
+</div>
+<div id='detail' class='data-dia'>
+	<div class='data-content'>
+		<h3 class='page-header'>
+			二维码明细
+			<a href='javascript:;' class='close_log'></a>
+		</h3>
+		<div class='table_info_title'>
+			<div class='table_info_main_title'>
+				<div>
+					<strong>拉粉总数</strong>
+					<span>3</span>
+				</div>
+				<div>
+					<strong>当前关注人数</strong>
+					<span>3</span>
+				</div>
+				<div>
+					<strong>取消关注人数</strong>
+					<span>3</span>
+				</div>
+			</div>
+			<table class='table_info'>
+				<thead>
+					<td width='35%'>用户昵称</td>
+					<td width='30%'>头像</td>
+					<td width='35%'>关注时间</td>
+				</thead>
+				<tr>
+					<td>王五</td>
+					<td><img src="images/header.png"></td>
+					<td>2015-10-13 20:30</td>
+				</tr>
+				<tr>
+					<td>王五</td>
+					<td><img src="images/header.png"></td>
+					<td>2015-10-13 20:30</td>
+				</tr>
+			</table>
+		</div>
+		<div class='pageNav btn_20'>
+				<a>上一页</a>
+				<a class="hoverd"> 1 </a>
+				<a> 2 </a>
+				<a> 3 </a>
+				<a>...</a>
+				<a>50</a>
+				<a>下一页</a>
+				到第<input type="text" />页
+				<input type="submit" value="确定" />
+				共<span>20</span>页<span class="all_items">200</span>项
+			</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('.tab_menu ul li:nth-of-type(1) a').click(function(){
+		$('#section').load('page/mll_qcrode.html')
+	})
+	$('.tab_menu ul li:nth-of-type(2) a').eq(2).click(function(){
+		$('#section').load('page/mll_qcrode_list.html')
+	})
+	$('.static_main_info td a').click(function(){
+		dialog(this)
+	})
+	$('.add_more').click(function(){
+		$('.add').show();
+		$(this).hide();
+		$(this).parent().children('.bright-button').hide();
+	})
+	$('.cut_more').click(function(){
+		$('.add').hide();
+		$('.add_more').show();
+		$('.add_more').parent().children('.bright-button').show();
+	})
+	$('input').focus(function(){
+		$(this).parent().append("<div class='insert'><ul></ul></div>");
+	})
+	$('input').keyup(function(){
+		var v = $(this).val();
+		var x = $(this).offset().top;
+		var y = $(this).offset().left;
+		var w = $(this).width();
+		var h = $(this).height();
+		console.log(x+'+'+y+'+'+w+'+'+h);
+		$('.insert ul').css('margin','0')
+		$('.insert').css({'position':'absolute','left':y,'top':x+h+3,'height':'auto','width':w+10,'border':'1px solid #ddd','z-index':'2000'});
+
+		/*-----java------*/
+		// !$.ajax({
+
+		// })
+		/*-----java------*/
+		$('.insert ul').append('<li>选项1</li>')
+	})
+	$('input').blur(function(){
+		console.log($(this).val());
+		$('.insert').remove()
+	})
+</script>

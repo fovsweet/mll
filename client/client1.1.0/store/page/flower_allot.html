@@ -1,0 +1,210 @@
+<!--日期插件引用css start-->
+<link href="../plug/datepicker/css/jquery.ui.css" rel="stylesheet"/>
+<link href="../plug/datepicker/css/date.css" rel="stylesheet" />
+<!--日期插件引用css end-->
+<!--zTree插件引用css start-->
+<link rel="stylesheet" href="ztree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+<!--Tree插件引用css end-->
+<link rel="stylesheet" href="css/flower.css" type="text/css">
+<div class="sec-main">
+	<div class="search-box">
+       <form>
+           <p style="margin-right:10px">
+               	<label class="no-margin-left">粉丝昵称</label>
+               	<input type="text" class="input" name="nikeName">
+              	<label>所在区域</label>
+              	<select class="select" style="margin-right: 10px">
+                   	<option value="0">请选择省</option>
+                   	<option value="1">广东省</option>
+               	</select>
+               	<select class="select">
+                   	<option value="0">请选择市</option>
+                   	<option value="1">深圳市</option>
+               	</select>
+               	<div class="date-group">
+               		<label>关注时间</label>
+	                <input type="text" readonly  id="startDate" class="input"/> 
+	                <span>至 </span>
+					<input type="text" readonly  id="endDate" class="input"/>
+	                <label>在线状态</label>
+               	</div>
+               	<select class="select" style="margin-right: 10px">
+                   	<option value="0">请选择</option>
+               	</select>
+           	</p>
+          	<p class="p-oper">
+               	<input type="button" class="light-button" value="搜索">
+               	<input type="button" class="bright-button js-flw-allot" value="粉丝分配" >
+           	</p>
+       </form>
+    </div>
+	<div class="info-list">
+		<table class="list">
+			<thead style="text-align:center">
+				<tr>
+					<th style="width:7%;text-align: left">
+						<div class="checkbox-group">
+							<input type="checkbox" id="checkAll"/>
+							<span class="checkbox-green"></span> 
+						</div>
+						全选
+					</th>
+					<th>粉丝头像</th>
+					<th>粉线昵称</th>
+					<th>所在区域</th>
+					<th>关注时间</th>
+					<th>最近激活时间</th>
+					<th>在线状态倒计时</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align: left"> 
+						<div class="checkbox-group">
+							<input type="checkbox" class="fl-ids" value="123" id="123"/>
+							<span class="checkbox-green"></span>
+						</div>
+					</td>
+					<td><img class="img-circle" src="images/testImg.png" alt="" /></td>
+					<td>喵喵喵</td>
+					<td>广东省深圳市</td>
+					<td>2015-12-31 20:00</td>
+					<td>2015-12-31 22:00</td>
+					<td>40:20:10</td>
+				</tr>
+				<tr>
+					<td style="text-align: left"> 
+						<div class="checkbox-group">
+							<input type="checkbox" class="fl-ids" value="234" id="234"/>
+							<span class="checkbox-green"></span> 
+						</div>
+					</td>
+					<td><img class="img-circle" src="images/testImg.png" alt=""/></td>
+					<td>喵喵喵</td>
+					<td>广东省深圳市</td>
+					<td>2015-12-31 20:00</td>
+					<td>2015-12-31 22:00</td>
+					<td>40:20:10</td>
+				</tr>
+			</tbody>
+		</table>
+		<p style="line-height:30px;">
+			共<span>1234</span>位分丝 已选择<strong class="text-green"> 223 </strong>位</td>
+		</p>
+	</div>
+	<div class="page-bar">
+        <a class="prev" href="#" style="width:66px;">&lt; 上一页</a>
+        <a href="#">1</a>
+        <strong>2</strong>
+        <a href="#">3</a>
+        <span class="dot">…</span>
+        <a href="#">150</a>
+        <a class="next" href="#" style="width:66px;">下一页 &gt;</a>
+        <span class="no-border">到第<input  onkeyup="__goPageE(this,event);">页</span>
+        <a class="button" href="javascript:;" onclick="__goPage(this);" style="width:50px;">确定</a>
+        <span class="total-info">共20页</span>
+        <span class="total-info">198项</span>
+    </div>
+</div>
+<!-----粉丝分配弹框 start--------->
+<div class="flwAllot" style="display:none">
+	<div class="flw-allot">
+		<div class="flw-content">
+			<p class="flw-header">已选择粉丝（43）位</p>
+			<div class="flw-list">
+				<ul class="allot-list">
+					<li>
+						<div class="media-img">
+							<img src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img  src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img  src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img  src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+					<li>
+						<div class="media-img">
+							<img src="images/testImg.png" alt="" />
+							<p class="media-body">喵喵喵</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flw-content">
+			<p class="flw-header">选择门店</p>
+			<div class="flw-list">
+				<ul id="store-list" class="ztree">
+					
+				</ul>
+			</div>
+		</div>
+		<div class="flw-content">
+			<p class="flw-header">选择店员</p>
+			<div class="flw-list">
+				<ul class="allot-list allot-choose">
+					<li class="active"><span>喵喵喵</span></li>
+					<li><span>喵喵喵</span></li>
+					<li><span>喵喵喵</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!------粉丝分配弹框 end-------->
+
+<!------请选择粉丝弹框 start-------->
+<div class="flowTips" style="display: none">
+	<p style="font-size: 14px;margin: 30px 0;text-align: center">请选择粉丝</p>
+</div>
+<!------请选择粉丝弹框 end-------->
+
+<script type="text/javascript" src="../plug/datepicker/js/jquery.ui.js"></script>
+<script type="text/javascript" src="../plug/datepicker/js/moment.min.js"></script>
+<script type="text/javascript" src="../plug/datepicker/js/stay.js"></script>
+<script type="text/javascript" src="ztree/js/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="ztree/js/jquery.ztree.excheck-3.5.js"></script>
+<script type="text/javascript" src="ztree/js/jquery.ztree.exedit-3.5.js"></script>
+<script type="text/javascript" src="js/flower.js"></script>
+<script>
+
+</script>

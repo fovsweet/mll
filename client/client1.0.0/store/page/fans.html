@@ -1,0 +1,191 @@
+<!--日期插件引用css-->
+	<link href="../plug/datepicker/css/jquery.ui.css" rel="stylesheet"/>
+	<link href="../plug/datepicker/css/date.css" rel="stylesheet" />
+<!--日期插件引用css结束-->
+
+<style>
+	h1,h2,h3,h4,h5{font-weight: normal;}
+	input{background-color: white; height: 30px; padding-left: 10px; margin: 0;}
+	input[type='submit']{cursor: pointer;}
+	label{margin-right: 8px;;}
+	span{margin: 0 4px;}
+	select{height: 34px;}
+	.search-btn{width: 96px; height: 34px;background-color: #2bc589;border:1px solid #2bc589; color: white;}
+	.search-value{margin: 30px 0;padding: 0 30px;}
+	.w-157{width: 157px;}
+	.w-90{width: 90px;}
+	.w-205{width: 205px;}
+	.mr-20{margin-right: 20px;}
+	.c-666{color: #666;}
+	.b-box{box-sizing: border-box;}
+	.list_table{ text-align: center;border-collapse: collapse;border-spacing: 0; border: 1px solid #ddd;  border-radius: 2px;width:100%;margin-bottom: 30px; font-size: 12px;}
+	.list_table img{width: 45px; height: 45px; border-radius: 50%; vertical-align: middle;}
+	.list_table thead{font-weight: bold; font-size: 13px; color: #666; background-color: #eee;}
+	.list_table tr{ border-bottom: 1px solid #ddd;}
+	.list_table tr td{height: 55px; padding: 3px 15px;box-sizing: border-box;  vertical-align: middle; position: relative;color: #666666;}
+	.list_table tr td:hover .edit_date{display: block; cursor: pointer;}
+	.list_table tr:nth-of-type(2n){background-color: #f9f9f9;}
+	.list_table .edit_date{ width: 80%; height: 70%; line-height: 40px; position: absolute; top: 15%; left: 10%; margin: 0 auto;  background-color: #ececec; opacity: 0.9; display: none; } 
+	.list_table .edit_date{ font-size: 14px; font-weight: bold; color: #2bc589;}
+	.list_table .max_w{width: 15%;}
+	.list_table .min_w{width:10%;}
+	.list_table .user_ico{padding: 0;}
+	.list_table .user_ico img{display: inline-block; vertical-align: middle; width: 35px; height: 35px; border-radius: 50%;}
+	.list_table a{ border: 1px solid #ddd; padding:5px; border-radius: 2px; cursor: pointer;}
+	.list_table a:hover{border: 1px solid #2bc589; color: #2bc589;}
+	.pageNav input[type='text']{height: 25px;}
+	
+	.page-header{text-align: center;color: #666; padding-top: 10px; padding-bottom: 10px; }
+	.data-dia .search-value{margin: 20px 0 30px 0; padding: 0;}
+	.data-dia .data-content{width: 916px;}
+	.data-dia table{border: 1px solid #ddd;}
+	.data-dia table tr{border-bottom: 1px solid #ddd;}
+	.data-dia table tr, .data-dia table td{text-align: center;}
+	.data-dia .pageNav{margin-bottom: 25px;}
+</style>
+
+<div class="search-value">
+	<label class="c-666">门店名称</label>
+	<input type="text" class="w-157 mr-20"/>
+	<label class="c-666">日期</label>
+	<input type="text" class="w-90" id="startDate"/>
+	<span  class="c-666">至</span>
+	<input type="text" class="w-90 mr-20" id="endDate"/>
+	<input type="submit" value="搜索" class="search-btn" />
+</div>
+<div class="js-fans-list" style="padding:0 30px;">
+	<table class="list_table">
+		<thead>
+			<tr>
+				<td class="max_w">门店名称</td>
+				<td class="max_w">上级门店</td>
+				<td>粉丝主动选择</td>
+				<td>系统分配粉丝</td>
+				<td>店员主动拉粉</td>
+				<td>掉粉数</td>
+				<td>粉丝总数</td>
+				<td>操作</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>美乐乐旗舰店</td>
+				<td>美乐乐旗舰店</td>
+				<td>165066666</td>
+				<td>165066666</td>
+				<td>1522</td>
+				<td>1522</td>
+				<td>1522</td>
+				<td><a data-role='fans_list'>查看店员粉丝</a></td>
+			</tr>
+			<tr>
+				<td>美乐乐旗舰店</td>
+				<td>美乐乐旗舰店</td>
+				<td>1650</td>
+				<td>1522</td>
+				<td>165066666</td>
+				<td>165066666</td>
+				<td>1522</td>
+				<td><a data-role='fans_list'>查看店员粉丝</a></td>
+			</tr>
+			<tr>
+				<td>美乐乐旗舰店美乐乐旗舰店</td>
+				<td>美乐乐乐乐旗舰店</td>
+				<td>1650</td>
+				<td>1522</td>
+				<td>1522</td>
+				<td>165066666</td>
+				<td>165066666</td>
+				<td><a data-role='fans_list'>查看店员粉丝</a></td>
+			</tr>
+			<tr>
+				<td>美乐乐旗舰店美旗舰店</td>
+				<td>美乐乐乐乐旗舰店</td>
+				<td>1650</td>
+				<td>1522</td>
+				<td>1522</td>
+				<td>165066666</td>
+				<td>165066666</td>
+				<td><a data-role='fans_list'>查看店员粉丝</a></td>
+			</tr>
+			<tr>
+				<td>美乐乐旗乐旗舰店</td>
+				<td>乐旗舰店</td>
+				<td>1650</td>
+				<td>1522</td>
+				<td>1522</td>
+				<td>165066666</td>
+				<td>165066666</td>
+				<td><a data-role='fans_list'>查看店员粉丝</a></td>
+			</tr>
+			<tr>
+				<td>美乐乐旗舰店美舰店</td>
+				<td>美乐乐旗舰店美</td>
+				<td>1650</td>
+				<td>1522</td>
+				<td>1522</td>
+				<td>165066666</td>
+				<td>165066666</td>
+				<td><a data-role='fans_list'>查看店员粉丝</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="pageNav c-666">
+		<a>上一页</a>
+		<a class="hoverd"> 1 </a>
+		<a> 2 </a>
+		<a> 3 </a>
+		<a>...</a>
+		<a>50</a>
+		<a>下一页 </a>
+		到第<input type="text" />页
+		<input type="submit" value="确定" />
+		共<span>20</span>页<span class="all_items">200</span>项
+	</div>
+</div>
+
+<!--店员粉丝弹窗-->
+<div class="data-dia" id="fans_list">
+    <div class="data-content">
+   		<h3 class='page-header'>
+			店员粉丝
+			<a href='javascript:;' class='close_log'></a>
+		</h3>
+		<div class="list-cont">
+			
+		</div>
+    </div>
+</div>
+
+<!--粉丝详情弹窗-->
+<div class="data-dia" id="fans_info">
+    <div class="data-content">
+   		<h3 class='page-header'>
+			粉丝详情
+			<a href='javascript:;' class='close_log'></a>
+		</h3>
+		<div class="list-cont">
+			
+		</div>
+    </div>
+</div>
+	
+<!--日期插件引用JS-->
+<script type="text/javascript" src="../plug/datepicker/js/jquery.ui.js"></script>
+<script type="text/javascript" src="../plug/datepicker/js/moment.min.js"></script>
+<script type="text/javascript" src="js/days.js"></script>
+<!--日期插件引用结束-->
+<script type="text/javascript">
+	setDays('stay','startDate','endDate');
+	$('.js-fans-list td a').on('click',function(){
+		var id = $(this).data('role');
+		var that = this;
+		$('#'+id).find('.list-cont').load('page/fans_list.html',function(){
+			//TODO
+			
+			setDays('staylist','list-startDate','list-endDate');
+			dialog(that);
+		});
+	})
+</script>
+	

@@ -1,0 +1,73 @@
+﻿$axure.loadCurrentPage({
+  "url":"配置卡券.html",
+  "generationDate":new Date(1448257270015.9),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"e52d3f0ee3de4872adc2691e61f4b480",
+    "type":"Axure:Page",
+    "name":"配置卡券",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"efcb78f3ac8b4839894d6f8897258a69",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":50,
+              "y":86},
+            "size":{
+              "width":440,
+              "height":304}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"e82d0a0160284fad8d234131617ab39c",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":50,
+                  "y":86},
+                "size":{
+                  "width":440,
+                  "height":304}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "efcb78f3ac8b4839894d6f8897258a69":{
+      "scriptId":"u0"},
+    "e82d0a0160284fad8d234131617ab39c":{
+      "scriptId":"u1"}}});

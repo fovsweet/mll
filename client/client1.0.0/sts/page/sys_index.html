@@ -1,0 +1,122 @@
+<link href="css/sys_index.css" rel="stylesheet" />
+<div class="wechat_info" >
+	<h2>编辑微信接口信息</h2>
+	<table>
+		<tr>
+			<td ><span class="star_orange">*</span><span>微&nbsp;信&nbsp;号</span></td>
+			<td colspan="2"><input type="text" /></td>
+		</tr>
+
+		<tr>
+			<td><span class="star_orange">*</span><span>微信号名称</span></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span><span>AppID(应用ID)</span></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span><span>APPSecret(应用密钥)</span></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span><span>URL(服务器地址)</span></td>
+			<td><input type="text" class="gray_999" id="copEditUrl" /></td>
+			<td><input type="button" class="js_copy_button" data-clipboard-target="copEditUrl" value="复 制" /> </td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span><span >Token(令牌)</span></td>
+			<td><input type="text" class="gray_999" id="copEditToken" /></td>
+			<td><input type="button" class="js_copy_button" data-clipboard-target="copEditToken" value="复 制" /> </td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span><span>消息加密解密密钥</span></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span><span>OAuth2.0网页授权</span></td>
+			<td><input type="text"  class="gray_999" id="copEditAuth" /></td>
+			<td><input type="button" class="js_copy_button" data-clipboard-target="copEditAuth" value="复 制" /> </td>
+		</tr>
+		<tfoot>
+		<td colspan="3" style="text-align: center; padding-top: 30px;">
+			<button type="submit" class="save_info">保&nbsp;&nbsp;存</button>
+		</td>
+		<td></td>
+		</tfoot>
+	</table>
+</div>
+<div class="wechat_edit" >
+	<h2>微信接口</h2>
+	<table>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>微信号</td>
+			<td>b4384c050f27b99151501b1a95eb529cb1a95eb529c</td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>微信号名称</td>
+			<td>b4384c050f27b99151501b1a95eb529cb1a95eb529c</td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>AppID(应用ID)</td>
+			<td>b4384c050f27b99151501b1a95eb529cb1a95eb529c</td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>AppSecret(应用密钥)</td>
+			<td>b4384c050f27b99151501b1a95eb529cb1a95eb529c</td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>URL(服务器地址)</td>
+			<td id="copUrl" class="gray_999">b4384c050f27b99151501b1a1111111111122</td>
+			<td><input type="submit" class="js_copy_button" data-clipboard-target="copUrl" value="复 制" ></td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>Token(令牌)</td>
+			<td id="copToken" class="gray_999">b4384c050f27b99151501b1a9222222222eb529c</td>
+			<td><input type="submit" class="js_copy_button" data-clipboard-target="copToken" value="复 制" ></td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>消息加解密密钥</td>
+			<td>b4384c050f27b99151501b1a95eb529cb1a95eb529c</td>
+		</tr>
+		<tr>
+			<td><span class="star_orange">*</span></td>
+			<td>OAuth2.0网页授权</td>
+			<td id="copAuth" class="gray_999">b4384c050f27b99151501b1a444444441b4384c050f27b99151501b1a444444441</td>
+			<td><input type="submit" class="js_copy_button" data-clipboard-target="copAuth"  value="复 制" ></td>
+		</tr>
+		<tfoot>
+		<td colspan="4" style="text-align: center; padding-top: 30px;">
+			<button type="submit" id="edit_info" class="edit_info">编&nbsp;&nbsp;辑</button>
+		</td>
+		</tfoot>
+	</table>
+</div>
+<script type="text/javascript" src="js/selectivizr.js"></script>
+<script type="text/javascript" src="../plug/zeroClip/ZeroClipboard.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#edit_info').on('click',function(){
+			$('.wechat_edit').css('display','none');
+			$('.wechat_info').css('display','block');
+		});
+		
+		// 定义一个新的复制对象
+		var clip = new ZeroClipboard( document.getElementsByClassName('js_copy_button'), {
+		  moviePath: "../plug/zeroClip/ZeroClipboard.swf"
+		});
+		
+		// 复制内容到剪贴板成功后的操作
+		clip.on( 'complete', function(client, args) {
+		   alert("复制成功");
+		} );
+
+	})
+</script>

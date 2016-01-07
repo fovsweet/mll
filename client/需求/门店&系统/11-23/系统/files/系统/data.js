@@ -1,0 +1,108 @@
+﻿$axure.loadCurrentPage({
+  "url":"系统.html",
+  "generationDate":new Date(1448119788262.72),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"239a6bff678b46a782e19784e549ff41",
+    "type":"Axure:Page",
+    "name":"系统",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"7bf97f01b77b432ab9c4fe66ac62cdad",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":1190,
+              "height":908}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"f27d20c6087d43c7998e009eb7b0f09d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":1190,
+                  "height":908}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/系统/u0.png"}},
+{
+          "id":"d2df588f4609469b89e7d937207383a1",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFFFFF},
+            "size":{
+              "width":1190,
+              "height":908},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFFCCCCCC}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"f34440e1955443988f1bea86bbc8f73c",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFF},
+                "size":{
+                  "width":1190,
+                  "height":908},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/系统/u2.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "7bf97f01b77b432ab9c4fe66ac62cdad":{
+      "scriptId":"u0"},
+    "f27d20c6087d43c7998e009eb7b0f09d":{
+      "scriptId":"u1"},
+    "d2df588f4609469b89e7d937207383a1":{
+      "scriptId":"u2"},
+    "f34440e1955443988f1bea86bbc8f73c":{
+      "scriptId":"u3"}}});

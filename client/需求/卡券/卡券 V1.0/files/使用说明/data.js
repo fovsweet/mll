@@ -1,0 +1,1406 @@
+﻿$axure.loadCurrentPage({
+  "url":"使用说明.html",
+  "generationDate":new Date(1448257275335.2),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"5b727018c1d84ea99f2aa63bf4a2326c",
+    "type":"Axure:Page",
+    "name":"使用说明",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"c6e8e310b9b74f92bcefc73e4b6c622c",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "size":{
+              "width":320,
+              "height":568}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"9191ad10f5f44f818234e8e5262517d8",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "size":{
+                  "width":320,
+                  "height":568}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/手机卡包--平台卡券_微信卡券/u0.png"}},
+{
+          "id":"6863e4d449224a7199ee4cace68d42c3",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fontSize":"28px",
+            "location":{
+              "x":0,
+              "y":18},
+            "size":{
+              "width":320,
+              "height":44}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d53905a4a6a34b72a62c487480b2ec2d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fontSize":"28px",
+                "location":{
+                  "x":0,
+                  "y":18},
+                "size":{
+                  "width":320,
+                  "height":44}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/微信会话中获取卡券/u2.png"}},
+{
+          "id":"6b085b72c5e74657816750fb473726a3",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "size":{
+              "width":320,
+              "height":18},
+            "rotation":"0",
+            "textRotation":"0",
+            "borderWidth":"0",
+            "cornerRadiusTopLeft":"0"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"075c449e3bc24911b81e59b2179bf5da",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "size":{
+                  "width":320,
+                  "height":18},
+                "rotation":"0",
+                "textRotation":"0",
+                "borderWidth":"0",
+                "cornerRadiusTopLeft":"0"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/微信会话中获取卡券/u4.png"}},
+{
+          "id":"7688b9d7e81542b2aab89199467eecbb",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":0,
+              "y":28},
+            "size":{
+              "width":30,
+              "height":30},
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"14d0899932044c3aaf2891ab7be97eae",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":0,
+                  "y":28},
+                "size":{
+                  "width":30,
+                  "height":30},
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/微信会话中获取卡券/u6.png"}},
+{
+          "id":"7c89087510074a9d9ce361401fc161be",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":145,
+              "y":34},
+            "size":{
+              "width":28,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a3688813711a4aaeb2b9f18190632459",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":145,
+                  "y":34},
+                "size":{
+                  "width":28,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"18a94db1c78e4198adf69b5f6a2ee321",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFA1A1A1},
+            "location":{
+              "x":9,
+              "y":67},
+            "size":{
+              "width":300,
+              "height":132}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"0e623d9c781c4c19bc89234ab7735fad",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFA1A1A1},
+                "location":{
+                  "x":9,
+                  "y":67},
+                "size":{
+                  "width":300,
+                  "height":132}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/手机卡包--平台卡券_微信卡券/u10.png"}},
+{
+          "id":"a820b5a6258e425aabf898ad207319e8",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":17,
+              "y":75},
+            "size":{
+              "width":50,
+              "height":50},
+            "cornerRadiusTopLeft":"100"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"c15b62add9314990b33fcf2fae028d7a",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":17,
+                  "y":75},
+                "size":{
+                  "width":50,
+                  "height":50},
+                "cornerRadiusTopLeft":"100"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/微信会话中获取卡券/u72.png"}},
+{
+          "id":"81d75a0e71bb465d850a42976ebb4a94",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"h2",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fontSize":"15px",
+            "fontWeight":"400",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":71,
+              "y":90},
+            "size":{
+              "width":63,
+              "height":20}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"cee4231d3bd04c9c8301bf8a168382a2",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fontSize":"15px",
+                "fontWeight":"400",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":71,
+                  "y":90},
+                "size":{
+                  "width":63,
+                  "height":20}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"907952eb5a8444d0bc679adeb6130a01",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fontSize":"12px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":32,
+              "y":172},
+            "size":{
+              "width":210,
+              "height":17}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"00d88f832efa4536969925cbb158938b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fontSize":"12px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":32,
+                  "y":172},
+                "size":{
+                  "width":210,
+                  "height":17}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"92ff1181574c4aa9a532b7c35ae8a2c5",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"h2",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fontSize":"17px",
+            "fontWeight":"400",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":112,
+              "y":126},
+            "size":{
+              "width":94,
+              "height":23}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ce98d75c6de94b2486e77b352a37057c",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fontSize":"17px",
+                "fontWeight":"400",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":112,
+                  "y":126},
+                "size":{
+                  "width":94,
+                  "height":23}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"861dd3bcdfde4b4db4df6a8ef230f355",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFA1A1A1},
+            "location":{
+              "x":9,
+              "y":437},
+            "size":{
+              "width":300,
+              "height":131}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"e4a512e0b7cf4c6f91857c466d0a5047",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFA1A1A1},
+                "location":{
+                  "x":9,
+                  "y":437},
+                "size":{
+                  "width":300,
+                  "height":131}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/手机卡包--平台卡券_微信卡券/u68.png"}},
+{
+          "id":"eb4bd8db6f7349f1be7973815414a0ce",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":20,
+              "y":449},
+            "size":{
+              "width":50,
+              "height":50},
+            "cornerRadiusTopLeft":"100"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"06abda1cedf64d31b11b42bba3eb0200",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":20,
+                  "y":449},
+                "size":{
+                  "width":50,
+                  "height":50},
+                "cornerRadiusTopLeft":"100"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/微信会话中获取卡券/u72.png"}},
+{
+          "id":"3478bdf7bfd34b5782412bdfcae37add",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"h2",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fontSize":"15px",
+            "fontWeight":"400",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":84,
+              "y":456},
+            "size":{
+              "width":63,
+              "height":20}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"7cefcf5e8bfa41e4834dda56bf5ccbf6",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fontSize":"15px",
+                "fontWeight":"400",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":84,
+                  "y":456},
+                "size":{
+                  "width":63,
+                  "height":20}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"824b2ca75af54b42b0af9a845c1ea86b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fontSize":"12px",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":33,
+              "y":524},
+            "size":{
+              "width":210,
+              "height":17}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"96bd53ae7d4c421c903867ad7b59df81",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fontSize":"12px",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":33,
+                  "y":524},
+                "size":{
+                  "width":210,
+                  "height":17}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"76fe054886ea493a934f85a9567662f8",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"h2",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "fontSize":"17px",
+            "fontWeight":"400",
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFFFFFFFF,
+              "opacity":1},
+            "location":{
+              "x":110,
+              "y":476},
+            "size":{
+              "width":133,
+              "height":23}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"107f76a5fef04061a560cf15269018fa",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "fontSize":"17px",
+                "fontWeight":"400",
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFFFFFFFF,
+                  "opacity":1},
+                "location":{
+                  "x":110,
+                  "y":476},
+                "size":{
+                  "width":133,
+                  "height":23}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"4dd3ad23f3f14942a82c3cde7cd1b19f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":9,
+              "y":198},
+            "size":{
+              "width":300,
+              "height":201}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"63935395c28340978c1845e8a41a0fef",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":9,
+                  "y":198},
+                "size":{
+                  "width":300,
+                  "height":201}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/手机卡包--平台卡券_微信卡券/u78.png"}},
+{
+          "id":"b86d14e867234a07aa091b5e9929d74b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":84,
+              "y":209},
+            "size":{
+              "width":150,
+              "height":100}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"bfc25fc2a94340bd95aafc9287880ecf",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":84,
+                  "y":209},
+                "size":{
+                  "width":150,
+                  "height":100}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/微信会话中获取卡券/u114.png"}},
+{
+          "id":"369b761920194af88aca257ad8f3c08d",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":97,
+              "y":319},
+            "size":{
+              "width":108,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"9fc2f49b753a4b4c928099b21a69b680",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":97,
+                  "y":319},
+                "size":{
+                  "width":108,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"1d785fb9670a4e27b4cfd977ccafa66e",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":9,
+              "y":387},
+            "size":{
+              "width":300,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"e34d5f6a0518443cb8565254c299e5a7",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":9,
+                  "y":387},
+                "size":{
+                  "width":300,
+                  "height":40}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/手机卡包--平台卡券_微信卡券/u84.png"}},
+{
+          "id":"b43d4301c8dc41588949135b270075e6",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":9,
+              "y":348},
+            "size":{
+              "width":300,
+              "height":40}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"507beeef9f9640c5bb0a92de3efa5103",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":9,
+                  "y":348},
+                "size":{
+                  "width":300,
+                  "height":40}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/手机卡包--平台卡券_微信卡券/u84.png"}},
+{
+          "id":"ea4ce7d09499415faa50eaed4e5743f5",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":12,
+              "y":400},
+            "size":{
+              "width":53,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b2b129b7bcb3462780f3da7a9ccd58a9",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":12,
+                  "y":400},
+                "size":{
+                  "width":53,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"74817060849b4a2e99a519ff26667dff",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":12,
+              "y":360},
+            "size":{
+              "width":53,
+              "height":19}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a52610228396491fb36ed9c78acba3f6",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":12,
+                  "y":360},
+                "size":{
+                  "width":53,
+                  "height":19}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"4ee985528795419ea23e310a4217f224",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":280,
+              "y":394},
+            "size":{
+              "width":25,
+              "height":25},
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"bc4d0ada4d8747848e8c2eb5fbc81ca2",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":280,
+                  "y":394},
+                "size":{
+                  "width":25,
+                  "height":25},
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/首次进入时--引导页/u48.png"}},
+{
+          "id":"c74f78f083144e9ca603a444637d467d",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'微软雅黑 Regular', '微软雅黑'",
+            "location":{
+              "x":280,
+              "y":352},
+            "size":{
+              "width":25,
+              "height":25},
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ecc9807412bc42d0be8115ca6a74500f",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'微软雅黑 Regular', '微软雅黑'",
+                "location":{
+                  "x":280,
+                  "y":352},
+                "size":{
+                  "width":25,
+                  "height":25},
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/首次进入时--引导页/u48.png"}},
+{
+          "id":"b30d2f5fec434c0aaf14eaf31b09a7d2",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0x7F666666},
+            "location":{
+              "x":0,
+              "y":18},
+            "size":{
+              "width":320,
+              "height":550},
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF666666}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ea5546ee29cd46fca9914348c9c404ac",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0x7F666666},
+                "location":{
+                  "x":0,
+                  "y":18},
+                "size":{
+                  "width":320,
+                  "height":550},
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF666666}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/使用说明/u48.png"}},
+{
+          "id":"9702a7cb6beb4149bb0824d3c82f21a3",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":59,
+              "y":126},
+            "size":{
+              "width":200,
+              "height":193}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1caa65dd7bea458a97fefef0d68c72b6",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":59,
+                  "y":126},
+                "size":{
+                  "width":200,
+                  "height":193}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/使用说明/u50.png"}},
+{
+          "id":"0ecf71dd21f84d0297ce0363e4a269a3",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":84,
+              "y":199},
+            "size":{
+              "width":120,
+              "height":24}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"664c4c2ced9e48bdbe4c3e2cf528340b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":84,
+                  "y":199},
+                "size":{
+                  "width":120,
+                  "height":24}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"23b49bd48ed541d5b99804a384c74f18",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":84,
+              "y":231},
+            "size":{
+              "width":158,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"11a463869f6f4d9f9988c6945ce7acdf",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":84,
+                  "y":231},
+                "size":{
+                  "width":158,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"d639e4d24adf4f08ad30eb91c0683397",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFFFCC00},
+            "location":{
+              "x":59,
+              "y":126},
+            "size":{
+              "width":200,
+              "height":46}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"caba4da1669f4e7e920a0ba23884cd12",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFFFCC00},
+                "location":{
+                  "x":59,
+                  "y":126},
+                "size":{
+                  "width":200,
+                  "height":46}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/使用说明/u56.png"}},
+{
+          "id":"72ded05249c146b38cf348d6837e8930",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "foreGroundFill":{
+              "fillType":"solid",
+              "color":0xFF000000,
+              "opacity":1},
+            "location":{
+              "x":132,
+              "y":142},
+            "size":{
+              "width":53,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"61c748fd696b4ad48a90178924ced947",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "foreGroundFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000,
+                  "opacity":1},
+                "location":{
+                  "x":132,
+                  "y":142},
+                "size":{
+                  "width":53,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"dc633f244d804e5ab92c04257693a187",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":230,
+              "y":113},
+            "size":{
+              "width":40,
+              "height":40},
+            "cornerRadiusTopLeft":"34"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"23064345d73e40358e591642f49ddbb4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":230,
+                  "y":113},
+                "size":{
+                  "width":40,
+                  "height":40},
+                "cornerRadiusTopLeft":"34"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/使用说明/u60.png"}},
+{
+          "id":"b2d262d244b54d30a8da5279d36b9789",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":235,
+              "y":118},
+            "size":{
+              "width":30,
+              "height":30},
+            "borderWidth":"-1",
+            "borderFill":{
+              "fillType":"solid",
+              "color":0xFF000000}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"4b05ad1ee76e46a6bdb6e42c9d92f0d3",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":235,
+                  "y":118},
+                "size":{
+                  "width":30,
+                  "height":30},
+                "borderWidth":"-1",
+                "borderFill":{
+                  "fillType":"solid",
+                  "color":0xFF000000}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/首次进入时--引导页/u164.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "c6e8e310b9b74f92bcefc73e4b6c622c":{
+      "scriptId":"u0"},
+    "9191ad10f5f44f818234e8e5262517d8":{
+      "scriptId":"u1"},
+    "6863e4d449224a7199ee4cace68d42c3":{
+      "scriptId":"u2"},
+    "d53905a4a6a34b72a62c487480b2ec2d":{
+      "scriptId":"u3"},
+    "6b085b72c5e74657816750fb473726a3":{
+      "scriptId":"u4"},
+    "075c449e3bc24911b81e59b2179bf5da":{
+      "scriptId":"u5"},
+    "7688b9d7e81542b2aab89199467eecbb":{
+      "scriptId":"u6"},
+    "14d0899932044c3aaf2891ab7be97eae":{
+      "scriptId":"u7"},
+    "7c89087510074a9d9ce361401fc161be":{
+      "scriptId":"u8"},
+    "a3688813711a4aaeb2b9f18190632459":{
+      "scriptId":"u9"},
+    "18a94db1c78e4198adf69b5f6a2ee321":{
+      "scriptId":"u10"},
+    "0e623d9c781c4c19bc89234ab7735fad":{
+      "scriptId":"u11"},
+    "a820b5a6258e425aabf898ad207319e8":{
+      "scriptId":"u12"},
+    "c15b62add9314990b33fcf2fae028d7a":{
+      "scriptId":"u13"},
+    "81d75a0e71bb465d850a42976ebb4a94":{
+      "scriptId":"u14"},
+    "cee4231d3bd04c9c8301bf8a168382a2":{
+      "scriptId":"u15"},
+    "907952eb5a8444d0bc679adeb6130a01":{
+      "scriptId":"u16"},
+    "00d88f832efa4536969925cbb158938b":{
+      "scriptId":"u17"},
+    "92ff1181574c4aa9a532b7c35ae8a2c5":{
+      "scriptId":"u18"},
+    "ce98d75c6de94b2486e77b352a37057c":{
+      "scriptId":"u19"},
+    "861dd3bcdfde4b4db4df6a8ef230f355":{
+      "scriptId":"u20"},
+    "e4a512e0b7cf4c6f91857c466d0a5047":{
+      "scriptId":"u21"},
+    "eb4bd8db6f7349f1be7973815414a0ce":{
+      "scriptId":"u22"},
+    "06abda1cedf64d31b11b42bba3eb0200":{
+      "scriptId":"u23"},
+    "3478bdf7bfd34b5782412bdfcae37add":{
+      "scriptId":"u24"},
+    "7cefcf5e8bfa41e4834dda56bf5ccbf6":{
+      "scriptId":"u25"},
+    "824b2ca75af54b42b0af9a845c1ea86b":{
+      "scriptId":"u26"},
+    "96bd53ae7d4c421c903867ad7b59df81":{
+      "scriptId":"u27"},
+    "76fe054886ea493a934f85a9567662f8":{
+      "scriptId":"u28"},
+    "107f76a5fef04061a560cf15269018fa":{
+      "scriptId":"u29"},
+    "4dd3ad23f3f14942a82c3cde7cd1b19f":{
+      "scriptId":"u30"},
+    "63935395c28340978c1845e8a41a0fef":{
+      "scriptId":"u31"},
+    "b86d14e867234a07aa091b5e9929d74b":{
+      "scriptId":"u32"},
+    "bfc25fc2a94340bd95aafc9287880ecf":{
+      "scriptId":"u33"},
+    "369b761920194af88aca257ad8f3c08d":{
+      "scriptId":"u34"},
+    "9fc2f49b753a4b4c928099b21a69b680":{
+      "scriptId":"u35"},
+    "1d785fb9670a4e27b4cfd977ccafa66e":{
+      "scriptId":"u36"},
+    "e34d5f6a0518443cb8565254c299e5a7":{
+      "scriptId":"u37"},
+    "b43d4301c8dc41588949135b270075e6":{
+      "scriptId":"u38"},
+    "507beeef9f9640c5bb0a92de3efa5103":{
+      "scriptId":"u39"},
+    "ea4ce7d09499415faa50eaed4e5743f5":{
+      "scriptId":"u40"},
+    "b2b129b7bcb3462780f3da7a9ccd58a9":{
+      "scriptId":"u41"},
+    "74817060849b4a2e99a519ff26667dff":{
+      "scriptId":"u42"},
+    "a52610228396491fb36ed9c78acba3f6":{
+      "scriptId":"u43"},
+    "4ee985528795419ea23e310a4217f224":{
+      "scriptId":"u44"},
+    "bc4d0ada4d8747848e8c2eb5fbc81ca2":{
+      "scriptId":"u45"},
+    "c74f78f083144e9ca603a444637d467d":{
+      "scriptId":"u46"},
+    "ecc9807412bc42d0be8115ca6a74500f":{
+      "scriptId":"u47"},
+    "b30d2f5fec434c0aaf14eaf31b09a7d2":{
+      "scriptId":"u48"},
+    "ea5546ee29cd46fca9914348c9c404ac":{
+      "scriptId":"u49"},
+    "9702a7cb6beb4149bb0824d3c82f21a3":{
+      "scriptId":"u50"},
+    "1caa65dd7bea458a97fefef0d68c72b6":{
+      "scriptId":"u51"},
+    "0ecf71dd21f84d0297ce0363e4a269a3":{
+      "scriptId":"u52"},
+    "664c4c2ced9e48bdbe4c3e2cf528340b":{
+      "scriptId":"u53"},
+    "23b49bd48ed541d5b99804a384c74f18":{
+      "scriptId":"u54"},
+    "11a463869f6f4d9f9988c6945ce7acdf":{
+      "scriptId":"u55"},
+    "d639e4d24adf4f08ad30eb91c0683397":{
+      "scriptId":"u56"},
+    "caba4da1669f4e7e920a0ba23884cd12":{
+      "scriptId":"u57"},
+    "72ded05249c146b38cf348d6837e8930":{
+      "scriptId":"u58"},
+    "61c748fd696b4ad48a90178924ced947":{
+      "scriptId":"u59"},
+    "dc633f244d804e5ab92c04257693a187":{
+      "scriptId":"u60"},
+    "23064345d73e40358e591642f49ddbb4":{
+      "scriptId":"u61"},
+    "b2d262d244b54d30a8da5279d36b9789":{
+      "scriptId":"u62"},
+    "4b05ad1ee76e46a6bdb6e42c9d92f0d3":{
+      "scriptId":"u63"}}});

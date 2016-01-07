@@ -1,0 +1,89 @@
+<div class="search-value">
+	<label class="c-666">店员姓名</label>
+	<input type="text" class="w-157 mr-20"/>
+	<label class="c-666">日期</label>
+	<input type="text" class="w-90" id="list-startDate"/>
+	<span  class="c-666">至</span>
+	<input type="text" class="w-90 mr-20" id="list-endDate"/>
+	<input type="submit" value="搜索" class="search-btn" />
+</div>
+<table class="list_table">
+	<thead>
+		<tr>
+			<td class="max_w">店员姓名</td>
+			<td class="max_w">所属门店</td>
+			<td>粉丝主动选择</td>
+			<td>系统分配粉丝</td>
+			<td>店员主动拉粉</td>
+			<td>掉粉数</td>
+			<td>粉丝总数</td>
+			<td>操作</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>美乐乐旗舰店</td>
+			<td>美乐乐旗舰店</td>
+			<td>12952513</td>
+			<td>18993233</td>
+			<td>19951</td>
+			<td>122581</td>
+			<td>4646454</td>
+			<td><a data-role='fans_info'>查看粉丝详情</a></td>
+		</tr>
+		<tr>
+			<td>美乐乐旗舰店</td>
+			<td>美乐乐旗舰店</td>
+			<td>12952513</td>
+			<td>18993233</td>
+			<td>19951</td>
+			<td>122581</td>
+			<td>4646454</td>
+			<td><a data-role='fans_info'>查看粉丝详情</a></td>
+		</tr>
+		<tr>
+			<td>美乐乐旗舰店</td>
+			<td>美乐乐旗舰店</td>
+			<td>12952513</td>
+			<td>18993233</td>
+			<td>19951</td>
+			<td>122581</td>
+			<td>4646454</td>
+			<td><a data-role='fans_info'>查看粉丝详情</a></td>
+		</tr>
+		<tr>
+			<td>美乐乐旗舰店</td>
+			<td>美乐乐旗舰店</td>
+			<td>12952513</td>
+			<td>18993233</td>
+			<td>19951</td>
+			<td>122581</td>
+			<td>4646454</td>
+			<td><a data-role='fans_info'>查看粉丝详情</a></td>
+		</tr>
+	</tbody>
+</table>
+<div class="pageNav c-666">
+	<a>上一页</a>
+	<a class="hoverd"> 1 </a>
+	<a> 2 </a>
+	<a> 3 </a>
+	<a>...</a>
+	<a>50</a>
+	<a>下一页 </a>
+	到第<input type="text" />页
+	<input type="submit" value="确定" />
+	共<span>20</span>页<span class="all_items">200</span>项
+</div>
+<script type="text/javascript">
+	$('#fans_list td a').on('click',function(){
+		var id = $(this).data('role');
+		var that = this;
+		$('#'+id).find('.list-cont').load('page/fans_info.html',function(){
+			//TODO
+			
+			setDays('stayinfo','info-startDate','info-endDate');
+			dialog(that);
+		});
+	})
+</script>

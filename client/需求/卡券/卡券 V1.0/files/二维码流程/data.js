@@ -1,0 +1,65 @@
+﻿$axure.loadCurrentPage({
+  "url":"二维码流程.html",
+  "generationDate":new Date(1448257224467.36),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"a5694e22b3614e3e8105911680e5d8c3",
+    "type":"Axure:Page",
+    "name":"二维码流程",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"e496e39157d340c995f3201d59b46605",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":819,
+              "height":751}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"9f2a181c819543549a692b0a9428a86a",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":819,
+                  "height":751}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/二维码流程/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "e496e39157d340c995f3201d59b46605":{
+      "scriptId":"u0"},
+    "9f2a181c819543549a692b0a9428a86a":{
+      "scriptId":"u1"}}});

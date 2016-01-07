@@ -1,0 +1,65 @@
+﻿$axure.loadCurrentPage({
+  "url":"优惠券运营流程.html",
+  "generationDate":new Date(1448257269565.87),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"8fa044618bee4b38908ce5d3eb6b60e4",
+    "type":"Axure:Page",
+    "name":"优惠券运营流程",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"3dfdfd042f2d45eda96ec03e02f5fe5e",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":860,
+              "height":741}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"36502268057846238cd5058dab45b923",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":860,
+                  "height":741}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/优惠券运营流程/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "3dfdfd042f2d45eda96ec03e02f5fe5e":{
+      "scriptId":"u0"},
+    "36502268057846238cd5058dab45b923":{
+      "scriptId":"u1"}}});

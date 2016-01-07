@@ -1,0 +1,51 @@
+<div class="main-content">
+    <div class="setting-box">
+        <p class="tips">设置带参数二维码的回复规则，当用户扫描带参数二维码，即可把您设置在此规则名中回复的内容自动发送给订阅用户。</p>
+        <p><span class="orange-button lit-orange js-add-rule"><i class="icon20-white-add"></i>添加规则</span></p>
+    </div>
+    <div class="info-list">
+        <table class="list">
+            <thead style="text-align: center">
+                <tr>
+                    <th>规则名</th>
+                    <th width="40%">二维码配置</th>
+                    <th width="25%">回复消息</th>
+                    <th width="18%">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>zhangsan</td>
+                    <td>张三</td>
+                    <td>美乐乐旗舰店</td>
+                    <td>
+                        <a href="javascript:;" onclick="editQrRule('9314|zhangsan|1,2,5|');">编辑</a>
+                        <a href="javascript:;" class="red-button" onclick="dialog('delAccount');">删除</a>
+                    </td>
+                </tr>
+                <tr class="odd">
+                    <td>大张三</td>
+                    <td>13800000000</td>
+                    <td>美乐乐旗舰店</td>
+                    <td>
+                        <a href="javascript:;" onclick="editQrRule('9314|zhangsan|1,2,5|','mllConcern');">编辑</a>
+                        <a href="javascript:;" class="red-button" onclick="delQrRule(9314);">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="page-bar">
+        <a class="prev" href="#" style="width:66px;">&lt; 上一页</a>
+        <a href="#">1</a>
+        <strong>2</strong>
+        <a href="#">3</a>
+        <span class="dot">…</span>
+        <a href="#">150</a>
+        <a class="next" href="#" style="width:66px;">下一页 &gt;</a>
+        <span class="no-border">到第<input  onkeyup="__goPageE(this,event);">页</span>
+        <a class="button" href="javascript:;" onclick="__goPage(this);" style="width:50px;">确定</a>
+        <span class="total-info">共20页</span>
+        <span class="total-info">198项</span>
+    </div>
+</div>
