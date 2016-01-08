@@ -1,0 +1,67 @@
+﻿$axure.loadCurrentPage({
+  "url":"流程图-pc端m站im流程.html",
+  "generationDate":new Date(1451548206387.78),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"2ca35e05ec844fe8aa21bc082cfba5db",
+    "type":"Axure:Page",
+    "name":"流程图-PC端M站IM流程",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"33c58ba091d84291a17b3c55f9d379b4",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'应用字体 Regular', '应用字体'",
+            "size":{
+              "width":1061,
+              "height":1240}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"0218291147fa472a8f228ef5210962cb",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "size":{
+                  "width":1061,
+                  "height":1240}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/流程图-pc端m站im流程/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "33c58ba091d84291a17b3c55f9d379b4":{
+      "scriptId":"u0"},
+    "0218291147fa472a8f228ef5210962cb":{
+      "scriptId":"u1"}}});

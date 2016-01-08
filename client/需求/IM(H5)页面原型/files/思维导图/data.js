@@ -1,0 +1,67 @@
+﻿$axure.loadCurrentPage({
+  "url":"思维导图.html",
+  "generationDate":new Date(1451548206448.79),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"3832871a2db54b32977e4b36c79aa202",
+    "type":"Axure:Page",
+    "name":"思维导图",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"8037b43ca3644be2bbd0a3f8d921ed52",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "fontName":"'应用字体 Regular', '应用字体'",
+            "size":{
+              "width":1486,
+              "height":1677}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"98f203c4c16a46429d3d1c890376703e",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontName":"'应用字体 Regular', '应用字体'",
+                "size":{
+                  "width":1486,
+                  "height":1677}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/思维导图/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "8037b43ca3644be2bbd0a3f8d921ed52":{
+      "scriptId":"u0"},
+    "98f203c4c16a46429d3d1c890376703e":{
+      "scriptId":"u1"}}});
