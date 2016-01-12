@@ -10,14 +10,14 @@
 	 var menus = [{
             'name': '首页',
             'links': 'index',
-            'class':'menu_1',
+            'class':'menu_index',
             'href':'javascript:;',
             'list':''
         },
         {
             'name': '运营',
             'links': 'operation',
-            'class':'menu_2',
+            'class':'menu_operation',
             'href':'javascript:;',
             'list': [{
                 'name': '运营模块',
@@ -29,7 +29,7 @@
         {
             'name': '电商',
             'links': 'ec',
-            'class':'menu_3',
+            'class':'menu_ec',
             'href':'javascript:;',
             'list': [{
                 'name': '电商1',
@@ -44,7 +44,7 @@
         {
             'name': '门店',
             'links': 'store',
-            'class':'menu_4',
+            'class':'menu_store',
             'href':'javascript:;',
             'list': [{
 		                'name': '门店1',
@@ -66,7 +66,7 @@
         {
             'name': '客流',
             'links': 'custom',
-            'class':'menu_5',
+            'class':'menu_customer',
             'href':'javascript:;',
             'list': [{
 	                'name': '客户',
@@ -179,6 +179,8 @@ if($('#sidebar').length>0){
     //     }
     // });
 });
+
+/************************************华丽丽的分割线***************************/
 
 /*
  *[menuTree 生成导航菜单]

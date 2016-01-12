@@ -10,6 +10,10 @@
 	width: auto;
 }
 
+.pageNav input {
+	box-sizing: border-box;
+}
+
 .fr {
 	float: right;
 }
@@ -45,6 +49,18 @@
 	text-align: center;
 	margin-bottom: -1px;
 	margin-right: 10px;
+}
+
+.section .search-box {
+	margin-bottom: 0;
+}
+
+.section .search-box .p-oper {
+	margin-top: 0;
+}
+
+.section .search-box p:nth-of-type(1) {
+	margin-bottom: 20px;
 }
 
 .search-box p {

@@ -3,7 +3,7 @@ $(document).on('click','.js-flw-allot',function(){
 	$.lightBox({
         width: 680,
         boxID: 'flw_allot',
-        title: '粉丝分配',
+        title: '店员分配',
         html: $('.flwAllot').html(),
         buttons: [{
             value: '取  消',

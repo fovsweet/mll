@@ -91,3 +91,10 @@
     .pageNav input[type='submit']:hover{background-color: #2bc589; border: 1px solid #2bc589; color: white;}
     .pageNav span{color: black;}
     .pageNav .all_items{ display: inline-block; margin-left: 10px;}
+
+    .seriz_arrow{ display: inline-block; vertical-align:middle; margin-top: -2px;}
+	.seriz_arrow:hover{cursor: pointer;}
+	.seriz_arrow .arrow_up { width: 0;height: 0;border-left: 4px solid transparent; border-right: 4px solid transparent;  border-bottom: 4px solid #999999;font-size: 0; line-height: 0; margin-bottom: 3px; }
+	.seriz_arrow .up_chosed {  border-bottom: 5px solid #666666; margin-bottom: 3px; }
+	.seriz_arrow .arrow_down{width: 0;height: 0;border-left: 4px solid transparent; border-right: 4px solid transparent;  border-top: 4px solid #999999;font-size: 0; line-height: 0; }
+	.seriz_arrow .down_chosed{ border-top: 5px solid #666666;}

@@ -205,7 +205,7 @@ function upImgBox(boxSize,upImgBoxId,boxTitle,boxButtons) {
             + '<form method="post" enctype="multipart/form-data">'
                 + '<div class="js-imgDragPane img-drag-pane" style="width:'+boxSize.maxWidth+'px;height:'+(boxSize.maxHeight)+'px;">'
                     + '<div class="js-imgDragContainer img-drag-container" style="width:'+boxSize.maxWidth+'px;height:'+boxSize.maxHeight+'px;">'
-                        + '<p class="p1">建议尺寸：'+boxSize.tipWidth+'×'+boxSize.tipHeight+'</p>'
+                        + '<p class="p1">（建议尺寸：'+boxSize.tipWidth+'×'+boxSize.tipHeight+'，建议大小：2M以下）</p>'
                 + '</div></div>'
                 + '<span class="file-btn" onclick="' + upImgBoxId + 'Filepath.click()"style="width:'+(boxSize.maxWidth-2)+'px;"><span class="file-ico"></span>上传本地图片</span>'
                 + '<input type="file" name="' + upImgBoxId + 'Filepath" id="' + upImgBoxId + 'Filepath" style="display:none" onchange="previewImage(this,eval('+boxSizeString+'))">'

@@ -1,5 +1,6 @@
 <!-------------------css---------------------->
 <link rel="stylesheet" href="css/active_setting.css" />
+<link rel="stylesheet" href="css/jquery.Jcrop.css" />
 
 <!-------------------主页---------------------->
 <div class="setting">
@@ -17,13 +18,13 @@
 		</div>
 		<div class="item">
 			<label>图文封面</label>
-			<div class="upimg-big">
+			<div class="upimg-big" id="upImg" onclick="upImgBox({boxWidth:560,maxWidth:290,maxHeight:200,minWidth:225,minHeight:125,tipWidth:900,tipHeight:500},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-warning">*请上传图片</span>
 				<img src='' class="img-hide" />
 				<span class="upimg-tips">大图建议尺寸&nbsp;900X500</span>
 			</div>
-			<div class="upimg-small">
+			<div class="upimg-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:150,minHeight:150,tipWidth:200,tipHeight:200},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-warning">*请上传图片</span>
 				<img src='' class="img-hide" />
@@ -33,7 +34,7 @@
 		<div class="item">
 			<label for="share-title">分享标题</label>
 			<input type="text" id="share-title" />
-			<span class="fault-tips">*请填写名称</span>
+			<span class="fault-tips">*请填写标题</span>
 		</div>
 		<div class="item">
 			<label for="share-cont">分享内容</label>
@@ -42,30 +43,40 @@
 		<div class="item">
 			<label for="share-url">分享URL</label>
 			<input type="text"  id="share-url"/>
+			<span class="fault-tips">*请填写URL</span>
 		</div>
 		<div class="active-title">
 			<span>活动设置</span>
 		</div>
 		<div class="item">
 			<label >活动时间</label>
-			<input type="text" class="chose-date" />至<input type="text" class="chose-date" />
+			<input type="text" id="js-stare-date" class="chose-date" />至<input type="text" id="js-end-date" class="chose-date" />
+			<span class="fault-tips">*请选择时间</span>
 		</div>
 		<div class="item">
 			<label for="active-explain">活动说明</label>
 			<textarea id="active-explain"></textarea>
+			<span class="fault-tips">*请填写说明</span>
 		</div>
 		<div class="active-title">
 			<span>奖品设置</span>
 		</div>
-		<div class="item add-prize" data-role="prize-setting">
+		<div class="item js-add-prize" data-role="prize-setting">
 				<span class="addimg-ico">添加奖品</span>
 		</div>
 		<div class="list-prize">
 			<div class="item prize-item">
 				<span>美乐乐代金券100</span>
 				<p>
-					<a href="javascript:;" data-role="prize-setting">编辑</a>
-					<a href="javascript:;">删除</a>
+					<a href="javascript:;" class="js-eidt-preize" data-role="prize-setting">编辑</a>
+					<a href="javascript:;" class="js-del-prize">删除</a>
+				</p>
+			</div>
+			<div class="item prize-item">
+				<span>美乐乐代金券100</span>
+				<p>
+					<a href="javascript:;" class="js-eidt-preize" data-role="prize-setting">编辑</a>
+					<a href="javascript:;" class="js-del-prize">删除</a>
 				</p>
 			</div>
 		</div>
@@ -87,7 +98,7 @@
 	
 	<!-----------预览图--------------->
 	<div class="active-preview">
-		
+		<div class="active-pre-title">拜年有礼&nbsp;美家惊喜</div>
 	</div>
 </div>
 
@@ -101,16 +112,17 @@
 		<div class="setting-cont">
 			<div class="setting-item">
 				<label>奖品类型</label>
-				<select></select>
+				<select>
+				</select>
 			</div>
-			<div class="setting-item" >
-				<label>奖品名称</label>
+			<div class="setting-item c-999" >
+				<label class="c-666">奖品名称</label>
 				<select style="margin-right: 10px"></select>
 				库存:<span>200</span>
 			</div>
 			<div class="setting-item">
 				<label>奖品数量</label>
-				<select></select>
+				<input type="text"  />
 			</div>
 			<div class="setting-item">
 				<label>兑奖说明</label>
@@ -124,8 +136,12 @@
 </div>
 
 <!-----------------js代码------------------------------>
-<script type="text/javascript">
-	$('.setting .add-prize').on('click',function(){
-		dialog(this);
-	})
-</script>
+<!--上传图片插件-->
+	<script type="text/javascript" src="js/jquery.Jcrop.js" ></script>
+	<script type="text/javascript" src="js/upPic.js" ></script>
+<!--上传图片插件结束-->
+<!--时间日期插件-->
+ <script type="text/javascript" src="../plug/laydate/laydate.dev.js"></script>
+ <!--时间日期插件结束-->
+ <script type="text/javascript" src="js/ac_setting.js"></script>
+ 
