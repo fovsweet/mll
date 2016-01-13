@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+        .demo1{
+            height:100px;
+            margin-top: 100px;
+        }
+    </style>
+	</head>
+	<body>
+	    <div class="demo1">
+	        方本框：<input type="text" id="J-xl" readonly="readonly">
+	    </div>
+	</body>
+	 <script type="text/javascript" src="../laydate.dev.js"></script>
+    <script type="text/javascript">
+       
+        laydate({
+            elem: '#J-xl',
+            format: 'YYYY/MM/DD hh:mm',
+            istime: true
+        });
+        laydate.skin('danlan');
+    </script>
+</html>

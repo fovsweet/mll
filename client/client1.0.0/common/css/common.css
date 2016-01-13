@@ -537,6 +537,8 @@ a.red-button {
     right: 20px;
     top: 6px;
     color: #666;
+    background:url(../images/close.png) 0 0 no-repeat;
+
 }
 .data-dia .dia-main {
     margin: 10px 0;

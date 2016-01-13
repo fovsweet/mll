@@ -218,7 +218,7 @@ img.jcrop-preview {
     display:inline-block;
     margin-right:15px;
     vertical-align: -3px;
-    background:url(../images/add_green_ico.png);
+    /*background:url(../images/add_green_ico.png);*/
 }
 .imgup-block1 .file-tips {
     display:inline-block;

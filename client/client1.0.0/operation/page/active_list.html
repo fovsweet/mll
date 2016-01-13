@@ -30,17 +30,16 @@
 		<table class="list">
 			<thead style="text-align:center">
 				<tr>
-					<th style="width:7%">ID</th>
 					<th >活动名称</th>
 					<th>活动时间</th>
 					<th>中奖●奖品</th>
-					<th style="width:10%">状态</th>
+					<th>参与人数</th>
+					<th style="width:12%">状态</th>
 					<th>操作</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>1</td>
 					<td>
 						<div class="active-pic">
 							<img src="images/active_bg.png" alt="" />
@@ -55,15 +54,15 @@
 							<p>礼品券马代游（0/1）</p>
 						</div>
 					</td>
+					<td>220</td>
 					<td>进行中</td>
 					<td>
                        <a href="javascript:;">编辑</a>
                        <a href="javascript:;" class="red-button">停用</a>
-                       <a href="javascript:;" class="js-prize-list">中奖明细</a>
+                       <a href="javascript:;" class="js-prize-list">人气排行</a>
 					</td>
 				</tr>
 				<tr>
-					<td>1</td>
 					<td>
 						<div class="active-pic">
 							<img src="images/active_bg.png" alt="" />
@@ -78,11 +77,11 @@
 							<p>礼品券马代游（0/1）</p>
 						</div>
 					</td>
+					<td>220</td>
 					<td>已结束</td>
 					<td>
                         <a href="javascript:;">编辑</a>
-                       <a href="javascript:;" class="red-button">停用</a>
-                       <a href="javascript:;" class="js-prize-list">中奖明细</a>
+                       <a href="javascript:;" class="js-prize-list">人气排行</a>
 					</td>
 				</tr>
 				
@@ -108,29 +107,14 @@
 
 <div class="prizeList" style="display: none">
 	<div class="prize-list">
-		<div class="search-box clearfix">
+		<div class="search-box">
 	       <form>
 	           <p style="margin-right:10px">
-	               	
-	              	<label class="no-margin-left">是否中奖</label>
-	              	<select class="select" style="margin-right: 10px;width: 85px" >
-	                   	<option value="0">全部</option>
-	                   	<option value="1">进行中</option>
-	                   	<option value="1">已结束</option>
-	               	</select>
-	               	<label class="no-margin-left">手机号码</label>
-	               	<input type="text" class="input"  placeholder="请输入手机号码" style="width: 120px">
+	               	<label class="no-margin-left">昵称</label>
+	               	<input type="text" class="input"  placeholder="请输入昵称">
 	           	</p>
 	          	<p class="p-oper">
 	               	<input type="button" class="bright-button" value="查询">
-	               	<input type="button" class="cancel-button" value="重置" >
-	           	</p>
-	           	<p class="p-oper fr">
-	               	<input type="button" class="light-button save-button" value="保存" >
-	               	<button class="btn-group" type="button">
-	               		<span class="btn-export"></span>
-	               		导出数据
-	               	</button>
 	           	</p>
 	       </form>
 	    </div>
@@ -139,52 +123,34 @@
 			<table class="list">
 				<thead style="text-align:center">
 					<tr>
-						<th>微信头像●昵称</th>
-						<th>手机号</th>
-						<th>是否中奖</th>
-						<th>券号</th>
-						<th>奖品名称</th>
-						<th>卡券状态</th>
-						<th style="width: 10%">领券时间</th>
-						<th style="width: 10%">核销时间</th>
-						<th>验券门店</th>
-						<th>验券店员</th>
+						<th>排名</th>
+						<th style="width: 25%">头像</th>
+						<th>昵称</th>
+						<th>人气</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
+						<td>1</td>
 						<td>
 							<div class="head-active">
 								<img src="images/header.png" alt="" />
 								<p>喵喵喵</p>
 							</div>
 						</td>
-						<td>18625390998</td>
-						<td>是</td>
-						<td>MLL12345678</td>
-						<td>礼品券抱枕</td>
-						<td>已使用</td>
-						<td>2015.10.11 13:34</td>
-						<td>2015.10.11 13:34</td>
-						<td>门店名称</td>
-						<td>店员姓名</td>
+						<td>喵喵喵</td>
+						<td>123</td>
 					</tr>
 					<tr>
+						<td>2</td>
 						<td>
 							<div class="head-active">
 								<img src="images/header.png" alt="" />
 								<p>喵喵喵</p>
 							</div>
 						</td>
-						<td>18625390998</td>
-						<td>是</td>
-						<td>MLL12345678</td>
-						<td>礼品券抱枕</td>
-						<td>已使用</td>
-						<td>2015.10.11 13:34</td>
-						<td>2015.10.11 13:34</td>
-						<td>门店名称</td>
-						<td>店员姓名</td>
+						<td>喵喵喵</td>
+						<td>223</td>
 					</tr>
 				</tbody>
 			</table>
@@ -210,7 +176,7 @@ $(document).on('click','.js-prize-list',function(){
 	$.lightBox({
         width: 1000,
         boxID: 'prizeList',
-        title: '中奖明细',
+        title: '人气排行',
         html: $('.prizeList').html()        
     });
     
