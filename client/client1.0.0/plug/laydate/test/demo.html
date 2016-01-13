@@ -12,17 +12,9 @@
 	</head>
 	<body>
 	    <div class="demo1">
-	        方本框：<input type="text" id="J-xl" readonly="readonly">
+	        方本框：<input type="text" id="J-xl" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 	    </div>
 	</body>
 	 <script type="text/javascript" src="../laydate.dev.js"></script>
-    <script type="text/javascript">
-       
-        laydate({
-            elem: '#J-xl',
-            format: 'YYYY/MM/DD hh:mm',
-            istime: true
-        });
-        laydate.skin('danlan');
-    </script>
+    
 </html>

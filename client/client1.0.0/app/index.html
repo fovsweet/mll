@@ -46,6 +46,9 @@
 
 <body>
 <div class="content">
+<!-- <input type="file" class="input-file" data-role="uploader" accept="image/*">
+<input type="file" accept="video/*;capture=camcorder"> <input type="file" accept="audio/*;capture=microphone">
+<input type='file' accept='video/*;capture = camcorder'> -->
     <div class="stamp_banner">
         <div class="head_portrait">
             <div class="pic"><img src="images/pic.png" alt="头像"/></div>
@@ -150,8 +153,8 @@
             <p>拨打</p>
         </div>
     </div>
-</div>
 
+</div>
 </body>
 <script type="text/javascript" src='js/jquery-1.11.3.js'></script>
 <script type="text/javascript" src='js/common.js'></script>
@@ -265,13 +268,107 @@
     $(function () {
         $('.stamp_wrap').creatStamps(1, stamps_info.ccValidators);
         $('.content,.map_info_list').scroll(function(){
+            var fov = [{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            },{
+                "id": 247,
+                "ccCardNo": "testCcCardNo",
+                "cardState": "1",
+                "ccName": "双十二优惠券1",
+                "ccDisplayName": "美乐乐1号店",
+                "ccValidPeriodDec": "2015.11.26～2015.12.24",
+                "ccId": "mll0",
+                "ccType": "2"
+            }]
             var h = $(this).height();
             var ch = $(this).get(0).scrollHeight;
             var sp =$(this).scrollTop();
             var bh = ch-h-sp;
             if(bh<=0){
                 setTimeout(function(){
-                    alert("到最底部啦！")
+                    // alert("到最底部啦！")
+                    // console.log(stamps_info.ccValidators.push)
+                    stamps_info.ccValidators.push(fov)
+                    $('.stamp_wrap').creatStamps(1,stamps_info.ccValidators)
                 },500)
             }
         })

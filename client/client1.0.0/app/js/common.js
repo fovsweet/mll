@@ -95,7 +95,9 @@ $.fn.extend({
     },
     tipStamp:function(data){
         $(this).click(function(e){
-            $('.stamp_bg').css('margin-bottom','30px');
+            e.stopImmediatePropagation();
+            $(this).siblings('.stamp_bg').removeClass('open_info');
+            $('.stamp_bg').css('margin-bottom','0.75rem');
             $(this).css('margin-bottom','0px');
             $(this).toggleClass('open_info');
             $('.content_made,.info_list').remove();
@@ -117,10 +119,12 @@ $.fn.extend({
                 $('.info_content').dialog();
                 $('.applicable_stores').dialog();
                 $('.consumer').dialog();
+
             }else{
                 $('.content_made,.info_list').remove();
-                $('.stamp_bg').css('margin-bottom','30px');
+                $('.stamp_bg').css('margin-bottom','0.75rem');
             }
+
         })
     }
 })

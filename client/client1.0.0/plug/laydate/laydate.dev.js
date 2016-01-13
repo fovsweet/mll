@@ -9,7 +9,6 @@
  */
 
 ;!function(win){
-
 //全局配置，如果采用默认均不需要改动
 var config =  {
     path: '../plug/laydate/', //laydate所在路径../plug/laydate/
@@ -18,7 +17,7 @@ var config =  {
     min: '1900-01-01 00:00:00', //最小日期
     max: '2099-12-31 23:59:59', //最大日期
     isv: false,
-    init: true
+    init: false
 };
 
 var Dates = {}, doc = document, creat = 'createElement', byid = 'getElementById', tags = 'getElementsByTagName';

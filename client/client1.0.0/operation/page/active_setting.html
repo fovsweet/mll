@@ -13,25 +13,26 @@
 			<span>活动图文</span>
 		</div>
 		<div class="item">
-			<label for="active-main">活动主题</label>
+			<label for="active-main"><span class="star-orange">*</span>活动主题</label>
 			<input type="text" id="active-main"/>
 		</div>
 		<div class="item">
-			<label>图文封面</label>
+			<label class="ver-40"><span class="star-orange">*</span>图文封面</label>
 			<div class="upimg-big" id="upImg" onclick="upImgBox({boxWidth:560,maxWidth:290,maxHeight:200,minWidth:225,minHeight:125,tipWidth:900,tipHeight:500},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-warning">*请上传图片</span>
-				<img src='' class="img-hide" />
+				<img  />
 				<span class="upimg-tips">大图建议尺寸&nbsp;900X500</span>
 			</div>
 			<div class="upimg-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:150,minHeight:150,tipWidth:200,tipHeight:200},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-warning">*请上传图片</span>
-				<img src='' class="img-hide" />
+				<img  />
 				<span class="upimg-tips">小图建议尺寸&nbsp;300X300</span>
 			</div>
 		</div>
-		<div class="item">
+		<!--20160113更改需求后删除
+			<div class="item">
 			<label for="share-title">分享标题</label>
 			<input type="text" id="share-title" />
 			<span class="fault-tips">*请填写标题</span>
@@ -44,52 +45,49 @@
 			<label for="share-url">分享URL</label>
 			<input type="text"  id="share-url"/>
 			<span class="fault-tips">*请填写URL</span>
-		</div>
+		</div>-->
 		<div class="active-title">
 			<span>活动设置</span>
 		</div>
 		<div class="item">
-			<label >活动时间</label>
+			<label ><span class="star-orange">*</span>活动时间</label>
 			<input type="text" id="js-stare-date" class="chose-date" />至<input type="text" id="js-end-date" class="chose-date" />
 			<span class="fault-tips">*请选择时间</span>
 		</div>
+		<div class="item item-active">
+			<label class="ver-40"><span class="star-orange">*</span>活&nbsp;&nbsp;动&nbsp;&nbsp;图</label>
+			<div class="upimg-active-big" id="upImg" onclick="upImgBox({boxWidth:560,maxWidth:290,maxHeight:200,minWidth:150,minHeight:200,tipWidth:900,tipHeight:1200},'ccPicBigImg');">
+				<span class="addimg-ico">上传图片</span>
+				<span class="upimg-activ-warning">*请上传图片</span>
+				<img  />
+				<span class="upimg-activ-tips">用于原始的活动页面中<br/>建议尺寸：900*1200</span>
+			</div>
+			<div class="upimg-activ-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:150,minHeight:150,tipWidth:900,tipHeight:1200},'ccPicBigImg');">
+				<span class="addimg-ico">上传图片</span>
+				<span class="upimg-activ-warning">*请上传图片</span>
+				<img  />
+				<span class="upimg-activ-tips">用于原始的活动页面中<br/>建议尺寸：900*1200</span>
+			</div>
+		</div>
 		<div class="item">
-			<label for="active-explain">活动说明</label>
+			<label for="active-explain"><span class="star-orange">*</span>活动说明</label>
 			<textarea id="active-explain"></textarea>
 			<span class="fault-tips">*请填写说明</span>
 		</div>
 		<div class="active-title">
-			<span>奖品设置</span>
+			<span>中奖设置</span>
+		</div>
+		<div class="item">
+			<span class="f-14">最多可设置5种奖品，如中奖率为70%，按100人参加，则有70人中奖，先到先得。</span>
+		</div>
+		<div class="list-prize">
+			<!--添加奖品显示地方-->
 		</div>
 		<div class="item js-add-prize" data-role="prize-setting">
 				<span class="addimg-ico">添加奖品</span>
 		</div>
-		<div class="list-prize">
-			<div class="item prize-item">
-				<span>美乐乐代金券100</span>
-				<p>
-					<a href="javascript:;" class="js-eidt-preize" data-role="prize-setting">编辑</a>
-					<a href="javascript:;" class="js-del-prize">删除</a>
-				</p>
-			</div>
-			<div class="item prize-item">
-				<span>美乐乐代金券100</span>
-				<p>
-					<a href="javascript:;" class="js-eidt-preize" data-role="prize-setting">编辑</a>
-					<a href="javascript:;" class="js-del-prize">删除</a>
-				</p>
-			</div>
-		</div>
 		<div class="item chose-box">
-			<label for="prize-condition">
-			    <input type="checkbox" id="prize-condition" class="hidden-input" />
-			    <span></span>中奖条件
-			</label>
-			<select>
-				<option>100%中奖</option>
-				<option>90%中奖</option>
-				<option>80%中奖</option>
-			</select>
+			    <span class="star-orange">*</span><span>中奖概率</span><input type="text" id="prize-condition" />%
 		</div>
 		<div class="item submit">
 			<input type="submit" value="保存" class="confirm-btn" />
@@ -98,7 +96,26 @@
 	
 	<!-----------预览图--------------->
 	<div class="active-preview">
-		<div class="active-pre-title">拜年有礼&nbsp;美家惊喜</div>
+		<div class="active-content">
+			<div class="active-pre-title">拜年有礼&nbsp;美家惊喜</div>
+			<div class="active-pre-img">
+				<div class="active-pre-random">拜年也要狂拽炫</div>
+				<div>活动时间&nbsp;<span>2016.02.01</span>&nbsp;-&nbsp;<span>2016.03.01</span></div>
+				<div class="active-pre-btn">
+					<span>召集好友跪拜我</span>
+				</div>
+				<div class="active-pre-result">
+					已有89998人参与拜年，拜年人才送大礼
+				</div>
+				<div class="active-pre-bar">
+					<span>拜年人气榜</span>
+					<span>活动详情</span>
+				</div>
+			</div>
+		</div>
+		<div class="btn-bar">
+			<span class="hoverd">原始页</span><span>循环页</span>
+		</div>
 	</div>
 </div>
 
@@ -106,7 +123,40 @@
 <div class="data-dia" id="prize-setting">
     <div class="data-content">
    		<h3 class='page-header'>
-			添加奖品
+			<span>添加奖品</span>
+			<a href='javascript:;' class='close_log'></a>
+		</h3>
+		<div class="setting-cont">
+			<div class="setting-item">
+				<label>奖品类型</label>
+				<select>
+				</select>
+			</div>
+			<div class="setting-item c-999" >
+				<label class="c-666">奖品名称</label>
+				<select style="margin-right: 10px"></select>
+				库存:<span>200</span>
+			</div>
+			<div class="setting-item">
+				<label>奖品数量</label>
+				<input type="text"  />
+			</div>
+			<div class="setting-item">
+				<label>兑奖说明</label>
+				<textarea></textarea>
+			</div>
+			<div class="btn-bar">
+			<input type="submit" value="保存" class="confirm-btn" />
+			</div>
+		</div>
+    </div>
+</div>
+
+<!-------------------奖品编辑框---------------------->
+<div class="data-dia" id="prize-edit">
+    <div class="data-content">
+   		<h3 class='page-header'>
+			<span>编辑奖品</span>
 			<a href='javascript:;' class='close_log'></a>
 		</h3>
 		<div class="setting-cont">
