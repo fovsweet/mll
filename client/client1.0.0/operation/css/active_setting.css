@@ -61,7 +61,8 @@
   width: 54%;
 }
 .active-title {
-  padding: 10px;
+  padding: 5px 10px;
+  width: 541px;
   font-size: 14px;
   background-color: #f5f5f5;
   border-radius: 2px;
@@ -69,6 +70,63 @@
 }
 .active-title span {
   font-weight: bold;
+}
+.active-title .js-prize-tips {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: -2px;
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  background: url(../images/prize-tips.png);
+}
+.active-title .tri-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  width: 333px;
+  height: 136px;
+  padding: 20px;
+  top: -146px;
+  left: -80px;
+  border: 1px solid #dfdfdf;
+  background-color: white;
+  z-index: 1000;
+}
+.active-title .tri-box p:nth-of-type(2) {
+  margin-top: 10px;
+}
+.active-title .tri-rig1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-color: #dfdfdf transparent transparent  transparent;
+  border-style: dashed dashed solid dashed;
+  overflow: hidden;
+  top: -11px;
+  left: 2px;
+  z-index: 1001;
+}
+.active-title .tri-rig2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 6px;
+  border-color: #ffffff transparent transparent transparent;
+  border-style: dashed dashed solid dashed;
+  overflow: hidden;
+  top: -12px;
+  left: 2px;
+  z-index: 1001;
+}
+.active-title .tri-hide {
+  display: none;
 }
 .upimg-big {
   display: inline-block;
@@ -143,7 +201,7 @@
   margin-right: 15px;
   border: 1px dashed #dddddd;
   position: relative;
-  width: 150px;
+  width: 175px;
   height: 191px;
   vertical-align: middle;
   cursor: pointer;
@@ -179,13 +237,12 @@
   font-size: 12px;
   margin-bottom: 20px;
   text-align: center;
-  vertical-align: middle;
   margin-right: 15px;
   border: 1px dashed #dddddd;
   position: relative;
-  width: 150px;
-  height: 91px;
-  vertical-align: top;
+  width: 175px;
+  height: 191px;
+  vertical-align: middle;
   cursor: pointer;
 }
 .upimg-activ-small img {
@@ -201,8 +258,7 @@
   display: block;
 }
 .upimg-activ-small img {
-  width: 124px;
-  height: 124px;
+  width: 175px;
   position: absolute;
   top: 0;
   left: 0;
@@ -241,6 +297,7 @@
   line-height: 1em;
   bottom: -35px;
   line-height: 15px;
+  text-align: left;
 }
 .upimg-warning {
   position: absolute;
@@ -268,9 +325,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-  width: 18%;
+  width: 84px;
   font-size: 14px;
-  text-align: right;
   padding-right: 15px;
   vertical-align: -4px;
 }
@@ -278,7 +334,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 81%;
+  width: 374px;
   height: 34px;
   line-height: 34px;
   background-color: white;
@@ -286,7 +342,7 @@
   padding-left: 10px;
 }
 .item input[type='text'].chose-date {
-  width: 30%;
+  width: 175px;
 }
 .item input[type='text'].chose-date:nth-of-type(1) {
   margin-right: 5px;
@@ -330,6 +386,7 @@
   background: url('../images/base_z2968da.png') 0 -208px no-repeat;
 }
 .item.js-add-prize {
+  width: 559px;
   height: 60px;
   line-height: 60px ;
   padding-bottom: 0;
@@ -357,22 +414,41 @@
   margin-bottom: 70px;
 }
 .item.prize-item {
-  height: 60px;
+  width: 560px;
+  height: 70px;
   font-size: 14px;
   padding-bottom: 0;
   margin-bottom: 20px;
   line-height: 60px;
   border: 1px solid #dddddd;
+  border-right: none;
+  border-left: none;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
+.item.prize-item img {
+  width: 74px;
+  height: 71px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -1px;
+}
 .item.prize-item span {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
 }
-.item.prize-item p {
+.item.prize-item span:nth-of-type(1) {
+  font-weight: bold;
+}
+.item.prize-item span:nth-of-type(2) {
+  margin-left: 50px;
+}
+.item.prize-item .prize-item-edit {
   float: right;
+  padding-right: 20px;
+  height: 70px;
+  background: url('../images/dash-border.png') right center no-repeat;
 }
 .item.prize-item a {
   display: inline-block;
@@ -380,9 +456,9 @@
   width: 38px;
   height: 22px;
   line-height: 22px;
+  margin-left: 10px;
   border: 1px solid #dddddd;
   color: #666666;
-  margin-right: 10px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -412,6 +488,7 @@
 .active-preview .active-content {
   width: 354px;
   height: 651px;
+  position: relative;
   background: url('../images/iphone.png') no-repeat;
 }
 .active-preview .active-content .active-pre-title {
@@ -422,12 +499,17 @@
   color: white;
 }
 .active-preview .active-content .active-pre-img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 240px;
   height: 394px;
+  padding-top: 275px;
   color: red;
   margin: auto;
   text-align: center;
   background: url('../images/test-pre.png') no-repeat;
+  background-size: 100%;
 }
 .active-preview .active-content .active-pre-img .active-pre-random {
   padding-top: 20px;
@@ -435,8 +517,13 @@
   font-size: 24px;
   font-weight: bold;
 }
+.active-preview .active-content .active-pre-img .active-pre-bottom {
+  height: 116px;
+  background: url('../images/pre-bottom.png');
+  position: relative;
+}
 .active-preview .active-content .active-pre-img .active-pre-btn {
-  margin-top: 210px;
+  margin-top: 0;
 }
 .active-preview .active-content .active-pre-img .active-pre-btn span {
   display: inline-block;
@@ -447,10 +534,11 @@
   font-size: 18px;
   background-color: white;
   border-radius: 36px;
+  box-shadow: 0px 5px 5px 0px #c32f1d;
 }
 .active-preview .active-content .active-pre-img .active-pre-result {
   color: white;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 .active-preview .active-content .active-pre-img .active-pre-bar {
   margin-top: 8px;
@@ -468,6 +556,22 @@
   font-size: 12px;
   text-align: center;
   background-color: #ffd800 ;
+}
+.active-preview .active-content .active-marquee-img {
+  width: 240px;
+  height: 394px;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+.active-preview .active-content .active-marquee-img .active-marquee-pre {
+  height: 156px;
+  background: url('../images/marquee-pre.png');
+  background-size: 100%;
+}
+.active-preview .active-content .active-marquee-img .active-marquee-count {
+  height: 238px;
+  background: url('../images/marquee-count.png');
 }
 .active-preview .btn-bar {
   text-align: center;

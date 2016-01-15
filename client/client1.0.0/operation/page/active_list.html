@@ -102,84 +102,16 @@
 	</div>
 </div>
 
-
-
-
-<div class="prizeList" style="display: none">
-	<div class="prize-list">
-		<div class="search-box">
-	       <form>
-	           <p style="margin-right:10px">
-	               	<label class="no-margin-left">昵称</label>
-	               	<input type="text" class="input"  placeholder="请输入昵称">
-	           	</p>
-	          	<p class="p-oper">
-	               	<input type="button" class="bright-button" value="查询">
-	           	</p>
-	       </form>
-	    </div>
-	    
-	    <div class="info-list">
-			<table class="list">
-				<thead style="text-align:center">
-					<tr>
-						<th>排名</th>
-						<th style="width: 25%">头像</th>
-						<th>昵称</th>
-						<th>人气</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>
-						<td>
-							<div class="head-active">
-								<img src="images/header.png" alt="" />
-								<p>喵喵喵</p>
-							</div>
-						</td>
-						<td>喵喵喵</td>
-						<td>123</td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td>
-							<div class="head-active">
-								<img src="images/header.png" alt="" />
-								<p>喵喵喵</p>
-							</div>
-						</td>
-						<td>喵喵喵</td>
-						<td>223</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	    <div class="pageNav mt30">
-			<a>上一页</a>
-			<a class="hoverd"> 1 </a>
-			<a> 2 </a>
-			<a> 3 </a>
-			<a>...</a>
-			<a>50</a>
-			<a>下一页</a>
-			到第<input type="text" />页
-			<input type="submit" value="确定" />
-			共<span>20</span>页<span class="all_items">200</span>项
-		</div>
-	</div>
-</div>
-
 <script>
-	
+
 $(document).on('click','.js-prize-list',function(){
 	$.lightBox({
         width: 1000,
         boxID: 'prizeList',
         title: '人气排行',
-        html: $('.prizeList').html()        
+       	html: ''
     });
-    
+    $('#prizeListDia').find('.dia-main').load('page/listDialog.html');
     $('#prizeListDia').find('.dia-footer').remove();
 })
 	

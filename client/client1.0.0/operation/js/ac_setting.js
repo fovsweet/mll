@@ -1,3 +1,6 @@
+//实例化编辑器
+ var ue = UE.getEditor('myEditor');
+
 //配置日期选择
 var start = {
         elem: '#js-stare-date',
@@ -37,13 +40,17 @@ laydate(end);
 $('.js-add-prize').unbind('click').on('click',function(){
 	dialogs(this,function(){
 		var html ='';
+		var v =$('#prize-category option:selected').val();
 		html = '<div class="item prize-item">'
+			+ '<img src="images/'+ v +'.png"/>'
 			+ '<span>美乐乐代金券100</span>'
-			+ '<p>'
+			+ '<span>奖品数量：200</span>'
+			+ '<p class="prize-item-edit">'
 			+ '<a href="javascript:;" class="js-eidt-preize" data-role="prize-edit">编辑</a>'
 			+ '<a href="javascript:;" class="js-del-prize">删除</a>'
 			+ '</p>'
 		+ '</div>';
+
 		$('.list-prize').append(html);
 		$('.js-del-prize').unbind('click').on('click',function(){
 			$(this).parents('.prize-item').remove();
@@ -55,7 +62,26 @@ $('.js-add-prize').unbind('click').on('click',function(){
 		})
 	});
 })
-//编辑
+
+
+//提示框
+
+$('.js-prize-tips').on('mouseover',function(){
+	$('.tri-hide').css('display','block')
+})
+$('.js-prize-tips').on('mouseout',function(){
+	$('.tri-hide').css('display','none')
+})
+
+//切换预览图
+
+$('.js-check-btn').on('click',function(){
+	var tar = $(this).data('role');
+	$('.js-check').css('display','none');
+	$('.'+tar).css('display','block');
+	$('.js-check-btn').removeClass('hoverd');
+	$(this).addClass('hoverd');
+})
 
 
 

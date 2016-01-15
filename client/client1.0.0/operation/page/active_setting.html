@@ -1,7 +1,11 @@
 <!-------------------css---------------------->
 <link rel="stylesheet" href="css/active_setting.css" />
+<!--上传图片样式-->
 <link rel="stylesheet" href="css/jquery.Jcrop.css" />
-
+<!--上传图片样式结束-->
+<!--ueEditor样式-->
+<!--ueEditor结束-->
+ 	
 <!-------------------主页---------------------->
 <div class="setting">
 	<div class="active-catagory">
@@ -22,13 +26,13 @@
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-warning">*请上传图片</span>
 				<img  />
-				<span class="upimg-tips">大图建议尺寸&nbsp;900X500</span>
+				<span class="upimg-tips">大图建议尺寸&nbsp;900*500</span>
 			</div>
 			<div class="upimg-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:150,minHeight:150,tipWidth:200,tipHeight:200},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-warning">*请上传图片</span>
 				<img  />
-				<span class="upimg-tips">小图建议尺寸&nbsp;300X300</span>
+				<span class="upimg-tips">小图建议尺寸&nbsp;300*300</span>
 			</div>
 		</div>
 		<!--20160113更改需求后删除
@@ -60,35 +64,54 @@
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-activ-warning">*请上传图片</span>
 				<img  />
-				<span class="upimg-activ-tips">用于原始的活动页面中<br/>建议尺寸：900*1200</span>
+				<span class="upimg-activ-tips">原始分享页面的活动图<br/>建议尺寸：900*1200</span>
 			</div>
 			<div class="upimg-activ-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:150,minHeight:150,tipWidth:900,tipHeight:1200},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-activ-warning">*请上传图片</span>
-				<img  />
-				<span class="upimg-activ-tips">用于原始的活动页面中<br/>建议尺寸：900*1200</span>
+				<img  src="images/iphone.png" class="pic-show"/>
+				<span class="upimg-activ-tips">分享给朋友的循环页面活动图<br/>建议尺寸：900*1200</span>
 			</div>
 		</div>
 		<div class="item">
 			<label for="active-explain"><span class="star-orange">*</span>活动说明</label>
-			<textarea id="active-explain"></textarea>
+			<div style="width: 450px;display: inline-block; vertical-align: middle;">
+				<script type="text/plain" id="myEditor" style="width:475px;height:190px;">
+				</script>
+			</div>
 			<span class="fault-tips">*请填写说明</span>
 		</div>
 		<div class="active-title">
 			<span>中奖设置</span>
+			<div class="js-prize-tips">
+				<div class="tri-box tri-hide">
+					<p>1.最多可设置5种奖品，如中奖率为70%，按100人参加，则有70人中奖，先到先得</p>
+					<p>2.因优惠券有领取限制，如超过领取限制，则不能再领取，系统默认不中奖</p>
+				</div>
+				<div class="tri-rig1 triangle tri-hide"></div>
+  				<div class="tri-rig2 triangle tri-hide"></div>		
+			</div>
 		</div>
-		<div class="item">
-			<span class="f-14">最多可设置5种奖品，如中奖率为70%，按100人参加，则有70人中奖，先到先得。</span>
+		<div class="item chose-box">
+			    <span class="star-orange">*</span><span>中奖概率</span><input type="text" id="prize-condition" />%
 		</div>
+		<!--示例模板
+			<div class="item prize-item">
+			<img />
+			<span>美乐乐代金券100</span>
+			<span>奖品数量：200</span>
+			<p class="prize-item-edit">
+				<a href="javascript:;" class="js-eidt-preize" data-role="prize-edit">编辑</a>
+				<a href="javascript:;" class="js-del-prize">删除</a>
+			</p>
+		</div>-->
 		<div class="list-prize">
 			<!--添加奖品显示地方-->
 		</div>
 		<div class="item js-add-prize" data-role="prize-setting">
 				<span class="addimg-ico">添加奖品</span>
 		</div>
-		<div class="item chose-box">
-			    <span class="star-orange">*</span><span>中奖概率</span><input type="text" id="prize-condition" />%
-		</div>
+		
 		<div class="item submit">
 			<input type="submit" value="保存" class="confirm-btn" />
 		</div>
@@ -98,23 +121,35 @@
 	<div class="active-preview">
 		<div class="active-content">
 			<div class="active-pre-title">拜年有礼&nbsp;美家惊喜</div>
-			<div class="active-pre-img">
-				<div class="active-pre-random">拜年也要狂拽炫</div>
-				<div>活动时间&nbsp;<span>2016.02.01</span>&nbsp;-&nbsp;<span>2016.03.01</span></div>
-				<div class="active-pre-btn">
-					<span>召集好友跪拜我</span>
+			<!--原始页预览图-->
+			<div class="js-check active-pre-img">
+				
+				<!--<div class="active-pre-random">拜年也要狂拽炫</div>
+				<div>活动时间&nbsp;<span>2016.02.01</span>&nbsp;-&nbsp;<span>2016.03.01</span></div>-->
+				
+				<div class="active-pre-bottom">
+					<div class="active-pre-btn">
+						<span>召集好友跪拜我</span>
+					</div>
+					<div class="active-pre-result">
+						已有89998人参与拜年，拜年人才送大礼
+					</div>
+					<div class="active-pre-bar">
+						<span>拜年人气榜</span>
+						<span>活动详情</span>
+					</div>
 				</div>
-				<div class="active-pre-result">
-					已有89998人参与拜年，拜年人才送大礼
+			</div>
+			<!--循环页预览图-->
+			<div class="js-check active-marquee-img">
+				<div class="active-marquee-pre">
 				</div>
-				<div class="active-pre-bar">
-					<span>拜年人气榜</span>
-					<span>活动详情</span>
+				<div class="active-marquee-count">
 				</div>
 			</div>
 		</div>
 		<div class="btn-bar">
-			<span class="hoverd">原始页</span><span>循环页</span>
+			<span class="hoverd js-check-btn" data-role='active-pre-img'>原始页</span><span class="js-check-btn" data-role='active-marquee-img'>循环页</span>
 		</div>
 	</div>
 </div>
@@ -129,7 +164,10 @@
 		<div class="setting-cont">
 			<div class="setting-item">
 				<label>奖品类型</label>
-				<select>
+				<select id="prize-category" name="prize-category">
+					<option value="liping">礼品券</option>
+					<option value="coupon">折扣券</option>
+					<option value="money">代金券</option>
 				</select>
 			</div>
 			<div class="setting-item c-999" >
@@ -186,6 +224,12 @@
 </div>
 
 <!-----------------js代码------------------------------>
+<!--ueEditor插件-->	
+	<script type="text/javascript">window.UEDITOR_HOME_URL='../plug/ueEditor/'</script>
+    <script type="text/javascript" charset="utf-8" src="../plug/ueEditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../plug/ueEditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../plug/ueEditor/lang/zh-cn/zh-cn.js"></script>
+<!--editor结束-->
 <!--上传图片插件-->
 	<script type="text/javascript" src="js/jquery.Jcrop.js" ></script>
 	<script type="text/javascript" src="js/upPic.js" ></script>

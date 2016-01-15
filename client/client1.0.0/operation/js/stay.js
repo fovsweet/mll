@@ -19,7 +19,7 @@
                 showMonthAfterYear:true,
                 firstDay : 1,
                 showOtherMonths:true,
-                minDate : 0,
+                minDate :-360,
                 maxDate:360,
               	onSelect:function(dateText,inst){
                     stay.end.datepicker('option', 'minDate', new Date(moment(dateText).add('days', 1)));
@@ -44,7 +44,7 @@
                 showMonthAfterYear:true,
                 firstDay : 1,
                 showOtherMonths:true,
-                minDate : 1,
+                minDate : -360,
                 maxDate:360,               
                	/*onSelect:function(){
                     stay.end.datepicker('option', 'appendText', stay.compare($(this)));

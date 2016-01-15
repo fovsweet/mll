@@ -13,6 +13,10 @@
 @cl-border:#ddd;
 @mb-20:20px;
 @img-src:'../images';
+@tit-width:541px;
+@cont-width:374px;
+@tit-label:84px;
+@date-width:175px;
 
 /*重用样式*/
 .c-999{
@@ -85,7 +89,8 @@
     
 }
 .active-title{
-    padding: 10px;
+    padding: 5px 10px;
+    width: @tit-width;
     font-size: @ft-14;
     background-color: @cl-f5;
     border-radius: 2px;
@@ -94,6 +99,61 @@
     span{
         font-weight: bold;
     }
+    
+    .js-prize-tips{
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: -2px;
+        margin-left: 10px;
+        cursor: pointer;
+        position: relative;
+        background: url(../images/prize-tips.png);
+    }    
+    .tri-box{
+        .border-box;
+        .border-radius;
+        position: absolute;
+        width: 333px;
+        height: 136px;
+        padding: 20px;
+        top: -146px;
+        left: -80px;
+        border: 1px solid #dfdfdf;
+        background-color: white;
+        z-index: 1000;
+        
+        p:nth-of-type(2){
+            margin-top: 10px;
+        }
+    }
+    .tri-rig1{
+        position:absolute;
+        width:0; 
+        height:0; 
+        border-width:6px; 
+        border-color:#dfdfdf transparent transparent  transparent; 
+        border-style:dashed dashed solid dashed; 
+        overflow:hidden; 
+        top:-11px; 
+        left:2px;
+        z-index: 1001;
+        }
+    .tri-rig2{
+        position:absolute;
+        width:0; 
+        height:0; 
+        border-width:6px; 
+        border-color:#ffffff transparent transparent transparent; 
+        border-style:dashed dashed solid dashed; 
+        overflow:hidden; 
+        top:-12px; 
+        left:2px;
+         z-index: 1001;
+        }  
+    .tri-hide{
+        display: none;
+    }   
 }
 .upimg-big{
     display: inline-block;
@@ -142,7 +202,7 @@
 }
 .upimg-active-big{
     .upimg-big;
-     width: 150px;
+     width: @date-width;
      height: 191px;
      vertical-align: middle;
      cursor: pointer;
@@ -163,14 +223,13 @@
 }
 .upimg-activ-small{
     .upimg-big;
-     width: 150px;
-     height: 91px;
-     vertical-align: top;
+     width: @date-width;
+     height: 191px;
+     vertical-align:middle;
      cursor: pointer;
      
      img{
-        width: 124px;
-        height: 124px;
+        width: 175px;
         position: absolute;
         top: 0;
         left: 0;
@@ -207,6 +266,7 @@
   
     bottom: -35px;
     line-height: 15px;
+    text-align: left;
 }
 .upimg-warning{
     position: absolute;
@@ -227,15 +287,14 @@
       label{
           .border-box;
           display: inline-block;
-          width: 18%;
+          width: @tit-label;
           font-size: @ft-14;
-          text-align: right;
           padding-right: 15px;
           vertical-align: -4px;
       }
       input[type='text']{
           .border-box;
-          width: 81%;
+          width: @cont-width;
           height: 34px;
           line-height: 34px;
           background-color: white;
@@ -243,7 +302,7 @@
           padding-left: 10px;
           
           &.chose-date{
-               width: 30%;   
+               width: @date-width;   
           }
           &.chose-date:nth-of-type(1){
               margin-right: 5px;
@@ -287,6 +346,7 @@
         } 
        
        &.js-add-prize{
+           width: @tit-width+18;
            height: 60px;
            line-height:60px ;
            padding-bottom: 0;
@@ -319,21 +379,39 @@
         }
         
         &.prize-item{
-            height: 60px;
+            width:@tit-width+19;
+            height: 70px;
             font-size: @ft-14;
             padding-bottom: 0;
             margin-bottom: 20px;
             line-height: 60px;
             border: 1px solid @cl-border;
+            border-right: none;
+            border-left: none;
             .border-radius;
+            
+            img{
+              width: 74px; 
+              height: 71px;
+              display: inline-block; 
+              vertical-align: middle;
+              margin-top: -1px;
+            }
             
             span{
                 display: inline-block;
-                margin-left: 10px;
+                margin-left: 20px;
             }
+            span:nth-of-type(1){
+                font-weight: bold;
+            }
+            span:nth-of-type(2){margin-left: 50px;}
             
-            p{
+            .prize-item-edit{
                 float: right;
+                padding-right: 20px;
+                height: 70px;
+                background: url('@{img-src}/dash-border.png') right center no-repeat;
             }
             a{
                 display: inline-block;
@@ -341,9 +419,9 @@
                 width: 38px;
                 height: 22px;
                 line-height: 22px;
+                margin-left: 10px;
                 border: 1px solid @cl-border;
                 color: @cl-666;
-                margin-right: 10px;
                 .border-radius;
                 
                 &:hover{
@@ -359,8 +437,7 @@
             bottom: 0px;
             left: 15%;
             display: none;
-        }
-                                                                  
+        }                                                 
     }
 .item-active{
     padding-bottom: 30px;
@@ -378,6 +455,7 @@
     .active-content{
         width: 354px;
         height: 651px;
+        position: relative;
         background: url('@{img-src}/iphone.png') no-repeat;
         
         .active-pre-title{
@@ -388,12 +466,15 @@
             color: white;
         }
         .active-pre-img{
+            .border-box;
             width: 240px;
             height: 394px;
+            padding-top: 275px;
             color: red;
             margin: auto;
             text-align: center;
             background: url('@{img-src}/test-pre.png') no-repeat;
+            background-size:100%;
             
             .active-pre-random{
                 padding-top: 20px;
@@ -402,9 +483,13 @@
                 font-weight: bold;
             }
             
+            .active-pre-bottom{
+                height: 116px; 
+                background:url('@{img-src}/pre-bottom.png');
+                position: relative;  
+            }
             .active-pre-btn{
-                margin-top: 210px;
-                   
+                margin-top: 0;
                 span{
                     display: inline-block;
                     width:180px;
@@ -414,12 +499,13 @@
                     font-size: 18px;
                     background-color: white;
                     border-radius: 36px;
+                    box-shadow: 0px 5px 5px 0px #c32f1d;
                 }
             }
             
             .active-pre-result{
                 color: white;
-                margin-top: 3px;
+                margin-top: 8px;
             }
             .active-pre-bar{
                 margin-top: 8px;
@@ -436,6 +522,25 @@
                     text-align: center;
                     background-color:#ffd800 ;
                 }
+            }
+        }
+        
+        .active-marquee-img{
+            width: 240px;
+            height: 394px;
+            margin: auto;
+            text-align: center;
+            display: none;
+            
+            .active-marquee-pre{
+                height: 156px;
+                background: url('@{img-src}/marquee-pre.png');
+                background-size:100%;
+            }
+            
+            .active-marquee-count{
+                height: 238px;
+                background: url('@{img-src}/marquee-count.png');
             }
         }
     }
