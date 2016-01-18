@@ -1,5 +1,8 @@
 //实例化编辑器
  var ue = UE.getEditor('myEditor');
+ 
+//获取文本框输入的内容
+//UM.getEditor('myEditor').getContent()
 
 //配置日期选择
 var start = {
@@ -39,25 +42,29 @@ laydate(end);
 //新增
 $('.js-add-prize').unbind('click').on('click',function(){
 	dialogs(this,function(){
+		//设置TODO
+		
 		var html ='';
 		var v =$('#prize-category option:selected').val();
-		html = '<div class="item prize-item">'
-			+ '<img src="images/'+ v +'.png"/>'
+		html = '<div class="item prize-item" id="">'
+			+ '<img src="images/'+ v +'.png"/><input type="hidden">'
 			+ '<span>美乐乐代金券100</span>'
 			+ '<span>奖品数量：200</span>'
 			+ '<p class="prize-item-edit">'
-			+ '<a href="javascript:;" class="js-eidt-preize" data-role="prize-edit">编辑</a>'
+			+ '<a href="javascript:;" class="js-eidt-preize" data-role="prize-setting">编辑</a>'
 			+ '<a href="javascript:;" class="js-del-prize">删除</a>'
 			+ '</p>'
 		+ '</div>';
-
 		$('.list-prize').append(html);
 		$('.js-del-prize').unbind('click').on('click',function(){
 			$(this).parents('.prize-item').remove();
 		})
 		$('.js-eidt-preize').unbind('click').on('click',function(){
+			//TODO
+			
 			dialogs(this,function(){	
 				//编辑TODO
+				
 			});
 		})
 	});
@@ -65,7 +72,6 @@ $('.js-add-prize').unbind('click').on('click',function(){
 
 
 //提示框
-
 $('.js-prize-tips').on('mouseover',function(){
 	$('.tri-hide').css('display','block')
 })
@@ -74,7 +80,6 @@ $('.js-prize-tips').on('mouseout',function(){
 })
 
 //切换预览图
-
 $('.js-check-btn').on('click',function(){
 	var tar = $(this).data('role');
 	$('.js-check').css('display','none');
@@ -82,8 +87,6 @@ $('.js-check-btn').on('click',function(){
 	$('.js-check-btn').removeClass('hoverd');
 	$(this).addClass('hoverd');
 })
-
-
 
 //弹窗
 function dialogs(obj,callback) {
@@ -98,7 +101,6 @@ function dialogs(obj,callback) {
             $('#'+r+' .fix').detach();
         }, 500)
     });
-    
     $('#'+r+' .confirm-btn').unbind('click').on('click',function(){
     	callback();
     	d.fadeOut();

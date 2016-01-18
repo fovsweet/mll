@@ -17,22 +17,29 @@
 			<span>活动图文</span>
 		</div>
 		<div class="item">
-			<label for="active-main"><span class="star-orange">*</span>活动主题</label>
+			<label for="active-main"><span class="star-orange">*</span>活动名称</label>
 			<input type="text" id="active-main"/>
+			<div class="title_tips">
+				<span id="coupon_name_length">0</span>/9
+			</div>
 		</div>
 		<div class="item">
 			<label class="ver-40"><span class="star-orange">*</span>图文封面</label>
-			<div class="upimg-big" id="upImg" onclick="upImgBox({boxWidth:560,maxWidth:290,maxHeight:200,minWidth:225,minHeight:125,tipWidth:900,tipHeight:500},'ccPicBigImg');">
+			<div class="upimg-group">
+				<div class="upimg-big" id="upImg" onclick="upImgBox({boxWidth:560,maxWidth:290,maxHeight:200,minWidth:225,minHeight:125,tipWidth:900,tipHeight:500},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-warning">*请上传图片</span>
-				<img  />
-				<span class="upimg-tips">大图建议尺寸&nbsp;900*500</span>
+				<img />
+				</div>
+				<div class="upimg-all-tips">推送图文时，图文列表的封面大图，<br />建议尺寸 900*500</div>
 			</div>
-			<div class="upimg-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:150,minHeight:150,tipWidth:200,tipHeight:200},'ccPicBigImg');">
-				<span class="addimg-ico">上传图片</span>
-				<span class="upimg-warning">*请上传图片</span>
-				<img  />
-				<span class="upimg-tips">小图建议尺寸&nbsp;300*300</span>
+			<div class="upimg-group">
+				<div class="upimg-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:180,minHeight:180,tipWidth:200,tipHeight:200},'ccPicBigImg');">
+					<span class="addimg-ico">上传图片</span>
+					<span class="upimg-warning">*请上传图片</span>
+					<img />
+				</div>
+				<div class="upimg-all-tips">推送图文时，图文列表的封面小图，<br />建议尺寸200*200</div>
 			</div>
 		</div>
 		<!--20160113更改需求后删除
@@ -60,17 +67,17 @@
 		</div>
 		<div class="item item-active">
 			<label class="ver-40"><span class="star-orange">*</span>活&nbsp;&nbsp;动&nbsp;&nbsp;图</label>
-			<div class="upimg-active-big" id="upImg" onclick="upImgBox({boxWidth:560,maxWidth:290,maxHeight:200,minWidth:150,minHeight:200,tipWidth:900,tipHeight:1200},'ccPicBigImg');">
+			<div class="upimg-active-big" id="upImg" onclick="upImgBox({boxWidth:560,maxWidth:290,maxHeight:200,minWidth:180,minHeight:320,tipWidth:750,tipHeight:1400},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-activ-warning">*请上传图片</span>
-				<img  />
-				<span class="upimg-activ-tips">原始分享页面的活动图<br/>建议尺寸：900*1200</span>
+				<i></i><img  src="images/pre_index_bg.png" class="pic-show"/>
+				<span class="upimg-activ-tips">原始分享页面的活动图<br/>建议尺寸：750*1400</span>
 			</div>
-			<div class="upimg-activ-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:150,minHeight:150,tipWidth:900,tipHeight:1200},'ccPicBigImg');">
+			<div class="upimg-activ-small" id="upImgsmall" onclick="upImgBox({boxWidth:530,maxWidth:290,maxHeight:200,minWidth:180,minHeight:180,tipWidth:750,tipHeight:750},'ccPicBigImg');">
 				<span class="addimg-ico">上传图片</span>
 				<span class="upimg-activ-warning">*请上传图片</span>
-				<img  src="images/iphone.png" class="pic-show"/>
-				<span class="upimg-activ-tips">分享给朋友的循环页面活动图<br/>建议尺寸：900*1200</span>
+				<i></i><img  src="images/marquee-pre.png" class="pic-show"/>
+				<span class="upimg-activ-tips">分享给朋友的循环页面活动图<br/>建议尺寸：750*750</span>
 			</div>
 		</div>
 		<div class="item">
@@ -93,7 +100,7 @@
 			</div>
 		</div>
 		<div class="item chose-box">
-			    <span class="star-orange">*</span><span>中奖概率</span><input type="text" id="prize-condition" />%
+			    <span class="star-orange">*</span><span>中奖概率</span><input type="text" placeholder="0~100" id="prize-condition" />%
 		</div>
 		<!--示例模板
 			<div class="item prize-item">
@@ -128,7 +135,7 @@
 				<div>活动时间&nbsp;<span>2016.02.01</span>&nbsp;-&nbsp;<span>2016.03.01</span></div>-->
 				
 				<div class="active-pre-bottom">
-					<div class="active-pre-btn">
+					<!--<div class="active-pre-btn">
 						<span>召集好友跪拜我</span>
 					</div>
 					<div class="active-pre-result">
@@ -137,7 +144,7 @@
 					<div class="active-pre-bar">
 						<span>拜年人气榜</span>
 						<span>活动详情</span>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<!--循环页预览图-->
@@ -172,50 +179,20 @@
 			</div>
 			<div class="setting-item c-999" >
 				<label class="c-666">奖品名称</label>
-				<select style="margin-right: 10px"></select>
-				库存:<span>200</span>
-			</div>
-			<div class="setting-item">
-				<label>奖品数量</label>
-				<input type="text"  />
-			</div>
-			<div class="setting-item">
-				<label>兑奖说明</label>
-				<textarea></textarea>
-			</div>
-			<div class="btn-bar">
-			<input type="submit" value="保存" class="confirm-btn" />
-			</div>
-		</div>
-    </div>
-</div>
-
-<!-------------------奖品编辑框---------------------->
-<div class="data-dia" id="prize-edit">
-    <div class="data-content">
-   		<h3 class='page-header'>
-			<span>编辑奖品</span>
-			<a href='javascript:;' class='close_log'></a>
-		</h3>
-		<div class="setting-cont">
-			<div class="setting-item">
-				<label>奖品类型</label>
-				<select>
+				<select style="margin-right: 10px">
+					
 				</select>
-			</div>
-			<div class="setting-item c-999" >
-				<label class="c-666">奖品名称</label>
-				<select style="margin-right: 10px"></select>
 				库存:<span>200</span>
 			</div>
 			<div class="setting-item">
 				<label>奖品数量</label>
 				<input type="text"  />
 			</div>
-			<div class="setting-item">
+			<!--需求更改删除
+				<div class="setting-item">
 				<label>兑奖说明</label>
 				<textarea></textarea>
-			</div>
+			</div>-->
 			<div class="btn-bar">
 			<input type="submit" value="保存" class="confirm-btn" />
 			</div>

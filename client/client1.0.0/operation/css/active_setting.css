@@ -1,4 +1,19 @@
 @charset UTF-8;
+@media screen and (min-width: 1190px) {
+  .active-preview {
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .active-preview {
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .active-preview {
+    margin-left: 15%;
+  }
+}
 /*重用样式*/
 .c-999 {
   color: #999999;
@@ -58,7 +73,7 @@
 }
 .active-config {
   float: left;
-  width: 54%;
+  width: 545px;
 }
 .active-title {
   padding: 5px 10px;
@@ -67,6 +82,7 @@
   background-color: #f5f5f5;
   border-radius: 2px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .active-title span {
   font-weight: bold;
@@ -128,14 +144,16 @@
 .active-title .tri-hide {
   display: none;
 }
+.upimg-group {
+  display: inline-block;
+  vertical-align: middle;
+}
 .upimg-big {
   display: inline-block;
   width: 223px;
   height: 125px;
   font-size: 12px;
-  margin-bottom: 20px;
   text-align: center;
-  vertical-align: middle;
   margin-right: 15px;
   border: 1px dashed #dddddd;
   position: relative;
@@ -158,9 +176,7 @@
   width: 223px;
   height: 125px;
   font-size: 12px;
-  margin-bottom: 20px;
   text-align: center;
-  vertical-align: middle;
   margin-right: 15px;
   border: 1px dashed #dddddd;
   position: relative;
@@ -191,49 +207,9 @@
 .upimg-small .pic-show {
   display: block;
 }
-.upimg-active-big {
-  display: inline-block;
-  width: 223px;
-  height: 125px;
-  font-size: 12px;
-  margin-bottom: 20px;
-  text-align: center;
-  margin-right: 15px;
-  border: 1px dashed #dddddd;
-  position: relative;
-  width: 175px;
-  height: 191px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.upimg-active-big img {
-  width: 223px;
-  height: 125px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: medium none;
-  display: none;
-}
-.upimg-active-big .pic-show {
-  display: block;
-}
-.upimg-active-big img {
-  width: 124px;
-  height: 124px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: medium none;
-  display: none;
-}
-.upimg-active-big .pic-show {
-  display: block;
-}
+.upimg-active-big,
 .upimg-activ-small {
   display: inline-block;
-  width: 223px;
-  height: 125px;
   font-size: 12px;
   margin-bottom: 20px;
   text-align: center;
@@ -245,28 +221,24 @@
   vertical-align: middle;
   cursor: pointer;
 }
+.upimg-active-big i,
+.upimg-activ-small i {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.upimg-active-big img,
 .upimg-activ-small img {
-  width: 223px;
-  height: 125px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  max-width: 175px;
+  max-height: 191px;
+  vertical-align: middle;
   border: medium none;
   display: none;
+  position: relative;
 }
+.upimg-active-big .pic-show,
 .upimg-activ-small .pic-show {
-  display: block;
-}
-.upimg-activ-small img {
-  width: 175px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: medium none;
-  display: none;
-}
-.upimg-activ-small .pic-show {
-  display: block;
+  display: inline-block;
 }
 .addimg-ico {
   width: 48px;
@@ -279,6 +251,20 @@
   margin-top: -8px;
   display: inline-block;
   background: url('../images/add_ico.png') no-repeat;
+}
+.title_tips {
+  position: absolute;
+  line-height: 34px;
+  font-size: 14px;
+  top: 0;
+  right: 90px;
+  color: #666666;
+}
+.title_tips span {
+  color: #666666;
+}
+.upimg-all-tips {
+  color: #999999;
 }
 .upimg-tips {
   display: inline-block;
@@ -301,19 +287,19 @@
 }
 .upimg-warning {
   position: absolute;
-  bottom: -35px;
+  bottom: -55px;
   left: 0;
   line-height: 1em;
   color: #ff6600;
-  display: none;
+  display: none ;
 }
 .upimg-activ-warning {
   position: absolute;
-  bottom: -35px;
+  bottom: -55px;
   left: 0;
   line-height: 1em;
   color: #ff6600;
-  display: none;
+  display: none ;
   bottom: -48px;
 }
 .item {
@@ -390,10 +376,9 @@
   height: 60px;
   line-height: 60px ;
   padding-bottom: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: 1px dashed #dddddd;
   text-align: center;
-  border-radius: ;
   cursor: pointer;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -404,7 +389,7 @@
   line-height: 16px;
 }
 .item.chose-box input {
-  width: 145px;
+  width: 65px;
   margin-left: 10px;
   margin-right: 5px;
 }
@@ -419,7 +404,7 @@
   font-size: 14px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  line-height: 60px;
+  line-height: 70px;
   border: 1px solid #dddddd;
   border-right: none;
   border-left: none;
@@ -448,14 +433,15 @@
   float: right;
   padding-right: 20px;
   height: 70px;
+  line-height: 70px;
   background: url('../images/dash-border.png') right center no-repeat;
+  background-size: 3px 73px;
 }
 .item.prize-item a {
-  display: inline-block;
   text-align: center;
   width: 38px;
   height: 22px;
-  line-height: 22px;
+  padding: 3px 5px;
   margin-left: 10px;
   border: 1px solid #dddddd;
   color: #666666;
@@ -475,7 +461,7 @@
   display: none;
 }
 .item-active {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 .hidden-input {
   opacity: 0;
@@ -483,7 +469,7 @@
   z-index: -1;
 }
 .active-preview {
-  float: right;
+  float: left;
 }
 .active-preview .active-content {
   width: 354px;
@@ -508,8 +494,8 @@
   color: red;
   margin: auto;
   text-align: center;
-  background: url('../images/test-pre.png') no-repeat;
-  background-size: 100%;
+  background: url('../images/pre_index_bg.png') no-repeat;
+  background-size: 100% 100%;
 }
 .active-preview .active-content .active-pre-img .active-pre-random {
   padding-top: 20px;
@@ -519,7 +505,8 @@
 }
 .active-preview .active-content .active-pre-img .active-pre-bottom {
   height: 116px;
-  background: url('../images/pre-bottom.png');
+  background: url('../images/pre_bg_bottom.png') no-repeat;
+  background-size: 100% 100%;
   position: relative;
 }
 .active-preview .active-content .active-pre-img .active-pre-btn {
@@ -605,7 +592,7 @@
   color: #666666;
 }
 .data-dia .data-content {
-  width: 568px;
+  width: 468px;
 }
 .data-dia .page-header {
   text-align: center;
@@ -627,7 +614,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 300px;
+  width: 330px;
   height: 34px;
   padding-left: 10px;
   background-color: white;

@@ -1,0 +1,184 @@
+<div class="container">
+	<div id="container" class="chat-container">
+	<section id="scroll" >
+		<div class="clearfix">
+			<div class="chat-list chat-list-right fr">
+				<div class="chat-info">
+					hello,高端大气上档次，低调奢华有内涵，hello,高端大气上档次，低调奢华有内涵
+				</div>
+				<div class="chat-img">
+					<img src="../images/head.jpg" alt="" />
+				</div>
+				<span class="sending-icon rotated"></span>
+			</div>
+		</div>
+		<div class="chat-date-tips">
+			<span>2015年04月3日 15:33</span>
+		</div>
+		<div class="clearfix">
+			<div class="chat-list chat-list-left fl">
+				<div class="chat-img">
+					<img src="../images/head.jpg" alt="" />
+				</div>
+				<div class="chat-info">
+					hello,高端大气上档次，低调奢华有内涵，hello,高端大气上档次，低调奢华有内涵
+				</div>
+			</div>
+		</div>
+		<div class="chat-tips">
+			离该用户上次主动联系您已经超过48小时，您发送的消息对方将无法收到
+		</div>
+		<div class="clearfix">
+			<div class="chat-list chat-list-right error fr">
+				<div class="chat-info">
+					hello,高端大气上档次，低调奢华有内涵，hello,高端大气上档次，低调奢华有内涵
+				</div>
+				<div class="chat-img">
+					<img src="../images/head.jpg" alt="" />
+				</div>
+				<span class="failed-icon" data-role='leave_status'></span>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="chat-list chat-list-right error fr">
+				<div class="chat-info">
+					hello,高端大气上档次，低调奢华有内涵，hello,高端大气上档次，低调奢华有内涵
+				</div>
+				<div class="chat-img">
+					<img src="../images/head.jpg" alt="" />
+				</div>
+				<span class="failed-icon" data-role='leave_status'></span>
+			</div>
+		</div>
+        </section>
+
+        </div>
+	</div>
+	<footer class="fixed">
+		<form action="">
+			<div class="chat-send">
+				<div class="send-group">
+					<span class="add-icon js-chat-fun"></span>
+					<span class="smile-icon emotion"></span>
+					<textarea class="chat-input" id="saytext" ></textarea>
+					<!--- 灰色发送按钮
+					<button class="btn btn-send disabled" type="button">发送</button>
+					-->
+					<button class="btn btn-send js-dialog" data-role="js-classGroup" type="button">发送</button>
+				</div>
+				<div class="chat-func">
+					<span class="simg-icon">
+						<input type="file" accept="image/*;capture=camera">
+					</span>
+					<span class="phone-icon"></span>
+				</div>
+				<div class="smile-face">
+
+				</div>
+			</div>
+		</form>
+	</footer>
+
+	
+<!--	添加分组-->
+<div class="dialog js-classGroup" style="display:none">
+	<div class="bg-dialog fix"></div>
+	<div class="content-dialog">
+		<p class="title">添加分组</p>
+		<div class="info-dialog">
+			<form action="" class="classForm">
+				<input type="text" placeholder="请输入新组名" />
+			</form>
+		</div>
+		<div class="btn-group-dialog">
+			<button class="btn-dialog" type="button">取消</button>
+			<button class="btn-dialog" type="submit">确定</button>
+		</div>
+	</div>
+</div>
+
+
+<!--离线状态-->
+<div class="data-dia">
+	<div class="data-content">
+		<div class="info-dialog" style="padding: 30px 10%">
+			该消息发送时客户处于离线状态没有获取到，是否重发？
+		</div>
+		<div class="foot-dialog">
+			<div class="btn-group-dialog">
+				<button class="btn-dialog" type="button">取消</button>
+				<button class="btn-dialog" type="submit">确定</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--重发该消息-->
+<div class="data-dia leave_status">
+	<div class="content-dialog">
+		<div class="info-dialog" style="padding: 40px 10%; text-align: center">
+			重发该消息？
+		</div>
+		<div class="foot-dialog">
+			<div class="btn-group-dialog">
+				<button class="btn-dialog" type="button">取消</button>
+				<button class="btn-dialog" type="submit">确定</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src='../js/strophe.min.js'></script>
+<script type="text/javascript">
+/****QQface start***/
+$(function(){
+	loaded();
+
+	$('.emotion').qqFace({
+		id: 'chat-face', //表情盒子的ID
+		assign: 'saytext',//给那个控件赋值
+		path:'../images/face/'	//表情存放的路径
+	});
+	
+	$(".emotion").click(function(){
+		var swiper = new Swiper('.swiper-container',{
+			pagination:'.swiper-pagination'
+		});
+	});
+
+	$('.btn-send').click(function(){
+		var str = $("#saytext").val(); 
+        $("#scroll").html(replace_em(str)); 
+	});
+
+	// 高度变化
+	$(document).click(function(){
+		var fh = $('footer.fixed').height();
+		console.log(fh);
+	})
+});
+
+
+//查看结果
+function replace_em(str){
+	str = str.replace(/\</g,'&lt;');
+	str = str.replace(/\>/g,'&gt;');
+	str = str.replace(/\n/g,'<br/>');
+	str = str.replace(/\[em_([0-9]*)\]/g,'<img src="../images/face/$1.gif" border="0" />');
+	return str;
+}
+/****QQ face end****/
+// $('.js-dialog').dialog();
+$('.failed-icon').dialog();
+
+$(document).on('click','.js-chat-fun,.emotion',function(){
+	$('.chat-func').toggle();
+});
+
+var myScroll;
+function loaded(){
+    myScroll = new IScroll('#container', { mouseWheel: true, tap: true });
+}
+
+
+</script>
+

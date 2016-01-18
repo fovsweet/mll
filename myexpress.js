@@ -20,7 +20,7 @@ app.configure(function(){
     app.use(express.bodyParser());   //post请求的数据
     app.use(express.methodOverride());  //get.post请求转换
     app.use(app.router);    //路由分发
-    app.use(express.static(__dirname+'/client/client1.0.0'))    //根目录
+    app.use(express.static(__dirname+'/client/webapp'))    //根目录
     //app.use(express.favicon (__dirname+'/client/image/logogreen.png'));
     app.use(express.errorHandler());    //提示错误的
     app.use(partials());

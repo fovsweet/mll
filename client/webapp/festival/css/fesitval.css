@@ -1,0 +1,552 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a,img,button,input,textarea,div{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	font-family: Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+	background: #ffffff;
+	color: #333;
+	font-size: 1.4rem;
+	height: 100%;
+}
+
+ul  {
+	padding: 0;
+	list-style: none;
+}
+
+.fr {
+	float: right;
+}
+
+.fl {
+	float: left;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+.clearfix:after {
+	display: inline-block;
+	content: "";
+	clear: both;
+	visibility: hidden;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100%;
+	font-size: 1.4rem;
+	max-width: 680px;
+}
+
+.active-sec {
+	padding: 40px 20px 40px 20px;
+	width: 100%;
+	height: 100%;
+	background: url('../../../../../../../../works/client1.1.0/festival/images/activity-bg.png') no-repeat;
+	background-size: 100% 100%;
+	
+}
+
+.active-details {
+	padding: 20px 0;
+	height: 100%;
+	background: #fff9d5;
+	border: 1px solid #fff9d5;
+	border-radius: 5px;
+	position: relative;
+}
+
+.active-title {
+	width: 180px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: -20px;
+	margin-left: -90px;
+}
+
+.active-title img {
+	width: 100%;
+}
+
+.active-content {
+	padding: 30px 15px;
+	//height: 100%;
+}
+
+.active-info{
+	margin: 30px 0 0;
+	color: #591d0c;
+	line-height: 2.5rem;
+}
+
+/****排行弹框***/
+.charts-modal {
+	padding: 10px;
+	width: 80%;
+	border-radius: 5px;
+	background: #d62f37;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	margin-left: -40%;
+}
+
+.charts-header {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+    width: 230px;
+    margin-top: -45px;
+    margin-left: -115px;
+}
+
+.charts-header img {
+	width: 100%;
+}
+
+.charts-body {
+	height: 100%;
+	background: #fff9d5;
+	border: 1px solid #fff9d5;
+	border-radius: 5px;
+	color: #591d0c;
+}
+
+.chart-number {
+	margin: 20px 0 10px 0;
+	text-align: center;
+}
+
+.chart-table {
+	padding: 30px 0;
+	width: 100%;
+}
+
+.chart-table tr th,
+.chart-table tr td {
+	text-align: center;
+}
+
+.chart-table tbody tr {
+	border-bottom: 1px solid #efd9a4;
+}
+
+.chart-table thead tr th,
+.chart-table tbody tr td {
+	padding: 6px 0;
+}
+
+.chart-table img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.chart-icon {
+	display: inline-block;
+	padding-top: 4px;
+	width: 25px;
+	height: 35px;
+	text-align: center;
+	color: #fff;
+}
+
+.first-icon {
+	background: url("../images/first-icon.png") no-repeat;
+	background-size: 100%;
+	
+}
+
+.second-icon {
+	background: url("../images/second-icon.png") no-repeat;
+	background-size: 100%;
+}
+
+.third-icon {
+	background: url("../images/third-icon.png") no-repeat;
+	background-size: 100%;
+}
+
+.chart-num-icon {
+	display: inline-block;
+	padding-top: 4px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #f14951;
+	color: #fff;
+}
+
+/*****卡劵*****/
+.conpou-sec {
+	background: #e83337;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.lottery-cont {
+	padding: 0 10px;
+	width: 100%;
+	background:url('../images/coupon-bg.png') no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+.conpou-cont {
+	padding-bottom: 20px;
+	width: 100%;
+	background:url('../images/coupon-success.png') no-repeat  0 40px;
+	background-size: 100% ;
+	border: 1px solid transparent;
+}
+
+.conpou-details {
+	margin-top: 70%;
+	
+}
+
+.conpou-details .tips {
+	width: 65%;
+	margin: 8px auto 5rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1.2rem;
+	transform: translate(-1%);
+}
+
+.prize {
+	margin: 0 auto;
+	height: 7.3rem;
+	width: 63%;
+	background: url('../images/prize-bg.png') no-repeat;
+    background-size: 100% 100%;
+    transform: translate(-1%);
+    text-align: center;
+    position: relative;
+}
+
+
+.prize-text {
+	width: 20px;
+	position: absolute;
+	right: 7%;
+	top: 50%;
+	margin-top: -3rem;
+	color: #d22020;
+}
+
+.prize-info {
+	padding: 5px 0;
+	width: 75%;
+	height: 100%;
+	color: #521a03;
+	font-weight: bold;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+
+.prize-info  p {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+.prize-info img {
+	display: inline-block;
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+}
+
+.prize-info a {
+	color: #1852d5;
+	font-size: 1rem;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.year-cont {
+	padding: 0 10px;
+}
+
+.year-list {
+	padding: 0 2%;
+	min-height: 400px;
+	width: 100%;
+	background:url('../images/listBg.png') no-repeat;
+	background-size: 100% 100%;
+	border: 1px solid transparent;
+}
+
+.invite-count {
+	padding: 10px 0;
+	margin: 10px auto;
+	width: 75%;
+}
+
+.invite-count .title {
+	margin: 5px 0;
+	font-size: 1.6rem;
+	color: #591d0c;
+	font-weight: bold;
+}
+
+.invite-body {
+	overflow: hidden;
+}
+
+.circle-img {
+	float: left;
+	margin-right: 10px;
+	width: 60px;
+	height: 60px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+.invite-panel {
+	padding: 15px;
+	border-top: 1px solid #efd9a4;
+}
+
+.invite-panel .title {
+	margin: 0;
+	margin-left: calc(12.5% - 20px);
+	font-weight: bold;
+	color: #e83337;
+}
+
+.scroller {
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	//width: 700px;
+	height: 100%;
+}
+
+.invite-list {
+	margin-top: 10px;
+	width: 100%;
+	font-size: 0;
+}
+
+.invite-list li {
+	display: inline-block;
+	width: 70px;
+	font-size: 1.2rem;
+	text-align: center;
+	vertical-align: top;
+}
+
+.invite-list li p {
+	margin: 5px 0;
+	color: #591d0c;
+}
+
+.invite-list li img {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.followUs {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px 0;
+	width: 100%;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+}
+
+
+.follow-left img {
+	margin: 0 10px ;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.follow-btn {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -15px;
+	padding: 0px 10px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	background: #e50000;
+	color: #fff;
+}
+
+/****role 选择****/
+
+.roleModal {
+	margin: 5% auto 0;
+	width: 100%;
+	max-width: 680%;
+	position: absolute;
+}
+
+.role-header {
+	width: 100%;
+	text-align: center;;
+}
+
+.role-header img {
+	max-width: 100%;
+}
+
+.roleModal .role-body {
+	margin: -30px auto 0;
+	width: 80%;
+	background: url('../images/roleBg.png');
+	background-size: 15px 15px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	border-bottom: 2px solid #d8c385;
+}
+
+.role-list {
+	margin-top: 15%;
+	font-size: 0;
+}
+
+.role-list li {
+	display: inline-block;
+	margin-bottom: 2rem;
+	margin-left: 5%;
+    width: 43%;
+	vertical-align: top;
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 1%;
+	background: url('../images/roleBorderBg.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.role-list li:nth-child(2n) {
+	margin-left: 6%;
+}
+
+.role-list li img {
+	max-width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.role-list li p {
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	font-size: 1.4rem;
+	background: url('../images/role-btn.png') no-repeat; 
+	background-size: 100% 100%;
+	background-color: #e42254;
+	text-align: center;
+    color: #b2103e;
+    font-weight: bold;
+    position: relative;
+}
+
+/****btn*****/
+
+button {
+	outline: none;
+	border: none;
+}
+
+.btn-know {
+	width: 180px;
+	height: 60px;
+	background: url('../images/btn-know.png') no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -90px;
+}
+
+.btn-invite {
+	display: inline-block;
+	width: 80%;
+	height: 6rem;
+	background: url('../images/invite-btn.png') no-repeat;
+	background-size: 100% ;
+	position: absolute;
+	bottom: .2rem;
+	left: 50%;
+	margin-left: -40%;
+}
+
+.modal-close {
+	position: absolute;
+	top: -55px;
+	right: -13px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.2);
+}
+
+.modal-close .close-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	margin-left: -10px;
+	margin-top: 0;
+}
+
+.modal-close .close-icon:before {
+	width: 20px;
+}
+
+/***icon *****/
+
+.close-icon {
+	display: inline-block;
+	width: 25px;
+	height: 1px;
+	background: #FFF;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+}
+
+.close-icon:before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 1px;
+	background: #FFF;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}

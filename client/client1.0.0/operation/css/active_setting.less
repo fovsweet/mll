@@ -13,10 +13,29 @@
 @cl-border:#ddd;
 @mb-20:20px;
 @img-src:'../images';
+@config-width:545px;
 @tit-width:541px;
 @cont-width:374px;
 @tit-label:84px;
 @date-width:175px;
+
+
+
+@media screen and (min-width:1190px){
+        .active-preview{
+            margin-left:1%;
+        }
+}
+@media screen and (min-width:1250px){
+        .active-preview{
+            margin-left:5%;
+        }
+}
+@media screen and (min-width:1440px){
+        .active-preview{
+            margin-left: 15%;
+        }
+}
 
 /*重用样式*/
 .c-999{
@@ -85,7 +104,7 @@
 
 .active-config{
     float: left;
-    width: 54%;
+    width: @config-width;
     
 }
 .active-title{
@@ -95,6 +114,7 @@
     background-color: @cl-f5;
     border-radius: 2px;
     margin-bottom: @mb-20;
+    margin-top: @mb-20;
     
     span{
         font-weight: bold;
@@ -155,14 +175,16 @@
         display: none;
     }   
 }
+.upimg-group{
+    display: inline-block;
+    vertical-align: middle;
+}
 .upimg-big{
     display: inline-block;
     width: 223px;
     height: 125px;
     font-size: @ft-12;
-    margin-bottom: 20px;
     text-align: center;
-    vertical-align: middle;
     margin-right: 15px;
     border: 1px dashed @cl-border;
     position: relative;
@@ -200,47 +222,40 @@
         display: block;
     }
 }
-.upimg-active-big{
-    .upimg-big;
-     width: @date-width;
-     height: 191px;
-     vertical-align: middle;
-     cursor: pointer;
+.upimg-active-big,.upimg-activ-small{
+    display: inline-block;
+    font-size: @ft-12;
+    margin-bottom: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 15px;
+    border: 1px dashed @cl-border;
+    position: relative;
+    width: @date-width;
+    height: 191px;
+    vertical-align: middle;
+    cursor: pointer;
+     
+     i{
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+     }
      
      img{
-        width: 124px;
-        height: 124px;
-        position: absolute;
-        top: 0;
-        left: 0;
+        max-width: 175px;
+        max-height: 191px;
+        vertical-align: middle;
         border: medium none;
         display: none;
+        position: relative;
      }
      
      .pic-show{
-        display: block;
+        display: inline-block;
     }
 }
-.upimg-activ-small{
-    .upimg-big;
-     width: @date-width;
-     height: 191px;
-     vertical-align:middle;
-     cursor: pointer;
-     
-     img{
-        width: 175px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: medium none;
-        display: none;
-     }
-     
-     .pic-show{
-        display: block;
-    }
-}
+
 .addimg-ico{
     width: 48px;
     height: 16px;
@@ -252,6 +267,21 @@
     margin-top: -8px;
     display: inline-block;
     background: url('@{img-src}/add_ico.png') no-repeat;
+}
+.title_tips{
+    position: absolute; 
+    line-height: 34px; 
+    font-size: @ft-14;
+    top: 0; 
+    right: 90px; 
+    color: @cl-666;
+    
+        span{
+            color: @cl-666;
+        }
+    }
+.upimg-all-tips{
+    color: @cl-999;
 }
 .upimg-tips{
     display: inline-block;
@@ -270,11 +300,11 @@
 }
 .upimg-warning{
     position: absolute;
-    bottom: -35px;
+    bottom: -55px;
     left: 0;
     line-height: 1em;
     color: @cl-warning;
-    display: none;
+    display:none ;
 }
 .upimg-activ-warning{
     .upimg-warning;
@@ -350,10 +380,9 @@
            height: 60px;
            line-height:60px ;
            padding-bottom: 0;
-           margin-bottom: 20px;
+           margin-bottom: 30px;
            border: 1px dashed @cl-border;
            text-align: center;
-           border-radius: ;
            cursor: pointer;
            .border-radius;
           
@@ -366,7 +395,7 @@
        
        &.chose-box{
            input{
-               width: 145px;
+               width: 65px;
                margin-left: 10px;
                margin-right: 5px;
            }
@@ -384,7 +413,7 @@
             font-size: @ft-14;
             padding-bottom: 0;
             margin-bottom: 20px;
-            line-height: 60px;
+            line-height: 70px;
             border: 1px solid @cl-border;
             border-right: none;
             border-left: none;
@@ -411,14 +440,15 @@
                 float: right;
                 padding-right: 20px;
                 height: 70px;
+                line-height: 70px;
                 background: url('@{img-src}/dash-border.png') right center no-repeat;
+                background-size:3px 73px
             }
             a{
-                display: inline-block;
                 text-align: center;
                 width: 38px;
                 height: 22px;
-                line-height: 22px;
+                padding: 3px 5px;
                 margin-left: 10px;
                 border: 1px solid @cl-border;
                 color: @cl-666;
@@ -440,7 +470,7 @@
         }                                                 
     }
 .item-active{
-    padding-bottom: 30px;
+    padding-bottom: 35px;
 }
 
 .hidden-input {
@@ -450,8 +480,8 @@
 }
 
 .active-preview{
-    float: right;
-    
+    float: left;
+
     .active-content{
         width: 354px;
         height: 651px;
@@ -473,8 +503,8 @@
             color: red;
             margin: auto;
             text-align: center;
-            background: url('@{img-src}/test-pre.png') no-repeat;
-            background-size:100%;
+            background: url('@{img-src}/pre_index_bg.png') no-repeat;
+            background-size:100% 100%;
             
             .active-pre-random{
                 padding-top: 20px;
@@ -485,7 +515,8 @@
             
             .active-pre-bottom{
                 height: 116px; 
-                background:url('@{img-src}/pre-bottom.png');
+                background:url('@{img-src}/pre_bg_bottom.png') no-repeat;
+                background-size:100% 100%;
                 position: relative;  
             }
             .active-pre-btn{
@@ -581,7 +612,7 @@
     color: @cl-666;
     
     .data-content{
-        width: 568px;
+        width: 468px;
         //padding: 0;
     }
     .setting-cont{
@@ -610,7 +641,7 @@
         
         select,input{
             .border-box;
-            width: 300px;
+            width: 330px;
             height: 34px;
             padding-left: 10px;
             background-color: white;

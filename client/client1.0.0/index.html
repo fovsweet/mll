@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>登录注册</title>
+	<meta charset='utf-8'>
+</head>
+<style type="text/css">
+	*{text-decoration:none;vertical-align:baseline;margin:0;font-family:Arial,'微软雅黑';list-style:none;padding:0;line-height:1.5}
+	html, body {margin:0;padding:0;width:100%;height:100%;min-width:1190px;line-height:1.5;font-family:Arial,"微软雅黑";color:#666;font-size: 14px;}
+	.header,.content,.feet,.content_right,.check{display:flex;align-items:center;justify-content:center;}
+	.header{width:100%;height:78px;border-bottom:2px solid #2bc589}
+	.content{background:#eaf7f2;width:100%;position:absolute;top:80px;left:0px;bottom:80px;border-bottom:1px solid #dbece6;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;padding:0 10%;min-width:1190px;}
+	.feet{position:absolute;bottom:0px;left:0px;width:100%;height:80px;}
+	.feet>div{text-align:center;}
+
+	.content_left{background:url('common/images/login.png') 50% no-repeat;width:390px;height:100%}
+	.content_right{width:510px;height:100%;padding-left:70px;}
+	.login_content{width:397px;height:412px;background:#fff;border-radius:2px;}
+	.login_content h2{width:100%;height:100px;line-height:100px;text-align:center;font-size:28px;color:#666;font-weight:100}
+	.input{width:316px;height:45px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;border:1px solid #ddd;padding:0 10px;color:#666;margin:0 auto;margin-bottom:20px;outline:none;float:left;position:relative;border-radius:2px;}
+	.valid{color:#f60;font-size:12px;width:100%;position:relative;-webkit-box-pack:initial;-moz-box-pack:initial;margin-bottom:20px;display:none}
+	.valid p{padding-top:3px;margin-left:10px}
+	.denglu{width:100%;height:45px;border-radius:2px;background:#2bc589;border:1px solid #2bc589;outline:none;color:#fff;font-size:16px;cursor:pointer;}
+	.denglu:hover{background:rgba(43, 197, 137, 0.9);}
+	.qcode{width:196px}
+	.qcode_img{width:110px;background:#ddd;margin:0 0 20px 10px;border-radius:0;height:45px;float:left;}
+	.qcode_img img{width:100%;height:100%}
+	.checkform{width:320px;margin:0 auto}
+	.feet{color:#999;font-size:12px}
+</style>
+<body>
+	<div class='header'>
+		<img src="">
+	</div>
+	<div class='content'>
+		<div class='content_left'></div>
+		<div class='content_right'>
+			<div class='login_content'>
+				<h2>欢迎登录</h2>
+				<form class='checkform'>
+					<input class='input' type='text' placeholder='用户名' name='username' id='username'/>
+					<input class='input' type='password' placeholder='密码' name='password' id='password'/>
+					<input class='qcode input' type='text' placeholder='验证码' name='captcha' id='captcha'/>
+					<div class='qcode_img'><img src="" id='captchaImg'></div>
+					<div class='valid'>
+						<img src="common/images/warn.png">
+						<p>请输入正确的验证码</p>
+					</div>
+					<input name='submit' type='submit' class='denglu' value='登 录'/>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class='feet'>
+		<div>
+			<p>© 2005-2016 美乐乐 版权所有，并保留所有权利。</p>	
+			<p>ICP备案证书号：粤ICP备08008334号</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src='common/js/jquery-1.11.3.js'></script>
+<script type="text/javascript">
+	$('.qcode').blur(function(){
+		var c = $(this).val();
+		$('.valid').css({'display':'-webkit-box','display':'-moz-box'});
+		// if(){
+
+		// }else{
+
+		// }
+	})
+</script>
+</html>
