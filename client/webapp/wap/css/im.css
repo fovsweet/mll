@@ -78,6 +78,7 @@ ul  {
 	max-width: 680px;
 	overflow: hidden;
 	z-index: 99;
+	height:100%
 }
 
 .chat-container {

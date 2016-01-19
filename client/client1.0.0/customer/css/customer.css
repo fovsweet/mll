@@ -25,10 +25,9 @@ button{width: 148px; height: 45px; border-radius: 2px; background-color: #ffae13
 .search_value button:nth-of-type(2){width: 110px; padding-left: 20px; background:white url(../images/btn-export.png) no-repeat 10px center; float: right; color: #666666; border: 1px solid #999999; }
 .list_table{ text-align: center;border-collapse: collapse;border-spacing: 0; border: 1px solid #ddd;  border-radius: 2px;width:100%;margin-bottom: 30px; font-size: 12px;}
 .list_table tr{ border-bottom: 1px solid #ddd;}
-.list_table tr:first-child td{ height: 45px; font-size: 13px; font-weight: bold; background-color: #eeeeee;color: #666666;}
 .list_table tr td{height: 55px; padding: 3px 15px;box-sizing: border-box;  vertical-align: middle; position: relative;color: #666666;}
 .list_table tr td:hover .edit_date{display: block; cursor: pointer;}
-.list_table tr:nth-of-type(2n-1){background-color: #f9f9f9;}
+.list_table tr:nth-of-type(2n){background-color: #f9f9f9;}
 .list_table button{ width: 38px; height: 22px; font-size: 12px; background-color: white; color: #666666; border: 1px solid #dddddd; font-family: "微软雅黑"; padding: 0;}
 .list_table button:nth-of-type(1):hover{color: #2bc589; border: 1px solid #2bc589; cursor: pointer;}
 .list_table button:nth-of-type(2):hover{color: red; border: 1px solid red; cursor: pointer;}

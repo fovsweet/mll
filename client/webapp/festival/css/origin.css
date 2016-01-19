@@ -69,3 +69,229 @@ body {
 	background: url(../images/btn_bar_bg.png) center center no-repeat;
 	background-size: 100% 100%;
 }
+
+.share-mask{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	top: 0;
+	left: 0;
+	opacity:0;
+	z-index: -1;
+}
+
+.share-mask-bg{
+	margin-top: -3rem;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	width: 9.5rem;
+	height: 9.25rem;
+	background: url(../images/share-bg.png) center center no-repeat;
+	background-size: 100% 100%;
+}
+.share-mask-word{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	font-size:.75rem ;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+
+/*********排行弹框********/
+.charts-modal {
+	padding: 10px;
+	border-radius: 5px;
+	background: #d62f37;
+	position: relative;
+}
+
+.charts-header {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+    width: 230px;
+    margin-top: -45px;
+    margin-left: -115px;
+}
+
+.charts-header img {
+	width: 100%;
+}
+
+.charts-body {
+	height: 100%;
+	background: #fff9d5;
+	border: 1px solid #fff9d5;
+	border-radius: 5px;
+	color: #591d0c;
+}
+
+.chart-number {
+	margin: 20px 0 10px 0;
+	text-align: center;
+}
+
+.chart-table {
+	padding: .5rem 0;
+	width: 100%;
+}
+
+.chart-table tr th,
+.chart-table tr td {
+	text-align: center;
+}
+
+.chart-table tbody tr {
+	border-bottom: 1px solid #efd9a4;
+}
+
+.chart-table thead tr th{
+	height: 1.25rem;
+}
+.chart-table tbody tr td {
+	height: 3rem;
+}
+
+.chart-table img {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+}
+
+.chart-icon {
+	display: inline-block;
+	width: 1.5rem;
+	height: 2rem;
+	line-height: 1.6rem;
+	text-align: center;
+	color: #fff;
+}
+
+.first-icon {
+	background: url("../images/first-icon.png") no-repeat;
+	background-size: 100% 100%;
+	
+}
+
+.second-icon {
+	background: url("../images/second-icon.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.third-icon {
+	background: url("../images/third-icon.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.chart-num-icon {
+	display: inline-block;
+	width: 1.45rem;
+	height: 1.45rem;
+	line-height: 1.45rem;
+	border-radius: 50%;
+	background: #f14951;
+	color: #fff;
+}
+
+.modal-close {
+	position: absolute;
+	top: -55px;
+	right: -13px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.2);
+}
+
+.modal-close .close-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	margin-left: -10px;
+	margin-top: 0;
+}
+
+.modal-close .close-icon:before {
+	width: 20px;
+}
+
+.close-icon {
+	display: inline-block;
+	width: 25px;
+	height: 1px;
+	background: #FFF;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+}
+
+.close-icon:before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 1px;
+	background: #FFF;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/**********弹框样式**************/
+
+.data-dia, .data-dia > .fix {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width:16rem;
+	height: 100%;
+	z-index: 1001;
+	}
+.data-dia {
+	display: none;
+	}
+.data-dia > .fix {
+	z-index: 1001;
+	margin: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	}
+.data-dia .data-content {
+	width:14rem;
+	padding:0.25rem 0.75rem;
+	text-align: left;
+	position: relative;
+	border-radius:0.25rem;
+	margin: auto;
+	z-index: 1002;
+	background-color: transparent;
+	}
+.data-content *{
+	font-size:0.625rem;
+	}

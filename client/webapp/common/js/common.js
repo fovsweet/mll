@@ -8,7 +8,6 @@ jQuery.fn.extend({
         $(this).click(function () {
             var r = $(this).data('role');
             var d = $('.'+r);
-            console.log(d)
            	$(d).prepend("<div class='fix'></div>");
             d.fadeIn();
             $(d).css({'display':'-webkit-box','-webkit-box-orient': 'horizontal','-webkit-box-pack':'center','-webkit-box-align':'center'});

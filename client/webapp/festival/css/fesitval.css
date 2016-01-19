@@ -32,6 +32,10 @@ ul  {
 	float: left;
 }
 
+.text-orange {
+	color: #e83337;
+}
+
 .clearfix {
 	display: inline-block;
 }
@@ -204,6 +208,7 @@ ul  {
 	width: 100%;
 	background:url('../images/coupon-bg.png') no-repeat;
 	background-size: 100%;
+	border: 1px solid transparent;
 	position: relative;
 }
 
@@ -211,7 +216,7 @@ ul  {
 	padding-bottom: 20px;
 	width: 100%;
 	background:url('../images/coupon-success.png') no-repeat  0 40px;
-	background-size: 100% ;
+	background-size: 100%;
 	border: 1px solid transparent;
 }
 
@@ -282,7 +287,7 @@ ul  {
 }
 
 .year-cont {
-	padding: 0 10px;
+	padding: 0 10px 10px;
 }
 
 .year-list {
@@ -396,44 +401,112 @@ ul  {
 	color: #fff;
 }
 
-/****role 选择****/
-
-.roleModal {
-	margin: 5% auto 0;
+/****未中奖***/
+.invited-cont {
 	width: 100%;
-	max-width: 680%;
-	position: absolute;
+	//min-height: 400px;
+	text-align: center;
 }
 
-.role-header {
-	width: 100%;
-	text-align: center;;
-}
-
-.role-header img {
+.invited-cont img {
 	max-width: 100%;
 }
 
+.invited-cont .btn-invite {
+	margin: 20px 0;
+	width: 80%;
+	position: static;
+}
+
+/****lafenma*****/
+.lafen-content {
+	width: 100%;
+	height: 100%;
+	background: url('../images/lafenBg.png') no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.erweima {
+	position: absolute;
+	bottom: 6%;
+	width: 100%;
+	text-align: center;
+}
+
+.erweima img {
+	width: 50%;
+	border-radius: 5px;
+}
+
+.erweima p {
+	margin: 0.8333rem 0;
+	color: #fff;
+}
+/****role 选择****/
+
+.fix {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.roleModal {
+	margin: 0 auto ;
+	width: 100%;
+	max-width: 680%;
+	position: absolute;
+	top: -5%;
+	
+}
+
+.role-header {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	background: url('../images/redBg.png') no-repeat;
+   	background-size: 100%;
+   	position: relative;
+    z-index: 99;
+}
+
+.role-header img {
+	margin-top: -3%;
+	max-width: 100%;
+    transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	
+}
+
 .roleModal .role-body {
-	margin: -30px auto 0;
+	margin: -50px auto 0;
 	width: 80%;
 	background: url('../images/roleBg.png');
 	background-size: 15px 15px;
 	border-radius: 5px;
 	border: 1px solid transparent;
 	border-bottom: 2px solid #d8c385;
+	transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-ms-transform: scale(.9);
+	
 }
 
 .role-list {
-	margin-top: 15%;
+	margin-top: 12%;
 	font-size: 0;
 }
 
 .role-list li {
 	display: inline-block;
-	margin-bottom: 2rem;
-	margin-left: 5%;
+	margin-bottom: 1.8rem;
+	margin-left: 4%;
     width: 43%;
+    height: 130px;
 	vertical-align: top;
 	border-radius: 5px;
 	overflow: hidden;
@@ -447,15 +520,20 @@ ul  {
 }
 
 .role-list li img {
-	max-width: 100%;
+	width: 100%;
+	height: 70%;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
 .role-list li p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 	margin: 0;
 	padding: 10px;
 	width: 100%;
+	height: 31%;
 	font-size: 1.4rem;
 	background: url('../images/role-btn.png') no-repeat; 
 	background-size: 100% 100%;
@@ -487,13 +565,21 @@ button {
 .btn-invite {
 	display: inline-block;
 	width: 80%;
-	height: 6rem;
+	height: 5rem;
+	color: #e43c34;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: center;
+    line-height: 5rem;
+    text-decoration: none;
+	letter-spacing: .2rem;
 	background: url('../images/invite-btn.png') no-repeat;
-	background-size: 100% ;
+	background-size: 100% 100%;
 	position: absolute;
-	bottom: .2rem;
+	bottom: 1.2rem;
 	left: 50%;
 	margin-left: -40%;
+	
 }
 
 .modal-close {
@@ -549,4 +635,24 @@ button {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+
+@media (min-width:420px) {
+	.conpou-details {
+    	margin-top: 63%;
+    }
+    .conpou-cont {
+    	margin-bottom: 50px;	
+    }
+    
+    .prize {
+    	height: 12rem;
+    }
+    
+    .btn-invite {
+    	height: 8rem;
+    	line-height: 8rem;
+    	font-size: 2.5rem;
+    }
 }

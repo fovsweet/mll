@@ -22,10 +22,108 @@
 					已有122,082人参与拜年，拜年人气送大礼
 				</div>
 				<div class="festival-bar">
-					<span class="festival-btn">拜年人气榜</span>
+					<span class="festival-btn" id="rankLists" data-role="checkList">拜年人气榜</span>
 					<span class="festival-btn">活动详情</span>
 				</div>
 			</div>
 		</div>
+		<!--------------分享蒙层------------------------>
+		<div class="share-mask">
+			<div class="share-mask-bg"></div>
+			<div class="share-mask-word">
+				请点击右上角<br />
+				分享给指定好友或分享到朋友圈
+			</div>
+		</div>
+		<!--------------排行弹窗------------------------>
+		<div class="data-dia" id="checkList">
+			<div class="data-content">
+				  <div class="charts-modal">
+					<div class="charts-header">
+						<img src="../images/chartImg.png" alt="" />
+					</div>
+					<div class="charts-body">
+						<div class="charts-content">
+							<div class="chart-number">当前排名：(只显示前10名)</div>
+							<table class="chart-table">
+								<thead>
+									<tr>
+										<th>排行</th>
+										<th>头像</th>
+										<th>昵称</th>
+										<th>人气</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><span class="chart-icon first-icon">1</span></td>
+										<td><img src="../images/head.jpg" alt="" /></td>
+										<td>dadadad</td>
+										<td>34</td>
+									</tr>
+									<tr>
+										<td><span class="chart-icon second-icon">2</span></td>
+										<td><img src="../images/head.jpg" alt="" /></td>
+										<td>dadadad</td>
+										<td>34</td>
+									</tr>
+									<tr>
+										<td><span class="chart-icon third-icon">3</span></td>
+										<td><img src="../images/head.jpg" alt="" /></td>
+										<td>dadadad</td>
+										<td>34</td>
+									</tr>
+									<tr>
+										<td><span class="chart-num-icon">4</span></td>
+										<td><img src="../images/head.jpg" alt="" /></td>
+										<td>dadadad</td>
+										<td>34</td>
+									</tr>
+									<tr>
+										<td><span class="chart-num-icon">5</span></td>
+										<td><img src="../images/head.jpg" alt="" /></td>
+										<td>dadadad</td>
+										<td>34</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<span class="modal-close">
+						<span class="close-icon"></span>
+					</span>
+				</div>
+			</div>
+		</div>
 	</body>
+	<script src="../js/zepto.min.js"></script>
+	<script type="text/javascript">
+		!(function($){
+			$.fn.dialog=function () {
+			       var r = $(this).data('role');
+			       var d = $('#'+r);
+			       d.append("<div class='fix'></div>");
+			       d.css({'display':'-webkit-box','-webkit-box-orient': 'horizontal','-webkit-box-pack':'center','-webkit-box-align':'center'});
+			    };
+			
+			
+			$('.friend-btn').on('tap',function(){
+				$('.share-mask').css({'display':'-webkit-box','-webkit-box-orient': 'vertical','-webkit-box-pack':'center','-webkit-box-align':'center'}).find('.share-mask-bg').css('margin-top','-3rem');
+				$(".share-mask").css('z-index','1').animate({opacity:0.9,},200,'ease-out')
+			});
+			
+			$('.share-mask').on('tap',function(){
+				maskHide();
+			});
+			
+			$('#rankLists').on('tap',function(){
+				$(this).dialog();
+			})
+						
+		})(Zepto)
+		
+		function maskHide(){
+				$('.share-mask').animate({opacity:0,},500,'ease-in').css('z-index','-1');
+		}
+	</script>
 </html>
