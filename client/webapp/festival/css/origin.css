@@ -9,24 +9,218 @@ body {
 	color: #333;
 }
 
+@-webkit-keyframes bounceIn { /* 默认 */
+	0% {
+		-webkit-transform: scale(.5);
+		transform: scale(.5)
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
 .wrap {
 	width: 100%;
 	height: 100%;
 	background: url(../images/origin_index_bg.png) top center no-repeat;
 	background-size: 100% auto;
-	position: relative;
+	position: fixed;
 }
-/*.wrap {
-	width: 100%;
-	height: auto;
-	position: relative;
+.wrap-animate{
+	animation:myfirst .7s ease-in-out forwards;
+	-webkit-animation:myfirst .7s ease-in-out forwards; /* Safari and Chrome */
 }
-.wrap img{
+
+
+@keyframes myfirst{
+	0% {
+		opacity: 0;
+		background-size:100% auto;
+		}
+	10% {
+		opacity: 0.1;
+		background-size:80% auto;
+	}
+	30%{
+		opacity: 0.3;
+		background-size:120% auto;
+	}
+	100% {
+		opacity: 1;
+		background-size:100% auto;
+		}
+	}
+	
+@-webkit-keyframes myfirst{
+	0% {
+		opacity: 0;
+		background-size:80% auto;
+		}
+	30% {
+		opacity: 0.3;
+		background-size:120% auto;
+	}
+	100% {
+		opacity: 1;
+		background-size:100% auto;
+		}
+}
+	
+.red-pack{
+	display: none;
+}
+.red-pack img{
 	width: 100%;
-	height: auto;
-}*/
+	height: 100%;
+}
+.redpack-01{
+	display: block;
+	width: 1.4rem;
+	height: 2.15rem;
+	position: absolute;
+	top: 2rem;
+	left: 1rem;
+	animation: leftin .9s ease-in forwards;
+	-webkit-animation: leftin .9s ease-in forwards;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	
+}
+.redpack-02{
+	display: block;
+	width: 1.4rem;
+	height: 2.15rem;
+	position: absolute;
+	top: 8rem;
+	left: 1.5rem;
+	animation: leftin02 .3s ease-in forwards;
+	-webkit-animation: leftin02 .3s ease-in forwards;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	
+}
+.redpack-03{
+	display: block;
+	width: 2rem;
+	height: 2.75rem;
+	position: absolute;
+	top: 2rem;
+	right: 1rem;
+	animation: rightin .8s ease-in forwards;
+	-webkit-animation: rightin .8s ease-in forwards;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	
+}
+.redpack-04{
+	display: block;
+	width: 1.55rem;
+	height: 2.375rem;
+	position: absolute;
+	top: 9rem;
+	right: 2.5rem;
+	animation: rightin02 .6s ease-in forwards;
+	-webkit-animation: rightin02 .6s ease-in forwards;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	
+}
+@keyframes leftin { /* 默认 */
+	0% {
+		opacity: 0;
+		transform: rotate(-45deg) scale(0.2,0.2) translate(-8rem,-16rem);
+		
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(-45deg) scale(1,1) translate(0,0);
+		
+	}
+}
+@-webkit-keyframes leftin { /* 默认 */
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(-45deg) scale(0.2,0.2) translate(-8rem,-16rem);
+		
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(-45deg) scale(1,1) translate(0,0);
+		
+	}
+}
+@keyframes leftin02 { /* 默认 */
+	0% {
+		opacity: 0;
+		transform: rotate(-45deg) scale(0.2,0.2) translate(-8rem,-16rem);
+		
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(-45deg) scale(1,1) translate(0,0);	
+	}
+}
+@-webkit-keyframes leftin02 { /* 默认 */
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(-45deg) scale(0.2,0.2) translate(-8rem,-16rem);
+		
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(-45deg) scale(1,1) translate(0,0);
+		
+	}
+}
+@keyframes rightin { /* 默认 */
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) scale(0.2,0.2) translate(8rem,-24rem);		
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(45deg) scale(1,1) translate(0,0);
+	}
+}
+@-webkit-keyframes rightin { /* 默认 */
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(0.2,0.2) translate(8rem,-24rem);
+		
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(45deg) scale(1,1) translate(0,0);
+		
+	}
+}
+@keyframes rightin02 { /* 默认 */
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) scale(0.2,0.2) translate(8rem,-24rem);	
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(45deg) scale(1,1) translate(0,0);
+		
+	}
+}
+@-webkit-keyframes rightin02 { /* 默认 */
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(0.2,0.2) translate(8rem,-24rem);
+		
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(45deg) scale(1,1) translate(0,0);
+		
+	}
+}
 
 .wrap-footer {
+	display: none;
 	width: 100%;
 	position: absolute;
 	bottom: .5rem;
@@ -34,6 +228,36 @@ body {
 	background: url(../images/origin_footer_bg.png) center center no-repeat;
 	background-size: 100% 100%;
 }
+.wrap-footer-animate{
+	display: block;
+	animation: gettop .3s;
+	-webkit-animation: gettop .3s;
+}
+@keyframes gettop { /* 默认 */
+	0% {
+		opacity: 0;
+		transform: translateY(8rem);;
+		
+	}
+	100% {
+		opacity: 1;
+		transform:translateY(0);
+		
+	}
+}
+@-webkit-keyframes gettop { /* 默认 */
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(8rem);
+		
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform:translateY(0);
+		
+	}
+}
+
 .friend-btn{
 	width: 13.025rem;
 	height: 2.95rem;
@@ -116,11 +340,21 @@ body {
 
 
 /*********排行弹框********/
+.layermcont{
+	width: 14rem;
+	border-radius: .25rem;
+}
+.layermchild{
+	background-color: transparent;
+}
+
 .charts-modal {
 	padding: 10px;
 	border-radius: 5px;
 	background: #d62f37;
 	position: relative;
+	font-size: .625rem;
+	margin-top: 45px;
 }
 
 .charts-header {
@@ -213,8 +447,8 @@ body {
 
 .modal-close {
 	position: absolute;
-	top: -55px;
-	right: -13px;
+	top: -35px;
+	right: -10px;
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -265,7 +499,7 @@ body {
 }
 
 /**********弹框样式**************/
-
+/*
 .data-dia, .data-dia > .fix {
 	position: fixed;
 	top: 0px;
@@ -294,4 +528,4 @@ body {
 	}
 .data-content *{
 	font-size:0.625rem;
-	}
+	}*/

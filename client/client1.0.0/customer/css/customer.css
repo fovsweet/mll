@@ -13,25 +13,27 @@ button{width: 148px; height: 45px; border-radius: 2px; background-color: #ffae13
 .customer_category #endDate{width: 120px; margin-right: 15px;}
 
 /*列表页面*/
-.search_value{margin-bottom: 30px;}
+.search_value{margin-bottom: 30px;min-width: 965px;}
 .search_value input{width: 174px; margin-right: 15px; height: 34px;}
 .search_value input:nth-of-type(2){margin-right: 5px;}
 .search_value input:nth-of-type(3){margin-left: 5px;}
 .search_value select{margin-right: 15px; height: 34px; padding-left: 5px; color: #999999; font-size: 14px;}
-.search_value option{line-height: 20p;}
+.search_value option{line-height: 20px;}
 .search_value select:nth-of-type(1){width: 90px;}
 .search_value select:nth-of-type(2){width: 102px;}
 .search_value button{height: 35px; font-size: 14px; cursor: pointer; background-color: #2bc589;}
 .search_value button:nth-of-type(2){width: 110px; padding-left: 20px; background:white url(../images/btn-export.png) no-repeat 10px center; float: right; color: #666666; border: 1px solid #999999; }
-.list_table{ text-align: center;border-collapse: collapse;border-spacing: 0; border: 1px solid #ddd;  border-radius: 2px;width:100%;margin-bottom: 30px; font-size: 12px;}
+.list_table{ text-align: center;border-collapse: collapse;border-spacing: 0; border: 1px solid #ddd;  border-radius: 2px;width:100%;margin-bottom: 30px;
+    font-size:12px;}
 .list_table tr{ border-bottom: 1px solid #ddd;}
+.list_table thead tr{ height: 55px; font-size: 13px; font-weight: bold; background-color: #eeeeee;color: #666666;}
 .list_table tr td{height: 55px; padding: 3px 15px;box-sizing: border-box;  vertical-align: middle; position: relative;color: #666666;}
 .list_table tr td:hover .edit_date{display: block; cursor: pointer;}
 .list_table tr:nth-of-type(2n){background-color: #f9f9f9;}
 .list_table button{ width: 38px; height: 22px; font-size: 12px; background-color: white; color: #666666; border: 1px solid #dddddd; font-family: "微软雅黑"; padding: 0;}
 .list_table button:nth-of-type(1):hover{color: #2bc589; border: 1px solid #2bc589; cursor: pointer;}
 .list_table button:nth-of-type(2):hover{color: red; border: 1px solid red; cursor: pointer;}
-.list_table .edit_date{ width: 80%; height: 70%; line-height: 40px; position: absolute; top: 15%; left: 10%; margin: 0 auto;  background-color: #ececec; opacity: 0.9; display: none; } 
+.list_table .edit_date{ width: 80%; height: 70%; line-height: 40px; position: absolute; top: 15%; left: 10%; margin: 0 auto;  background-color: #ececec; opacity: 0.9; display: none; }
 .list_table .edit_date{ font-size: 14px; font-weight: bold; color: #2bc589;}
 .list_table .seriz_arrow{ display: inline-block; vertical-align:middle; margin-top: -2px;}
 .list_table .seriz_arrow:hover{cursor: pointer;}
@@ -43,17 +45,16 @@ button{width: 148px; height: 45px; border-radius: 2px; background-color: #ffae13
 .list_table .min_w{width:10%;}
 .list_table .user_ico{padding: 0;}
 .list_table .user_ico img{display: inline-block; vertical-align: middle; width: 35px; height: 35px; border-radius: 50%;}
-.pageNav{text-align: center; margin-top: 30px;}
-.pageNav a{ display: inline-block; margin: 0 2px;height: 26px; line-height: 28px; padding: 0 10px; border: 1px solid #dddddd; cursor: pointer; color: #666666;}
+.pageNav{ text-align: center;}
+.pageNav a{ display: inline-block;margin: 0 2px; height: 26px; line-height: 28px; padding: 0 10px; border: 1px solid #dddddd; cursor: pointer; color: #666666;}
 .pageNav a:hover{background-color: #2bc589; border: 1px solid #2bc589; color: white;}
 .pageNav a.hoverd{background-color: #2bc589; border: 1px solid #2bc589; color: white;}
 .pageNav input{height: 28px;width:32px;  padding-left: 5px; margin: -4px 5px 0 5px; border-radius: 0;}
 .pageNav input[type='submit']{width: auto; padding: 0 15px; cursor: pointer;}
-.pageNav button{ height: 28px; margin: -6px 5px 0 0 ; border-radius: 0;}
 .pageNav input[type='button']{width: auto; padding: 0 15px; cursor: pointer;}
+.pageNav button{ height: 28px; margin: -6px 5px 0 0 ; border-radius: 0;}
 .pageNav input[type='submit']:hover{background-color: #2bc589; border: 1px solid #2bc589; color: white;}
 .pageNav span{color: black;}
-.pageNav .color_black{color: #333;}
 .pageNav .all_items{ display: inline-block; margin-left: 10px;}
 
 
@@ -61,7 +62,7 @@ button{width: 148px; height: 45px; border-radius: 2px; background-color: #ffae13
 .data-dia, .data-dia > .fix{position: fixed;}
 .data-dia .data-content{text-align: center; }
 .data-dia .dia_header{height: 40px; padding-top: 5px; border-bottom: 1px solid #ddd; color: #666666; text-align: center;}
-.data-dia .dia_header .close_log{margin-top: 10px; height:15px; width: 16px; }
+.data-dia .dia_header .close_log{margin-top: 10px; height:15px; width: 16px;position:absolute;top:17px;right:30px;}
 .data-dia p{padding-top: 20px;}
 .data-dia p:nth-of-type(2){}
 .data-dia span{color: #999999;}
@@ -74,9 +75,29 @@ button{width: 148px; height: 45px; border-radius: 2px; background-color: #ffae13
 
 
 /*customer 弹窗样式 */
-#user_info .data-content{width: 320px;}
+#user_info .data-content{width: 917px;min-height:80%;}
 .data-dia img{width: 100px; height: 100px; border-radius: 50%;}
-.data-dia table{margin: auto;}
-.data-dia table tr td{ height: 30px; vertical-align:middle; text-align: left; width: 100px; color: #666666;}
-.data-dia table tr td:first-child{text-align: right;}
-.data-dia table tr td:nth-child(2){padding-left: 15px;}
+.data-dia .list_table{margin: auto;border:1px solid #ddd;}
+.data-dia table td{text-align: center}
+.data-dia table td button{font-size:12px}
+.data-dia table tr{border-bottom:1px solid #ddd}
+
+/*tab_chick切换功能模块*/
+.tab_chick table tr{height:40px;border-bottom:1px solid #ddd}
+.tab_chick table tr td{vertical-align:middle;font-size:14px;cursor:pointer;}
+.tab_chick table tr .chicked{border-bottom:1px solid #2bc486;color:#2bc486}
+.data-dia .data-content .pageNav input{width:auto;}
+.data-dia .data-content .pageNav input[type=text]{width:30px}
+.data-dia .data-content .pageNav{margin:30px 0 20px 0;}
+#personal .personal_title{margin:0 auto;height:60px;}
+#personal .personal_title li{display:inline-block;width:135px;text-align:center;height:60px;line-height:60px;}
+#personal .personal_title li b{font-weight:bold;}
+.tab_chick_list>div{display:none;}
+#wechart_info{padding-top:30px;}
+#wechart_info .personal_header{height:160px;display: -webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;}
+#wechart_info table{width:600px;margin:0 auto;border:1px solid #ddd; font-size: 12px}
+#wechart_info table td{vertical-align:middle;}
+/*#wechart_info table tr td:nth-of-type(2n-2){background:#eee;}*/
+#wechart_info table tr .bgwhite{background:#fff;}
+#no_info{ margin-top: 50px; text-align: center; }
+#no_info img{border-radius: 0; width: 166px; height: 220px;}

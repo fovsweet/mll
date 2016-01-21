@@ -6,15 +6,25 @@
 		<meta name="format-detection" content="telephone=no" />
 		<title>拜年有礼 美家惊喜</title>
 		<link rel="stylesheet" href="../../common/css/reset.css" />
+		<link rel="stylesheet" href="../css/lay-mobile.css" />
 		<link rel="stylesheet" href="../css/origin.css" />
-		<script type="text/javascript">
-			!function(x){function w(){var a=r.getBoundingClientRect().width;a/v>640&&(a=640*v),x.rem=a/16,r.style.fontSize=x.rem+"px"}var v,u,t,s=x.document,r=s.documentElement,q=s.querySelector('meta[name="viewport"]'),p=s.querySelector('meta[name="flexible"]');if(q){console.warn("将根据已有的meta标签来设置缩放比例");var o=q.getAttribute("content").match(/initial-scale=(["']?)([d.]+)1?/);o&&(u=parseFloat(o[2]),v=parseInt(1/u))}else{if(p){var o=p.getAttribute("content").match(/initial-dpr=(["']?)([d.]+)1?/);o&&(v=parseFloat(o[2]),u=parseFloat((1/v).toFixed(2)))}}if(!v&&!u){var n=(x.navigator.appVersion.match(/android/gi),x.navigator.appVersion.match(/iphone/gi)),v=x.devicePixelRatio;v=n?v>=3?3:v>=2?2:1:1,u=1/v}if(r.setAttribute("data-dpr",v),!q){if(q=s.createElement("meta"),q.setAttribute("name","viewport"),q.setAttribute("content","initial-scale="+u+", maximum-scale="+u+", minimum-scale="+u+", user-scalable=no"),r.firstElementChild){r.firstElementChild.appendChild(q)}else{var m=s.createElement("div");m.appendChild(q),s.write(m.innerHTML)}}x.dpr=v,x.addEventListener("resize",function(){clearTimeout(t),t=setTimeout(w,300)},!1),x.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(t),t=setTimeout(w,300))},!1),"complete"===s.readyState?s.body.style.fontSize=12*v+"px":s.addEventListener("DOMContentLoaded",function(){s.body.style.fontSize=12*v+"px"},!1),w()}(window);
-		</script>
 	</head>
 	<body>
-		<div class="wrap">
+		<div class="wrap" id="wrap">
+			<span class="red-pack" id="redpack01">
+				<img src="../images/redpack3.png" />
+			</span>
+			<span class="red-pack" id="redpack02">
+				<img src="../images/redpack3.png" />
+			</span>
+			<span class="red-pack" id="redpack03">
+				<img src="../images/redpack1.png" />
+			</span>
+			<span class="red-pack" id="redpack04">
+				<img src="../images/redpack2.png" />
+			</span>
 			<!--<img src="../images/origin_index_bg.png" />-->
-			<div class="wrap-footer">
+			<div id="wrapfooter" class="wrap-footer">
 				<div class="friend-btn">
 					召集好友跪拜我
 				</div>
@@ -35,78 +45,30 @@
 				分享给指定好友或分享到朋友圈
 			</div>
 		</div>
-		<!--------------排行弹窗------------------------>
-		<div class="data-dia" id="checkList">
-			<div class="data-content">
-				  <div class="charts-modal">
-					<div class="charts-header">
-						<img src="../images/chartImg.png" alt="" />
-					</div>
-					<div class="charts-body">
-						<div class="charts-content">
-							<div class="chart-number">当前排名：(只显示前10名)</div>
-							<table class="chart-table">
-								<thead>
-									<tr>
-										<th>排行</th>
-										<th>头像</th>
-										<th>昵称</th>
-										<th>人气</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><span class="chart-icon first-icon">1</span></td>
-										<td><img src="../images/head.jpg" alt="" /></td>
-										<td>dadadad</td>
-										<td>34</td>
-									</tr>
-									<tr>
-										<td><span class="chart-icon second-icon">2</span></td>
-										<td><img src="../images/head.jpg" alt="" /></td>
-										<td>dadadad</td>
-										<td>34</td>
-									</tr>
-									<tr>
-										<td><span class="chart-icon third-icon">3</span></td>
-										<td><img src="../images/head.jpg" alt="" /></td>
-										<td>dadadad</td>
-										<td>34</td>
-									</tr>
-									<tr>
-										<td><span class="chart-num-icon">4</span></td>
-										<td><img src="../images/head.jpg" alt="" /></td>
-										<td>dadadad</td>
-										<td>34</td>
-									</tr>
-									<tr>
-										<td><span class="chart-num-icon">5</span></td>
-										<td><img src="../images/head.jpg" alt="" /></td>
-										<td>dadadad</td>
-										<td>34</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<span class="modal-close">
-						<span class="close-icon"></span>
-					</span>
-				</div>
-			</div>
-		</div>
 	</body>
+	<script src="../js/se-respone-width.js"></script>
 	<script src="../js/zepto.min.js"></script>
+	<script src="../js/lay-mobile.js"></script>
 	<script type="text/javascript">
+		var oimg = ['origin_footer_bg.png','origin_index_bg.png','redpack1.png','redpack2.png','redpack3.png'];
+		loadImg(oimg,'../images/',function(){
+			layer.open({type: 2});
+		},function(){
+			setTimeout(function(){$('#layermbox3').remove();$('.wrap').addClass('wrap-animate');},500);			
+			var ow = document.getElementById('wrap');
+			var owf =document.getElementById('wrapfooter');
+			ow.addEventListener('webkitAnimationEnd',function(){
+				$('#wrapfooter').addClass('wrap-footer-animate');
+				owf.addEventListener('webkitAnimationEnd',function(){
+					$('#redpack01').addClass('redpack-01');
+					$('#redpack02').addClass('redpack-02');
+					$('#redpack03').addClass('redpack-03');
+					$('#redpack04').addClass('redpack-04');
+				})
+			},false)
+		});
+		
 		!(function($){
-			$.fn.dialog=function () {
-			       var r = $(this).data('role');
-			       var d = $('#'+r);
-			       d.append("<div class='fix'></div>");
-			       d.css({'display':'-webkit-box','-webkit-box-orient': 'horizontal','-webkit-box-pack':'center','-webkit-box-align':'center'});
-			    };
-			
-			
 			$('.friend-btn').on('tap',function(){
 				$('.share-mask').css({'display':'-webkit-box','-webkit-box-orient': 'vertical','-webkit-box-pack':'center','-webkit-box-align':'center'}).find('.share-mask-bg').css('margin-top','-3rem');
 				$(".share-mask").css('z-index','1').animate({opacity:0.9,},200,'ease-out')
@@ -117,13 +79,95 @@
 			});
 			
 			$('#rankLists').on('tap',function(){
-				$(this).dialog();
+				layer.open({
+		            type: 1,
+		            anim: true,
+		            shadeClose:false,
+		            content: '<div class="charts-modal">'+
+								'<div class="charts-header">'+
+									'<img src="../images/chartImg.png" alt="" />'+
+								'</div>'+
+								'<div class="charts-body">'+
+									'<div class="charts-content">'+
+										'<div class="chart-number">当前排名：(只显示前10名)</div>'+
+										'<table class="chart-table">'+
+											'<thead>'+
+												'<tr>'+
+													'<th>排行</th>'+
+													'<th>头像</th>'+
+													'<th>昵称</th>'+
+													'<th>人气</th>'+
+												'</tr>'+
+											'</thead>'+
+											'<tbody>'+
+												'<tr>'+
+													'<td><span class="chart-icon first-icon">1</span></td>'+
+													'<td><img src="../images/head.jpg" alt="" /></td>'+
+													'<td>dadadad</td>'+
+													'<td>34</td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td><span class="chart-icon second-icon">2</span></td>'+
+													'<td><img src="../images/head.jpg" alt="" /></td>'+
+													'<td>dadadad</td>'+
+													'<td>34</td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td><span class="chart-icon third-icon">3</span></td>'+
+													'<td><img src="../images/head.jpg" alt="" /></td>'+
+													'<td>dadadad</td>'+
+													'<td>34</td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td><span class="chart-num-icon">4</span></td>'+
+													'<td><img src="../images/head.jpg" alt="" /></td>'+
+													'<td>dadadad</td>'+
+													'<td>34</td>'+
+												'</tr>'+
+												'<tr>'+
+													'<td><span class="chart-num-icon">5</span></td>'+
+													'<td><img src="../images/head.jpg" alt="" /></td>'+
+													'<td>dadadad</td>'+
+													'<td>34</td>'+
+												'</tr>'+
+											'</tbody>'+
+										'</table>'+
+									'</div>'+
+								'</div>'+
+								'<span class="modal-close">'+
+									'<span class="close-icon"></span>'+
+								'</span>'+
+							'</div>'
+		        });
+		        $('.modal-close').on('tap',function(){
+					$('.layermbox').innerHTML = '';
+					$('.layermbox').remove();
+				})
 			})
-						
+			
 		})(Zepto)
 		
 		function maskHide(){
 				$('.share-mask').animate({opacity:0,},500,'ease-in').css('z-index','-1');
+		}
+		function loadImg(oimg,srcs,tipbback,callback){
+			var imgNum =0;
+			var oImg = new Image();
+			loader();
+			function loader(){
+				oImg.src =srcs+oimg[imgNum];
+				oImg.onload = function(){
+					imgNum ++;
+					console.log(imgNum);
+					if(imgNum<oimg.length){
+						loader();
+						tipbback&&tipbback();
+					}
+					else{
+						callback&&callback();
+					}
+				}
+			}
 		}
 	</script>
 </html>

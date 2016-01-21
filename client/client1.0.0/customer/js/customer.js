@@ -107,6 +107,7 @@ function dialogs(obj){
     var d = $("#" + r + "");
     d.fadeIn();
     d.css('display', 'flex');
+    $('.tab_chick table tr td').tab_list('#user_info',obj);
     $('.fix,.close_log,.cancel').on('click',function () {
         d.fadeOut();
         setTimeout(function(){
@@ -114,3 +115,27 @@ function dialogs(obj){
         },500)
     });
 }
+
+/*tab_list切换功能*/
+$.fn.extend({
+    tab_list:function(DialogParentNode,obj){ 
+    	$(this).siblings().removeClass('chicked').siblings().eq(0).addClass('chicked');
+        !$('.tab_chick_list>div').hide();
+        $('.tab_chick_list>div').eq(1).show();
+        $(this).click(function(){
+            var d = $(this).data('tab');
+            $(this).parent().children('td').removeClass('chicked');
+            $(this).addClass('chicked');
+            $('.tab_chick_list').list_info(d);
+        })
+    },
+    list_info:function(d){
+        $('.tab_chick_list>div').hide();
+        $(d).show();
+    },
+    checkNoifno:function(){
+    	$('.tab_chick_list>div').hide();
+    	$('#no_info').show();
+    }
+})
+

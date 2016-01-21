@@ -25,7 +25,8 @@ ul  {
 }
 
 .fr {
-	float: right;
+	float:right;
+	justify-content:flex-end;
 }
 
 .fl {
@@ -38,13 +39,7 @@ ul  {
 
 .clearfix {
 	display: inline-block;
-}
-
-.clearfix:after {
-	display: inline-block;
-	content: "";
-	clear: both;
-	visibility: hidden;
+	width:100%;
 }
 
 .wrapper {
@@ -75,14 +70,15 @@ ul  {
 	padding-top: 50px;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 680px;
+	max-width: 640px;
 	overflow: hidden;
 	z-index: 99;
 	height:100%
 }
 
 .chat-container {
-	max-width: 680px;
+	width: 100%;
+	max-width:640px;
 	position: absolute;
 	top: 50px;
 	bottom: 72px;
@@ -197,11 +193,22 @@ ul  {
 }
 
 .chat-list {
-	margin: 20px 10px 0 10px;
+	margin: 20px 10px 0 0px;
 	font-size: 0;
-	width: 80%;
+	/*width: 100%;*/
 	position: relative;
+	display:table;
 }
+
+.chat-list-right {
+	padding-left: 15%;
+	
+}
+
+.chat-list-left {
+	padding-right: 15%;
+}
+
 
 .chat-list .chat-info {
 	display: table-cell;
@@ -209,11 +216,13 @@ ul  {
 	font-size: 1.4rem;
 	border-radius: 8px;
 	position: relative;
+	max-width:65%;
+	word-break:break-all
 }
 
 .chat-list .chat-img {
 	display: table-cell;
-	width: 50px;
+	width: 70px;
 	vertical-align: top;
 	
 }
@@ -268,6 +277,8 @@ ul  {
 .chat-list-left .chat-img {
 	padding-right: 20px;
 }
+
+.smile-face{display:none}
 
 .chat-list-left .chat-info:before {
 	position: absolute;
@@ -325,15 +336,17 @@ ul  {
 	display: inline-block;
 	padding:10px;
 	height: 40px;
-	width: calc(100% - 135px);
-	/*line-height: 40px;*/
+	width: 50%;
 	border: 1px solid #bbbbbb;
 	outline: none;
 	border-radius: 5px;
 	vertical-align: top;
 	overflow: hidden;
 	-webkit-box-sizing:border-box;
+	line-height:20px
 }
+
+.chat-input img{width:20px;height:20px;}
 
 .btn-send {
 	padding: 0 10px;
@@ -627,7 +640,7 @@ ul  {
 	background: url('../images/sending-icon.png') no-repeat 0 0;
 	background-size: 20px;
 	position: absolute;
-	left: -30px;
+	left:10px;
 	bottom: 0;
 }
 
@@ -668,9 +681,9 @@ ul  {
 
 .rotated {
 	animation: rotated 2s linear infinite;
-	-webkit-animation: rotated 2s linear infinite,;
-	-moz-animation: rotated 2s linear infinite,;
-	-ms-animation: rotated 2s linear infinite,
+	-webkit-animation: rotated 2s linear infinite;
+	-moz-animation: rotated 2s linear infinite;
+	-ms-animation: rotated 2s linear infinite;
 }
 
 @keyframes rotated {
@@ -719,4 +732,3 @@ ul  {
 .data-dia .data-content {width:70%;padding:0.25rem 0.75rem;text-align: left;position: relative;border-radius:0.25rem;margin: auto;z-index: 1002;background-color: #fff;}
 .data-content ul{max-height:16rem;overflow:auto;}
 .data_main_content{margin:.875rem 0;display:block;word-break: break-all;word-wrap: break-word;}
-.close_icon{content:url(../images/closeDia.png);display:inline-block;position:absolute;top:-0.5rem;right:-0.5rem;width:1.45rem;height:1.45rem;background-size:100%}

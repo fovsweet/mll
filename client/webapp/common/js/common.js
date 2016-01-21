@@ -7,7 +7,8 @@ jQuery.fn.extend({
     dialog: function () {
         $(this).click(function () {
             var r = $(this).data('role');
-            var d = $('.'+r);
+            var d = $(r);
+            console.log(111)
            	$(d).prepend("<div class='fix'></div>");
             d.fadeIn();
             $(d).css({'display':'-webkit-box','-webkit-box-orient': 'horizontal','-webkit-box-pack':'center','-webkit-box-align':'center'});
@@ -73,7 +74,7 @@ jQuery.fn.extend({
         }else{ 
             textObj.value+=textFeildValue; 
         } 
-    } 
+    }
 });
 
 function openNewWin(inWndName,html,inAniID,f,time)

@@ -22,11 +22,10 @@ button{width: 148px; height: 45px; border-radius: 2px; background-color: #ffae13
 .search_value select:nth-of-type(1){width: 90px;}
 .search_value select:nth-of-type(2){width: 102px;}
 .search_value button{height: 35px; font-size: 14px; cursor: pointer; background-color: #2bc589;}
-.search_value button:nth-of-type(2){width: 110px; background-color: white; float: right; color: #666666; border: 1px solid #999999; }
+.search_value button:nth-of-type(2){width: 110px; padding-left: 20px; background:white url(../images/btn-export.png) no-repeat 10px center; float: right; color: #666666; border: 1px solid #999999; }
 .list_table{ text-align: center;border-collapse: collapse;border-spacing: 0; border: 1px solid #ddd;  border-radius: 2px;width:100%;margin-bottom: 30px;
     font-size:12px;}
 .list_table tr{ border-bottom: 1px solid #ddd;}
-/*.list_table tr:first-child td{ height: 55px; font-size: 13px; font-weight: bold; background-color: #eeeeee;color: #666666;}*/
 .list_table thead tr{ height: 55px; font-size: 13px; font-weight: bold; background-color: #eeeeee;color: #666666;}
 .list_table tr td{height: 55px; padding: 3px 15px;box-sizing: border-box;  vertical-align: middle; position: relative;color: #666666;}
 .list_table tr td:hover .edit_date{display: block; cursor: pointer;}
@@ -96,7 +95,7 @@ button{width: 148px; height: 45px; border-radius: 2px; background-color: #ffae13
 .tab_chick_list>div{display:none;}
 #wechart_info{padding-top:30px;}
 #wechart_info .personal_header{height:160px;display: -webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;}
-#wechart_info table{width:600px;margin:0 auto;border:1px solid #ddd; font-size: 12px;}
+#wechart_info table{width:600px;margin:0 auto;border:1px solid #ddd; font-size: 12px}
 #wechart_info table td{vertical-align:middle;}
 /*#wechart_info table tr td:nth-of-type(2n-2){background:#eee;}*/
 #wechart_info table tr .bgwhite{background:#fff;}

@@ -2,13 +2,21 @@
 <style type="text/css">
 	.container{padding-top:0px;}
 </style>
-<div class="container">
-	<div id="container" class="chat-container">
+<!-- <div id='login' style='text-align: center;position:absolute;top:0px;left:0px;width:100%;z-index:9000'>
+    <form name='cred'>
+        <label for='jid'>JID:</label>
+        <input type='text' id='jid' />
+        <label for='pass'>Password:</label>
+        <input type='password' id='pass' />
+        <input type='button' id='connect' value='connect' />
+    </form>
+</div> -->
+<div id="container" class="chat-container">
 	<section id="scroll" >
 		<div class="clearfix">
 			<div class="chat-list chat-list-right fr">
 				<div class="chat-info">
-					hello,高端大气上档次，低调奢华有内涵，hello,高端大气上档次，低调奢华有内涵
+					hello,高端大气上档次，低调奢华有内涵，hello,高端大气上档次，低调奢华有内涵1
 				</div>
 				<div class="chat-img">
 					<img src="../images/head.jpg" alt="" />
@@ -29,13 +37,23 @@
 				</div>
 			</div>
 		</div>
+		<div class="clearfix">
+			<div class="chat-list chat-list-left fl">
+				<div class="chat-img">
+					<img src="../images/head.jpg" alt="" />
+				</div>
+				<div class="chat-info">
+					hello,高端大气上档次
+				</div>
+			</div>
+		</div>
 		<div class="chat-tips">
 			离该用户上次主动联系您已经超过48小时，您发送的消息对方将无法收到
 		</div>
 		<div class="clearfix">
 			<div class="chat-list chat-list-right error fr">
 				<div class="chat-info">
-					hello,高端大气上档次，低调奢华有内涵，hello,高端大气上档次，低调奢华有内涵
+					hello,高端大气上档次
 				</div>
 				<div class="chat-img">
 					<img src="../images/head.jpg" alt="" />
@@ -54,36 +72,32 @@
 				<span class="failed-icon" data-role='leave_status'></span>
 			</div>
 		</div>
-        </section>
-
-        </div>
-	</div>
-	<footer class="fixed">
-		<form action="">
-			<div class="chat-send">
-				<div class="send-group">
-					<span class="add-icon js-chat-fun"></span>
-					<span class="smile-icon emotion"></span>
-					<textarea class="chat-input" id="saytext" ></textarea>
-					<!--- 灰色发送按钮
-					<button class="btn btn-send disabled" type="button">发送</button>
-					-->
-					<button class="btn btn-send js-dialog" data-role="js-classGroup" type="button">发送</button>
-				</div>
-				<div class="chat-func">
-					<span class="simg-icon">
-						<input type="file" accept="image/*;capture=camera">
-					</span>
-					<span class="phone-icon"></span>
-				</div>
-				<div class="smile-face">
-
-				</div>
+    </section>
+</div>
+<footer class="fixed">
+	<form action="">
+		<div class="chat-send">
+			<div class="send-group">
+				<span class="add-icon js-chat-fun"></span>
+				<span class="smile-icon emotion"></span>
+				<div contenteditable="true" class="chat-input" id="saytext" ></div>
+				<!--- 灰色发送按钮
+				<button class="btn btn-send disabled" type="button">发送</button>
+				-->
+				<button class="btn btn-send js-dialog" data-role="js-classGroup" type="button">发送</button>
 			</div>
-		</form>
-	</footer>
+			<div class="chat-func">
+				<span class="simg-icon">
+					<input type="file" accept="image/*;capture=camera">
+				</span>
+				<span class="phone-icon"></span>
+			</div>
+			<div class="smile-face"></div>
+		</div>
+	</form>
+</footer>
 
-	
+
 <!--	添加分组-->
 <div class="dialog js-classGroup" style="display:none">
 	<div class="bg-dialog fix"></div>
@@ -95,7 +109,7 @@
 			</form>
 		</div>
 		<div class="btn-group-dialog">
-			<button class="btn-dialog" type="button">取消</button>
+			<button class="btn-dialog close_icon" type="button">取消</button>
 			<button class="btn-dialog" type="submit">确定</button>
 		</div>
 	</div>
@@ -110,7 +124,7 @@
 		</div>
 		<div class="foot-dialog">
 			<div class="btn-group-dialog">
-				<button class="btn-dialog" type="button">取消</button>
+				<button class="btn-dialog close_icon" type="button">取消</button>
 				<button class="btn-dialog" type="submit">确定</button>
 			</div>
 		</div>
@@ -125,13 +139,13 @@
 		</div>
 		<div class="foot-dialog">
 			<div class="btn-group-dialog">
-				<button class="btn-dialog" type="button">取消</button>
+				<button class="btn-dialog close_icon" type="button">取消</button>
 				<button class="btn-dialog" type="submit">确定</button>
 			</div>
 		</div>
 	</div>
 </div>
-<script type='text/javascript' src='../js/jquery.cookie.js'></script>
-<script type="text/javascript" src='../js/strophe.min.js'></script>
+
+<script type="text/javascript" src='../js/strophe.js'></script>
 <script type="text/javascript" src='../js/chat.js'></script>
 

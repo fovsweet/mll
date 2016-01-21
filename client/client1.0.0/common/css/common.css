@@ -329,21 +329,21 @@ background: url(../images/common.png) 0px -166px;float: right;}*/
 #sts_sidebar > ul > li{margin-bottom: 20px; font-size:16px;position: relative; }
 #sts_sidebar > ul > li span{display: inline-block; width: 16px; height: 16px; margin-left: 20px; margin-right: 10px; vertical-align: -2px;}
 /*#sts_sidebar > ul > li a> i.arrow{width: 16px; height: 16px; display: inline-block; background: url(../images/rp.png) no-repeat; position: absolute; right: 5px; top:6px}*/
-#sts_sidebar > ul > li a> i.arrow{ width: 0;height: 0;border-left: 6px solid #999; border-right: 6px solid transparent;  border-bottom: 6px solid transparent; border-top: 6px solid transparent; position: absolute; right: 15px; top:5px}
+/*#sts_sidebar > ul > li a> i.arrow{ width: 0;height: 0;border-left: 6px solid #999; border-right: 6px solid transparent;  border-bottom: 6px solid transparent; border-top: 6px solid transparent; position: absolute; right: 15px; top:5px}*/
 #sts_sidebar > ul a{ display: inline-block; text-decoration: none; color: #aeb2b8; text-align: left;}
-#sts_sidebar > ul a:hover{color: white;}
-#sts_sidebar > ul > li >a:hover > i.arrow{width: 0;height: 0;border-left: 6px solid white; border-right: 6px solid transparent;  border-bottom: 6px solid transparent; border-top: 6px solid transparent;}
-#sts_sidebar > ul ul {display: none; }
+#sts_sidebar > ul > li >ul a:hover{color: white;}
+/*#sts_sidebar > ul > li >a:hover > i.arrow{width: 0;height: 0;border-left: 6px solid white; border-right: 6px solid transparent;  border-bottom: 6px solid transparent; border-top: 6px solid transparent;}*/
+#sts_sidebar > ul ul {display: block; }
 #sts_sidebar > ul ul li{line-height: 30px; font-size: 13px;}
-#sts_sidebar > ul li.show ul {display: block;}
-#sts_sidebar > ul li.show .arrow{transform: rotate(90deg); color: #aeb2b8; position: absolute; right: 15px; top:8px}
+/*#sts_sidebar > ul li.show ul {display: block;}
+#sts_sidebar > ul li.show .arrow{transform: rotate(90deg); color: #aeb2b8; position: absolute; right: 15px; top:8px}*/
 #sts_sidebar > ul li.show ul a{color: #87929A;}
 #sts_sidebar > ul li.show ul a:hover{color: white;}
 #sts_sidebar > ul ul li.show a{color: white;}
 #sts_sidebar .menu_account{background: url(../images/nav/account.png) ;}
 #sts_sidebar .menu_third{background: url(../images/nav/third.png) ;}
-#sts_sidebar > ul a:hover .menu_account{background: url(../images/nav/account-hover.png)}
-#sts_sidebar > ul a:hover .menu_third{background: url(../images/nav/third-hover.png)}
+/*#sts_sidebar > ul a:hover .menu_account{background: url(../images/nav/account-hover.png)}
+#sts_sidebar > ul a:hover .menu_third{background: url(../images/nav/third-hover.png)}*/
 
 
 /*系统设置导航*/

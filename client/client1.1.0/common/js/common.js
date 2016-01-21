@@ -1,4 +1,4 @@
-$(document).ready(function () {
+!$(document).ready(function () {
 	var rightNav =[{
 		'name':'系统',
 		'links':'settings',
@@ -10,14 +10,14 @@ $(document).ready(function () {
 	 var menus = [{
             'name': '首页',
             'links': 'index',
-            'class':'menu_1',
+            'class':'menu_index',
             'href':'javascript:;',
             'list':''
         },
         {
             'name': '运营',
             'links': 'operation',
-            'class':'menu_2',
+            'class':'menu_operation',
             'href':'javascript:;',
             'list': [{
                 'name': '运营模块',
@@ -28,13 +28,13 @@ $(document).ready(function () {
         },
         {
             'name': '电商',
-            'links': 'ec',
-            'class':'menu_3',
+            'links': 'ecs',
+            'class':'menu_ec',
             'href':'javascript:;',
             'list': [{
                 'name': '电商1',
                 'links': 'ec1',
-                'list': [{'name': '优惠券1', 'href': '#', 'class':'menu_1_1_1'  }, {
+                'list': [{'name': '优惠券1', 'href': '#','links':'ec:hover', 'class':'menu_1_1_1'  }, {
                     'name': '优惠券3',
                     'href': '#', 'class':'menu_1_1_1'
                 }]
@@ -44,7 +44,7 @@ $(document).ready(function () {
         {
             'name': '门店',
             'links': 'store',
-            'class':'menu_4',
+            'class':'menu_store',
             'href':'javascript:;',
             'list': [{
 		                'name': '门店1',
@@ -66,7 +66,7 @@ $(document).ready(function () {
         {
             'name': '客流',
             'links': 'custom',
-            'class':'menu_5',
+            'class':'menu_customer',
             'href':'javascript:;',
             'list': [{
 	                'name': '客户',
@@ -81,23 +81,16 @@ $(document).ready(function () {
 	                }]
          }];
 	var sys = [{
-            'name': '商家信息',
+            'name': '商家管理',
             'links': 'index',
-            'class':'menu_1',
+            'class':'menu_account',
             'href':'javascript:;',
-            'list': []
+            'list': [{'name': '商家信息','links': 'index_1','list': ''},{'name': '账号管理','links': 'index_2','list': '' }]
         },
-          {
-            'name': '账号管理',
-            'links': 'operation',
-            'class':'menu_2',
-            'href':'javascript:;',
-            'list': [{'name': '微信接口','links': '','list': ''},{'name': '微信菜单','links': '','list': '' },{'name': '微回复','links': '','list': ''}]
-          },
           {
             'name': '第三方接入',
             'links': 'ec',
-            'class':'menu_3',
+            'class':'menu_third',
             'href':'javascript:;',
             'list': [{'name': '微信接口','links': '','list': ''}, {'name': '微信菜单', 'links': '','list': ''},{'name': '微回复','links': '','list': ''}]
             }]
@@ -132,13 +125,14 @@ if($('#sidebar').length>0){
         }
      });
      setSectionLeft('#sidebar > ul > li.show >ul',80,220);
+     
 }else{
      var menu = new menuTree();
      menu.init({
         "targetId":"sts_sidebar",
         "data":sys,
         "url":'',
-        "action":"click"
+        "action":"click",
      });
      setSectionLeft('#sidebar > ul > li.show >ul',165,165);
 }
@@ -180,6 +174,8 @@ if($('#sidebar').length>0){
     // });
 });
 
+/************************************华丽丽的分割线***************************/
+
 /*
  *[menuTree 生成导航菜单]
  * @param  {object} setting
@@ -196,6 +192,7 @@ function menuTree(){
 				this.config = {
 					'data':'',
 					'url':'',
+					'menuKey':'',
 					'action':'click',
 					'callBack':null
 				}
@@ -209,17 +206,21 @@ function menuTree(){
 					this.forTree(_config.data);
 				}
 				this.obj.append(this.html);	
-				_config.action == 'click' ?this.menuClick(_config.callBack):this.menuHover(_config.callBack);;
+				
+				_config.action == 'click' ?this.menuClick(_config.callBack):this.menuHover(_config.callBack);
 				this.setsideBarHeigh(_config.targetId,80);
 				
+				if(_config.menuKey != '' && _config.menuKey != null && _config.menuKey != 'undefined'){
+					this.checkMenu(_config.menuKey);
+				}
 			}
 			menuTree.prototype.forTree = function(data){
 				this.html += '<ul><i></i>';
 				for(var i=0,ii=data.length;i<ii;i++){
 					if(typeof data[i].href == 'undefined'|| $.trim(data[i].href) == ''){
-						this.html += '<li><span class="' + data[i].class+ '"></span><a href="javascript:;">'+ data[i].name+'</a><i class="arrow"></i>';
+						this.html += '<li data-check="'+ data[i].links +'"><a href="javascript:;"><span class="' + data[i].class+ '"></span>'+ data[i].name+'<i class="arrow"></a></i>';
 					}else{
-						this.html += '<li><span class="' + data[i].class+ '"></span><a href="'+  data[i].href +'">'+ data[i].name+'</a><i class="arrow"></i>';
+						this.html += '<li data-check="'+ data[i].links +'"><a href="'+  data[i].href +'"><span class="' + data[i].class+ '"></span>'+ data[i].name+'<i class="arrow"></i></a>';
 					}
 					if(data[i].list != null && data[i].list.length >0){
 						this.forTree(data[i].list);
@@ -246,7 +247,7 @@ function menuTree(){
 						$(this).siblings('li').removeClass('show');
 						this.className =(this.className.length>0? " ": "") + "show";
 						//TODO
-						callback();
+						callback&&callback();
 						e.stopPropagation();
 					}
 				}
@@ -269,9 +270,18 @@ function menuTree(){
 		            $('#'+obj).css('height', h + 'px');
 		        }
 			}
+			menuTree.prototype.checkMenu = function(menuK){
+				$this = this.obj.find('li[data-check="'+ menuK +'"]');
+				if($this.parents('li').length > 0){
+					$this.addClass('show').parents('li').addClass('show');
+				}else{
+					$this.addClass('show');
+				}
+			}
 
- 
- /*根据sideBar的宽度设置section的左边距*/
+
+
+/*根据sideBar的宽度设置section的左边距*/
  function setSectionLeft(obj,smallLeft,largeLeft){
  	if($(obj).css('display') == 'block'){
 		$('#section').css('margin-left', ''+ largeLeft +'px');

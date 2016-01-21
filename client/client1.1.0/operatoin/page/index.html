@@ -1,0 +1,92 @@
+<link href="css/index.css" rel="stylesheet" />
+<div class="opr-content">
+	<div class="opr-count">
+		<div class="count-title">
+			昨日基本指标
+		</div>
+		<div class="count-content clearfixe">
+			<div class="count-01">
+				<p>活动参与人数</p>
+				<p>14561</p>
+				<p class="arrow-add">相比前天增长20%</p>	
+			</div>
+			<div class="count-01">
+				<p>领取卡券</p>
+				<p>14561</p>
+				<p class="arrow-down">相比前天下降10%</p>	
+			</div>
+			<div class="count-01">
+				<p>使用卡券</p>
+				<p>14561</p>
+				<p class="arrow-add">相比前天增长5%</p>	
+			</div>
+			<div class="count-01">
+				<p>正在进行中的活动</p>
+				<p>14561</p>
+				<p class="arrow-add">相比前天增长30%</p>	
+			</div>
+		</div>
+	</div>
+	<div id="opr-info" style="width: 98%; margin: 0 auto; height: 360px;">
+	</div>
+</div>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript">
+		// 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('opr-info'));
+
+        // 指定图表的配置项和数据
+        var option = {
+		    tooltip : {
+		        trigger: 'axis',
+		    },
+		    legend: {
+		    	right:'center',
+		    	bottom:0,
+		        data:[{
+				    name: '活跃用户数'
+				}]
+		    },
+		    grid: {
+		        left: '0%',
+		        right: '4%',
+		        bottom: '10%',
+		        containLabel: true,
+		    },
+		    toolbox: {
+		        feature: {
+		            saveAsImage: {}
+		        }
+		    },
+		    xAxis:[
+		        {
+		            type : 'category',
+		            boundaryGap : false,
+		            data : ['周一','周二','周三','周四','周五','周六','周日']
+		        }
+		    ],
+		    yAxis:[
+		        {
+		            type : 'value'
+		        }
+		    ],
+		    series:[
+		        {
+		            name:'活跃用户数',
+		            type:'line',
+		            stack: '总量',
+		            smooth: true,
+		             lineStyle: {
+			            normal: {
+			                color: '#2fcdd0',
+			                curveness: 0.2
+			            }
+			        },
+		            data:[120, 132, 101, 134, 90, 230, 210]
+		        }
+		    ]
+		};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option); 
+</script>

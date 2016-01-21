@@ -37,6 +37,7 @@
 					</div>
 					<!--------------------------------列表栏---------------------------------------->
 					<table class="list_table">
+						<thead>
 						<tr>
 							<td class="max_w">用户呢称</td>
 							<td>头像</td>
@@ -45,6 +46,8 @@
 							<td>当前是否关注</td>
 							<td>微信资料</td>
 						</tr>
+						</thead>
+						<tbody>
 						<tr>
 							<td>王XX</td>
 							<td class="user_ico"><img src="images/header.png"></td>
@@ -101,6 +104,7 @@
 							<td>未关注</td>
 							<td><button onclick="dialogs(this)" data-role="user_info">查看</button></td>
 						</tr>
+						</tbody>
 					</table>
 					<div class="pageNav">
 							<a>上一页</a>
@@ -120,31 +124,168 @@
 		<!--------------------------------查看资料弹出框------------------------------------>
 			<div class="data-dia" id="user_info">
 		        <div class="data-content">
-		        	<h1 class="dia_header" >
-               			 微信资料<a class='close_log' href="javascript:;"></a>
+		        	<h1 class="dia_header">
+               			 详细资料
+               			 <a class='close_log' href="javascript:;"></a>
            			</h1>
-           			<p><img src="images/header.png"></p>
-           			<table>
-           				<tr>
-           					<td>用户呢称</td>
-           					<td>卖火材的小小女孩</td>
-           				</tr>
-           				<tr>
-           					<td>性别</td>
-           					<td>女</td>
-           				</tr>
-           				<tr>
-           					<td>省份</td>
-           					<td>广东</td>
-           				</tr>
-           				<tr>
-           					<td>城市</td>
-           					<td>深圳</td>
-           				</tr>
-           			</table>
-           			<p>
-	           			<button class="cancel">关闭</button>
-           			</p>
+           			<div class='tab_chick'>
+           				<table>
+           					<tr>
+           						<td class='chicked' data-tab='#wechart_info'>微信资料</td>
+           						<td data-tab='#personal'>个人卡包</td>
+           						<td data-tab='#transaction_record'>交易记录</td>
+           						<td data-tab='#points_record'>积分记录</td>
+           						<td data-tab='#refill_records'>储值记录</td>
+           					</tr>
+           				</table>
+					</div>
+					<div class='tab_chick_list'>
+						<div id='personal'>
+							<div class='personal_title'>
+								<ul>
+									<li>共领取：<b>30</b></li>
+									<li>未使用：<b>30</b></li>
+									<li>已使用：<b>30</b></li>
+									<li>已过期：<b>30</b></li>
+								</ul>
+							</div>
+							<table class="list_table">
+								<thead>
+								<tr>
+									<td class="max_w">券号</td>
+									<td>卡券名称</td>
+									<td>卡券类型</td>
+									<td>领券时间</td>
+									<td>卡券状态</td>
+									<td>核销时间</td>
+									<td>核销门店</td>
+									<td>核销店员</td>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>MLL123456789</td>
+									<td>双十一9折优惠券</td>
+									<td>礼品券</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>已使用</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>门店名称</td>
+									<td>店员名</td>
+								</tr>
+								<tr>
+									<td>MLL123456789</td>
+									<td>双十一9折优惠券</td>
+									<td>礼品券</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>已使用</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>门店名称</td>
+									<td>店员名</td>
+								</tr>
+								<tr>
+									<td>MLL123456789</td>
+									<td>双十一9折优惠券</td>
+									<td>礼品券</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>已使用</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>门店名称</td>
+									<td>店员名</td>
+								</tr>
+								<tr>
+									<td>MLL123456789</td>
+									<td>双十一9折优惠券</td>
+									<td>礼品券</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>已使用</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>门店名称</td>
+									<td>店员名</td>
+								</tr>
+								<tr>
+									<td>MLL123456789</td>
+									<td>双十一9折优惠券</td>
+									<td>礼品券</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>已使用</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>门店名称</td>
+									<td>店员名</td>
+								</tr>
+								<tr>
+									<td>MLL123456789</td>
+									<td>双十一9折优惠券</td>
+									<td>礼品券</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>已使用</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>门店名称</td>
+									<td>店员名</td>
+								</tr>
+								<tr>
+									<td>MLL123456789</td>
+									<td>双十一9折优惠券</td>
+									<td>礼品券</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>已使用</td>
+									<td>2015-10-13<br/>20:30:20</td>
+									<td>门店名称</td>
+									<td>店员名</td>
+								</tr>
+								</tbody>
+							</table>
+							<div class="pageNav">
+								<a>上一页</a>
+								<a class="hoverd"> 1 </a>
+								<a> 2 </a>
+								<a> 3 </a>
+								<a>...</a>
+								<a>50</a>
+								<a>下一页</a>
+								到第<input type="text" />页
+								<input type="submit" value="确定" />
+								共<span>20</span>页<span class="all_items">200</span>项
+							</div>
+						</div>
+						<div id='wechart_info'>
+							<div class='personal_header'>
+								<img src="images/header.png">
+							</div>
+							<table>
+								<tr>
+									<td width=100>用户昵称</td>
+									<td width=200></td>
+									<td width=100>性&nbsp;&nbsp;别</td>
+									<td width=200></td>
+								</tr>
+								<tr>
+									<td>省&nbsp;&nbsp;份</td>
+									<td></td>
+									<td>城&nbsp;&nbsp;市</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>粉丝来源</td>
+									<td></td>
+									<td>当前是否关注</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>关注时间</td>
+									<td rowspan='3'></td>
+									<td style='background:#fff'></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+						<div id='transaction_record'></div>
+						<div id='points_record'></div>
+						<div id='refill_records'></div>
+						<div id="no_info">
+							<img src="images/noinfo.png" />
+						</div>
+					</div>
 		        </div>
 		    </div>
 	</body>
